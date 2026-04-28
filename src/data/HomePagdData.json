@@ -67,7 +67,7 @@
     "funfacts": [
       {
         "title": "Years Experience",
-        "number": 3
+        "number": 4
       },
       {
         "title": "Projects Delivered",
@@ -93,7 +93,7 @@
         "subTitle": "Full Stack · Java 17 · Angular 17",
         "details": {
           "title": "Enterprise Web Platform — Spring Boot 3 & Angular 17",
-          "description": "Architected a full-stack enterprise platform with a Spring Boot 3 / Java 17 backend exposing 20+ secured REST endpoints, fully documented via Swagger/OpenAPI 3. Implemented JWT authentication, role-based access control (RBAC), and Spring Security.<br><br>Angular 17 frontend with reactive forms, lazy-loaded modules, and HTTP interceptors. Applied TDD with JUnit 5 & Mockito (80%+ coverage) and enforced code quality gates with SonarQube. Containerized and deployed on Linux via Docker.",
+          "description": "Led requirements analysis and functional specification before implementation. Architected a full-stack enterprise platform with a Spring Boot 3 / Java 17 backend exposing 20+ secured REST endpoints, fully documented via Swagger/OpenAPI 3. Implemented JWT authentication, RBAC, and Spring Security.<br><br>Angular 17 frontend with reactive forms, lazy-loaded modules, and HTTP interceptors. Applied TDD with JUnit 5 & Mockito (80%+ coverage) and enforced code quality gates with SonarQube. Containerized and deployed on Linux via Docker.",
           "type": "Full Stack Web Application",
           "langages": "Java 17, TypeScript, HTML, SCSS",
           "platform": "Spring Boot 3, Angular 17, Docker",
@@ -116,7 +116,7 @@
         }
       },
       {
-        "thumbUrl": "/images/popup-project-3.jpg",
+        "thumbUrl": "/images/popup-project-3.png",
         "title": "Sports Management Platform",
         "subTitle": "Full Stack · Node.js · Vue.js 3",
         "details": {
@@ -149,7 +149,7 @@
         "subTitle": "DevOps · GitHub Actions · Docker",
         "details": {
           "title": "Automated CI/CD Pipelines & Multi-Stack Backend Services",
-          "description": "Engineered automated CI/CD pipelines with GitHub Actions for Spring Boot and FastAPI projects: lint, test, build, and Docker image publish on every push to main.<br><br>Docker Compose multi-container environments for local/staging parity. Playwright E2E + PyTest/JUnit 5 suites integrated into pipelines. Branch protection rules, semantic versioning, and code quality checks enforced throughout.",
+          "description": "Defined deployment requirements and infrastructure specifications before implementation. Engineered automated CI/CD pipelines with GitHub Actions for Spring Boot and FastAPI projects: lint, test, build, and Docker image publish on every push to main.<br><br>Docker Compose multi-container environments for local/staging parity. Playwright E2E + PyTest/JUnit 5 suites integrated into pipelines. Branch protection, semantic versioning, and SonarQube quality gates enforced throughout.",
           "type": "DevOps / Backend",
           "langages": "Python, Java, YAML, Bash",
           "platform": "GitHub Actions, Docker Compose, Linux",
@@ -176,34 +176,48 @@
   "service": {
     "sectionHeading": {
       "miniTitle": "SERVICES",
-      "title": "Development <span>services</span> I am providing"
+      "title": "Services I <span>provide</span>"
     },
     "allService": [
       {
         "imgUrl": "/images/service-01.jpg",
         "title": "Backend Development",
-        "subTitle": "Production-grade REST APIs and microservices with Spring Boot 3 (Java 17) and Python FastAPI. JWT/OAuth2 security, RBAC, Swagger/OpenAPI docs, TDD with JUnit 5 & PyTest, and clean layered architecture.",
+        "subTitle": "Production-grade REST APIs and microservices with Spring Boot 3 (Java 17) and Python FastAPI. JWT/OAuth2 security, RBAC, Swagger/OpenAPI, TDD with JUnit 5 & PyTest, clean layered architecture.",
         "icon": "bi:server",
         "ratings": 5
       },
       {
         "imgUrl": "/images/service-02.jpg",
         "title": "Frontend Development",
-        "subTitle": "Performant, accessible SPAs with Angular 17 and React. NgRx/Redux state management, reactive forms, lazy loading, HTTP interceptors, and TypeScript strict mode for maintainable, scalable UIs.",
+        "subTitle": "Performant, accessible SPAs with Angular 17 and React. NgRx/Redux state management, reactive forms, lazy loading, HTTP interceptors, and TypeScript strict mode.",
         "icon": "bi:code-square",
         "ratings": 5
       },
       {
         "imgUrl": "/images/service-03.jpg",
-        "title": "Database Design",
-        "subTitle": "Normalized schema design with PostgreSQL & MySQL, strategic indexing, EXPLAIN ANALYZE query tuning, ORM mapping with Hibernate & SQLAlchemy, and migration management via Flyway & Alembic.",
-        "icon": "bi:database",
+        "title": "Functional Analysis",
+        "subTitle": "Bridging business and IT: requirements elicitation, user story mapping, as-is/to-be process modelling (UML, BPMN), functional specifications, and UAT support for Agile and waterfall projects.",
+        "icon": "bi:diagram-3",
         "ratings": 4.5
       },
       {
         "imgUrl": "/images/service-04.jpg",
+        "title": "API Design & Docs",
+        "subTitle": "Design-first REST API specifications with OpenAPI 3 / Swagger. Contract-driven development, versioning strategy, integration documentation, and developer portals for internal and third-party consumers.",
+        "icon": "bi:file-earmark-code",
+        "ratings": 4.5
+      },
+      {
+        "imgUrl": "/images/service-01.jpg",
+        "title": "Database Design",
+        "subTitle": "Normalized schema design with PostgreSQL & MySQL, strategic indexing, EXPLAIN ANALYZE query tuning, ORM mapping with Hibernate & SQLAlchemy, migration management via Flyway & Alembic.",
+        "icon": "bi:database",
+        "ratings": 4.5
+      },
+      {
+        "imgUrl": "/images/service-02.jpg",
         "title": "DevOps & CI/CD",
-        "subTitle": "End-to-end CI/CD with GitHub Actions: automated lint, test, build, and Docker image delivery. Docker Compose multi-service environments, Linux server setup, and code quality gates on every pull request.",
+        "subTitle": "End-to-end CI/CD with GitHub Actions: automated lint, test, build, and Docker image delivery. Docker Compose multi-service environments, Linux server setup, code quality gates on every pull request.",
         "icon": "bi:gear",
         "ratings": 4.5
       }
@@ -216,54 +230,68 @@
     },
     "allExperience": [
       {
-        "designation": "Freelance Full Stack Developer",
-        "company": "SELF-EMPLOYED | BRUSSELS",
+        "designation": "Software Engineer & Functional Analyst",
+        "company": "SELF-EMPLOYED | BRUSSELS (KBO/VAT)",
         "duration": "MAY 2023 - PRESENT",
         "jobType": "Freelance",
         "companyTitle": "About Role",
-        "companyDescription": "Designed and shipped production REST APIs with Spring Boot 3 and FastAPI for clients across Belgium, managing the full project lifecycle from requirements to deployment. Containerized multi-service applications with Docker Compose and automated build/test/deploy pipelines via GitHub Actions. Built async Python backends with FastAPI, Pydantic v2, SQLAlchemy ORM, and Alembic migrations. Maintained 90%+ automated test coverage with PyTest, JUnit 5, and Playwright E2E tests. Delivered React and Angular frontends integrated against typed API contracts."
+        "companyDescription": "KBO/VAT-registered independent consultant delivering full-cycle software engineering and functional analysis for Belgian clients. Design and ship production REST APIs (Spring Boot 3, FastAPI); build Angular/React frontends; containerize with Docker Compose; automate pipelines via GitHub Actions. Lead requirements elicitation, write functional specifications, model as-is/to-be processes (UML, BPMN), and translate business needs into technical solutions. Maintain 90%+ automated test coverage (PyTest, JUnit 5, Playwright). Fluent in Agile/Scrum and formal documentation for Belgian public and private sector standards."
       },
       {
         "designation": "Junior Full Stack Java Developer",
         "company": "PRETTY CODE | BRUSSELS",
         "duration": "JUL 2023 - JUL 2024",
-        "jobType": "Full time",
+        "jobType": "Full-time",
         "companyTitle": "About Company",
-        "companyDescription": "Engineered RESTful microservices with Spring Boot 3 and Java 17 for Belgian SME clients, delivering user management, security, and data validation features. Implemented JWT authentication with role-based access control (RBAC) and Spring Security across secured API endpoints. Practiced TDD with JUnit 5 and Mockito, achieving 80%+ test coverage on all backend modules. Participated in Agile/Scrum sprints, contributed to GitLab-based code reviews, and collaborated with Angular frontend developers to ensure seamless API integration."
+        "companyDescription": "Engineered RESTful microservices with Spring Boot 3 and Java 17 for Belgian SME clients. Implemented JWT authentication with RBAC via Spring Security; achieved 80%+ test coverage with JUnit 5 & Mockito. Participated in functional analysis workshops to gather requirements, refine user stories, and produce technical specifications. Collaborated with Angular frontend developers in Agile/Scrum sprints; contributed to GitLab code reviews and CI/CD pipeline maintenance."
       },
       {
-        "designation": "Bachelor's in Computer Science",
+        "designation": "Bachelor's in Applied Computer Science",
         "company": "EAFC-UCCLE | BRUSSELS",
         "duration": "SEP 2021 - AUG 2024",
         "jobType": "Education",
         "companyTitle": "About Studies",
-        "companyDescription": "Bachelor's in Computer Science — EAFC-Uccle, Brussels (2021–2024). Core coursework: software architecture, algorithms & data structures, relational databases, web development, and networking. Complemented by an MBA — Universidad Isabel I, Spain (2025), focused on digital business strategy and technology management."
+        "companyDescription": "Bachelor's in Applied Computer Science — EAFC-Uccle, Brussels. Specialisations: software engineering, web development (Spring Boot, Angular, React), relational databases (PostgreSQL, MySQL), algorithms & data structures, networks, and UML/system modelling. Final-year project: full-stack enterprise application with Java Spring Boot backend and Angular frontend."
+      },
+      {
+        "designation": "MBA — Technology Management",
+        "company": "UNIVERSIDAD ISABEL I | SPAIN",
+        "duration": "2024 - 2025",
+        "jobType": "Education",
+        "companyTitle": "About Studies",
+        "companyDescription": "Master of Business Administration (MBA) — Universidad Isabel I, Burgos, Spain. Focus: digital business strategy, technology management, Agile project management, and entrepreneurship. Complements technical engineering profile with business acumen for client-facing consultancy and project ownership roles in the Belgian tech market."
       }
     ]
   },
   "testimonial": {
     "sectionHeading": {
-      "miniTitle": "Achievements",
-      "title": "Certified & <span>Award-Winning</span> <br /> Developer & Champion"
+      "miniTitle": "Certifications",
+      "title": "Education & <span>Certifications</span>"
     },
     "allTestimonial": [
       {
-        "reviewText": "Java Full Stack Developer Certificate from Coursera — comprehensive training covering Spring Boot, Angular, JWT Authentication, REST APIs, and full-stack web development best practices.",
+        "reviewText": "IBM Java Full Stack Developer Professional Certificate via Coursera — 14-course programme covering Spring Boot 3, Angular, REST API design, JWT authentication, Docker, and CI/CD. Practical emphasis on enterprise-grade full-stack development.",
         "avatarImg": "/images/avatar-1.jpg",
-        "avatarName": "Coursera Certification",
-        "avatarCompany": "Java Full Stack"
+        "avatarName": "IBM via Coursera",
+        "avatarCompany": "Java Full Stack Developer"
       },
       {
-        "reviewText": "World Kickboxing Champion at WFM Türkiye (2017) and African Muay Thai ISKA Titleholder (2016). Member of the Tunisian National Team with 25 professional fights in Thailand — discipline, focus, and resilience.",
+        "reviewText": "Meta Front-End Developer Professional Certificate via Coursera — covers React, advanced JavaScript, responsive design, accessibility (WCAG), version control with Git, and UX/UI principles. Issued by Meta's engineering team.",
         "avatarImg": "/images/avatar-2.jpg",
-        "avatarName": "World Champion",
-        "avatarCompany": "Kickboxing & Muay Thai"
+        "avatarName": "Meta via Coursera",
+        "avatarCompany": "Front-End Developer"
       },
       {
-        "reviewText": "Spring Boot 3, Spring 6 & Hibernate training plus hands-on Angular project experience with JWT Authentication and REST API integration — committed to continuous learning and professional growth.",
+        "reviewText": "Spring Boot 3, Spring 6 & Hibernate for Beginners — Chad Darby (Udemy, 41h). Deep-dive into Spring Core, AOP, Spring MVC, REST APIs, Spring Data JPA, Hibernate ORM, Spring Security, and OAuth2. Directly applied in production Spring Boot projects.",
         "avatarImg": "/images/avatar-3.jpg",
-        "avatarName": "Continuous Learning",
-        "avatarCompany": "Spring Boot & Angular"
+        "avatarName": "Udemy",
+        "avatarCompany": "Spring Boot 3 & Hibernate"
+      },
+      {
+        "reviewText": "World Kickboxing Champion — WFM Türkiye (2017). African Muay Thai ISKA Titleholder (2016). Member of the Tunisian National Team with 25 professional fights in Thailand. Demonstrates elite-level discipline, focus, and resilience under pressure.",
+        "avatarImg": "/images/avatar-4.jpg",
+        "avatarName": "WFM & ISKA Champion",
+        "avatarCompany": "International Kickboxing"
       }
     ]
   },
