@@ -1,24 +1,28 @@
 {
   "hero": {
     "imgUrl": "/images/home-banner.png",
-    "name": "Jenna Ortega",
-    "heading": "Hay! I’m Jenna",
-    "typingText": ["I'm a Designer", 1500, "I'm a Developer", 1500],
-    "description": "Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment.",
+    "name": "Abdessalem Saadaoui",
+    "heading": "Hey! I'm Abdessalem",
+    "typingText": ["I'm a Full Stack Developer", 1500, "I'm a Backend Engineer", 1500],
+    "description": "Dynamic Full Stack Web Developer with expertise in Java, Python, Spring Boot, FastAPI, React, and Angular. Passionate about building scalable, high-quality web applications and backend services.",
     "btnText": "Get in touch",
     "btnUrl": "contactus"
   },
   "socialBtns": [
     {
-      "icon": "fa-brands:facebook-f",
-      "iconBgClass": "facebook",
-      "href": "/"
+      "icon": "fa-brands:github",
+      "iconBgClass": "github",
+      "href": "https://github.com/abdessalems"
     },
-    { "icon": "fa-brands:dribbble", "iconBgClass": "dribbble", "href": "/" },
     {
       "icon": "fa-brands:linkedin-in",
       "iconBgClass": "linkedin",
-      "href": "/"
+      "href": "https://linkedin.com/in/abdussalem-saadaoui-10bb7018a"
+    },
+    {
+      "icon": "fa-solid:envelope",
+      "iconBgClass": "email",
+      "href": "mailto:abdessalemsaa@gmail.com"
     }
   ],
   "brands": [
@@ -57,21 +61,21 @@
   ],
   "about": {
     "imgSrc": "/images/about-banner.png",
-    "miniTitle": "About Us",
-    "title": "I AM AVAILABLE FOR <span>UI UX DESIGN</span> PROJECTS",
-    "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.",
+    "miniTitle": "About Me",
+    "title": "I AM AVAILABLE FOR <span>FULL STACK</span> DEVELOPMENT PROJECTS",
+    "description": "Results-driven Full Stack Developer based in Brussels, Belgium. I specialize in Java (Spring Boot), Python (FastAPI, Django), and modern frontend frameworks (React, Angular, Vue.js). Experienced in Agile methodologies, Test-Driven Development (TDD), and CI/CD pipelines. Also an International Kickboxing Champion with 25 professional fights.",
     "funfacts": [
       {
-        "title": "Google Review",
-        "number": 280
-      },
-      {
         "title": "Years Experience",
-        "number": 15
+        "number": 3
       },
       {
-        "title": "Awward Winning",
-        "number": 49
+        "title": "Projects Delivered",
+        "number": 10
+      },
+      {
+        "title": "World Champion",
+        "number": 1
       }
     ],
     "btnText": "Get in touch",
@@ -85,86 +89,86 @@
     "allProjects": [
       {
         "thumbUrl": "/images/popup-project-1.jpg",
-        "title": "Website Design",
-        "subTitle": "Web Design, App Design",
+        "title": "Spring Boot & Angular App",
+        "subTitle": "Full Stack, Web Application",
         "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
-          "country": "USA",
-          "url": "www.example.com"
+          "title": "Spring Boot & Angular Web Application",
+          "description": "Built a comprehensive web application using Spring Boot for the backend and Angular for the frontend. Developed RESTful APIs, integrated JWT Authentication, and applied TDD to ensure high-quality solutions.<br><br>Collaborated at Pretty Code as a Junior Full Stack Java Developer, integrating key features for user management, security, and data validation.",
+          "type": "Web Application",
+          "langages": "Java, TypeScript, HTML, CSS",
+          "platform": "Spring Boot, Angular",
+          "country": "Belgium",
+          "url": "github.com/abdessalems"
         }
       },
       {
         "thumbUrl": "/images/popup-project-2.jpg",
-        "title": "Website Design",
-        "subTitle": "Web Design, App Design",
+        "title": "FastAPI Backend",
+        "subTitle": "Backend, REST API",
         "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
-          "country": "USA",
-          "url": "www.example.com"
+          "title": "FastAPI Project — Users, Companies & Planning",
+          "description": "Developed a FastAPI backend for managing users, companies, and planning activities with JWT authentication. Includes automated testing with PyTest and is deployed using Docker.<br><br>Clean architecture with modular routers and dependency injection patterns.",
+          "type": "Backend API",
+          "langages": "Python, FastAPI",
+          "platform": "Docker, Linux",
+          "country": "Belgium",
+          "url": "github.com/abdessalems/FastApiProject"
         }
       },
       {
         "thumbUrl": "/images/popup-project-3.jpg",
-        "title": "Dashboard Design",
-        "subTitle": "Web Design, App Design",
+        "title": "Boxer App",
+        "subTitle": "Full Stack, CRUD Application",
         "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
-          "country": "USA",
-          "url": "www.example.com"
+          "title": "Boxer App — Boxer Profile Management",
+          "description": "Created a Node.js backend and Vue.js frontend for managing boxer profiles with full CRUD operations. Features include profile creation, update, deletion, and listing with a clean responsive UI.<br><br>Backend: Node.js + Express.js + MySQL. Frontend: Vue.js.",
+          "type": "Full Stack Application",
+          "langages": "JavaScript, Node.js, Vue.js",
+          "platform": "MySQL, Express.js",
+          "country": "Belgium",
+          "url": "github.com/abdessalems/Boxer_BackEnd"
         }
       },
       {
         "thumbUrl": "/images/popup-project-4.jpg",
-        "title": "Mobile App Design",
-        "subTitle": "Web Design, App Design",
+        "title": "MesProduits App",
+        "subTitle": "Frontend, Angular",
         "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
-          "country": "USA",
-          "url": "www.example.com"
+          "title": "MesProduits — Product Management App",
+          "description": "Developed an Angular project for managing product details with complete CRUD operations. Clean component-based architecture with reactive forms and Angular routing.<br><br>Focus on Angular best practices and reusable component design.",
+          "type": "Web Application",
+          "langages": "TypeScript, HTML, CSS",
+          "platform": "Angular",
+          "country": "Belgium",
+          "url": "github.com/abdessalems"
         }
       },
       {
         "thumbUrl": "/images/popup-project-5.jpg",
-        "title": "Website Design",
-        "subTitle": "Web Design, App Design",
+        "title": "Freelance Backend Services",
+        "subTitle": "Backend, DevOps",
         "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
-          "country": "USA",
-          "url": "www.example.com"
+          "title": "Freelance — Backend Services & CI/CD",
+          "description": "Developed backend services using Python (FastAPI, Django) and Java (Spring Boot) for various freelance clients. Implemented automated testing with PyTest, JUnit, and Playwright.<br><br>Deployed applications in Docker/Linux environments with CI/CD pipelines and Git-based workflows.",
+          "type": "Backend / DevOps",
+          "langages": "Python, Java, Bash",
+          "platform": "Docker, GitHub Actions",
+          "country": "Belgium",
+          "url": "github.com/abdessalems"
         }
       },
       {
         "thumbUrl": "/images/popup-project-6.jpg",
-        "title": "Website Design",
-        "subTitle": "Web Design, App Design",
+        "title": "Full Stack Integration",
+        "subTitle": "React, Angular, PostgreSQL",
         "details": {
-          "title": "Website Design for Marketing Agency Startup",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "type": "Website",
-          "langages": "PHP, HTML, CSS, JS",
-          "platform": "WordPress",
-          "country": "USA",
-          "url": "www.example.com"
+          "title": "Full Stack — Frontend & Database Integration",
+          "description": "Supported frontend integration with React, Angular, and Vue.js for full-stack delivery across multiple projects. Managed data with PostgreSQL and MySQL, ensuring performance and reliability.<br><br>Collaborated on code reviews and maintained clean, maintainable codebases using Git.",
+          "type": "Full Stack",
+          "langages": "JavaScript, TypeScript, SQL",
+          "platform": "React, Angular, PostgreSQL",
+          "country": "Belgium",
+          "url": "github.com/abdessalems"
         }
       }
     ]
@@ -172,36 +176,36 @@
   "service": {
     "sectionHeading": {
       "miniTitle": "SERVICES",
-      "title": "Design <span>services</span> I am providing"
+      "title": "Development <span>services</span> I am providing"
     },
     "allService": [
       {
         "imgUrl": "/images/service-01.jpg",
-        "title": "Website Design",
-        "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-        "icon": "bi:brush-fill",
+        "title": "Backend Development",
+        "subTitle": "Building robust REST APIs and backend services with Java Spring Boot, Python FastAPI & Django, with JWT auth and TDD.",
+        "icon": "bi:server",
         "ratings": 5
       },
       {
         "imgUrl": "/images/service-02.jpg",
-        "title": "Website Design",
-        "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+        "title": "Frontend Development",
+        "subTitle": "Crafting responsive, modern UIs using React, Angular, and Vue.js with clean component architecture.",
         "icon": "bi:code-square",
-        "ratings": 4.5
+        "ratings": 5
       },
       {
         "imgUrl": "/images/service-03.jpg",
-        "title": "SEO Marketing",
-        "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-        "icon": "bi:speedometer2",
-        "ratings": 5
+        "title": "Database Design",
+        "subTitle": "Designing and optimizing relational databases with PostgreSQL and MySQL for performance and reliability.",
+        "icon": "bi:database",
+        "ratings": 4.5
       },
       {
         "imgUrl": "/images/service-04.jpg",
-        "title": "Graphic Design",
-        "subTitle": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
-        "icon": "bi:palette",
-        "ratings": 5
+        "title": "DevOps & CI/CD",
+        "subTitle": "Deploying applications with Docker, Linux environments, and automated CI/CD pipelines using Git workflows.",
+        "icon": "bi:gear",
+        "ratings": 4.5
       }
     ]
   },
@@ -212,66 +216,66 @@
     },
     "allExperience": [
       {
-        "designation": "Front-end Developer",
-        "company": "WELAB | REMOTE",
-        "duration": "JAN 2019 - PRESENT",
-        "jobType": "Full time",
-        "companyTitle": "About Company",
-        "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ."
+        "designation": "Freelance Full Stack Developer",
+        "company": "SELF-EMPLOYED | BRUSSELS",
+        "duration": "MAY 2023 - PRESENT",
+        "jobType": "Freelance",
+        "companyTitle": "About Role",
+        "companyDescription": "Developed backend services using Python (FastAPI, Django) and Java (Spring Boot). Implemented automated testing with PyTest, JUnit, and Playwright. Deployed applications in Docker/Linux environments with CI/CD pipelines. Supported frontend integration with React, Angular, and Vue.js. Managed data with PostgreSQL and MySQL."
       },
       {
-        "designation": "Front-end Developer",
-        "company": "WELAB | REMOTE",
-        "duration": "JAN 2019 - PRESENT",
+        "designation": "Junior Full Stack Java Developer",
+        "company": "PRETTY CODE | BRUSSELS",
+        "duration": "JUL 2023 - JUL 2024",
         "jobType": "Full time",
         "companyTitle": "About Company",
-        "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ."
+        "companyDescription": "Developed backend services using Spring Boot and contributed to full-stack development of web applications. Integrated JWT authentication and implemented key features for user management, security, and data validation. Collaborated with front-end developers to ensure seamless integration. Actively participated in code reviews and adhered to Test-Driven Development (TDD) practices."
       },
       {
-        "designation": "Front-end Developer",
-        "company": "WELAB | REMOTE",
-        "duration": "JAN 2019 - PRESENT",
-        "jobType": "Full time",
-        "companyTitle": "About Company",
-        "companyDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ."
+        "designation": "Bachelor's in Computer Science",
+        "company": "EAFC-UCCLE | BRUSSELS",
+        "duration": "SEP 2021 - AUG 2024",
+        "jobType": "Education",
+        "companyTitle": "About Studies",
+        "companyDescription": "Bachelor's Degree in Computer Science at EAFC-Uccle, Brussels, Belgium. Gained solid foundations in software engineering, algorithms, databases, and web development. Complemented by an MBA from Universidad Isabel I, Spain (2025)."
       }
     ]
   },
   "testimonial": {
     "sectionHeading": {
-      "miniTitle": "Testimonial",
-      "title": "Over <span>8,000+</span> <br /> PEOPLE TRUST ME"
+      "miniTitle": "Achievements",
+      "title": "Certified & <span>Award-Winning</span> <br /> Developer & Champion"
     },
     "allTestimonial": [
       {
-        "reviewText": "Donec tellus sem, tempor ac purus a, porttitor lobortis purus. Etiam quis nisl eget ex pulvinar consectetur. Suspendisse potenti. Cras non elementum risus. Fusce massa tellus, consequat a rutrum et, aliquam a lacus. Quisque viverra egestas tincidunt. Nunc nec nisi sed enim consectetur ullamcorper. Vestibulum at neque tortor. Pellentesque urna enim, ultricies at tortor eu, elementum egestas leo. In hac habitasse platea dictumst.",
+        "reviewText": "Java Full Stack Developer Certificate from Coursera — comprehensive training covering Spring Boot, Angular, JWT Authentication, REST APIs, and full-stack web development best practices.",
         "avatarImg": "/images/avatar-1.jpg",
-        "avatarName": "Pamela Anders",
-        "avatarCompany": "Company Name"
+        "avatarName": "Coursera Certification",
+        "avatarCompany": "Java Full Stack"
       },
       {
-        "reviewText": "Donec tellus sem, tempor ac purus a, porttitor lobortis purus. Etiam quis nisl eget ex pulvinar consectetur. Suspendisse potenti. Cras non elementum risus. Fusce massa tellus, consequat a rutrum et, aliquam a lacus. Quisque viverra egestas tincidunt. Nunc nec nisi sed enim consectetur ullamcorper. Vestibulum at neque tortor. Pellentesque urna enim, ultricies at tortor eu, elementum egestas leo. In hac habitasse platea dictumst.",
+        "reviewText": "World Kickboxing Champion at WFM Türkiye (2017) and African Muay Thai ISKA Titleholder (2016). Member of the Tunisian National Team with 25 professional fights in Thailand — discipline, focus, and resilience.",
         "avatarImg": "/images/avatar-2.jpg",
-        "avatarName": "Pamela Anders",
-        "avatarCompany": "Company Name"
+        "avatarName": "World Champion",
+        "avatarCompany": "Kickboxing & Muay Thai"
       },
       {
-        "reviewText": "Donec tellus sem, tempor ac purus a, porttitor lobortis purus. Etiam quis nisl eget ex pulvinar consectetur. Suspendisse potenti. Cras non elementum risus. Fusce massa tellus, consequat a rutrum et, aliquam a lacus. Quisque viverra egestas tincidunt. Nunc nec nisi sed enim consectetur ullamcorper. Vestibulum at neque tortor. Pellentesque urna enim, ultricies at tortor eu, elementum egestas leo. In hac habitasse platea dictumst.",
+        "reviewText": "Spring Boot 3, Spring 6 & Hibernate training plus hands-on Angular project experience with JWT Authentication and REST API integration — committed to continuous learning and professional growth.",
         "avatarImg": "/images/avatar-3.jpg",
-        "avatarName": "Pamela Anders",
-        "avatarCompany": "Company Name"
+        "avatarName": "Continuous Learning",
+        "avatarCompany": "Spring Boot & Angular"
       }
     ]
   },
   "contact": {
     "sectionHeading": {
-      "title": "Let’s Discuss Your Project",
-      "subTitle": "Always available for freelancing if the right project comes along, Feel free to contact me."
+      "title": "Let's Discuss Your Project",
+      "subTitle": "Always available for freelancing if the right project comes along. Feel free to contact me."
     },
     "contactImg": "/images/contact-us.png",
     "contactInfo": [
-      { "title": "Write an e-mail", "email": "sample@domain.com" },
-      { "title": "write an e-mail", "tel": "+044 9696 9696 3636" }
+      { "title": "Write an e-mail", "email": "abdessalemsaa@gmail.com" },
+      { "title": "Give me a call", "tel": "+32 465 620 488" }
     ]
   }
 }
