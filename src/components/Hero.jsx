@@ -71,7 +71,7 @@ export default function Hero({ data, socialData }) {
           </div>
           <div className="col-lg-6">
             <div className="hs-banner">
-              <img src={imgUrl} title alt="Admin" />
+              <img src={imgUrl} alt="Abdessalem Saadaoui" fetchpriority="high" decoding="async" />
             </div>
           </div>
         </div>

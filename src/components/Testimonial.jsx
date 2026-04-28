@@ -8,9 +8,11 @@ export default function Testimonial({ data }) {
     dots: true,
     arrows: false,
     infinite: true,
-    autoplay: false,
-    autoplaySpeed: 4000,
-    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 6000,
+    cssEase: 'linear',
+    pauseOnHover: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -35,7 +37,7 @@ export default function Testimonial({ data }) {
               <div key={index}>
                 <div className="testimonial-box">
                   <div className="t-user">
-                    <img src={item.avatarImg} alt="Avatar" />
+                    <img src={item.avatarImg} alt={item.avatarName} loading="lazy" decoding="async" />
                   </div>
                   <div className="t-text">{item.reviewText}</div>
                   <div className="t-person">

@@ -35,7 +35,7 @@ export default function About({ data }) {
             data-aos-delay="500"
           >
             <div className="about-banner text-center">
-              <img src={imgSrc} alt="Thumb" />
+              <img src={imgSrc} alt="About Abdessalem Saadaoui" loading="lazy" decoding="async" />
             </div>
           </div>
           <div className="col-lg-6 col-xl-5 ps-lg-3 ps-xl-4">

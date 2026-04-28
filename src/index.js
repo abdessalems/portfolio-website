@@ -5,6 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'slick-carousel/slick/slick.css';
 import './scss/style.scss';
+import './icons';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
