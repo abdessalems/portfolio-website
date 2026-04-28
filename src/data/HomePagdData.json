@@ -2,7 +2,7 @@
   "hero": {
     "imgUrl": "/images/home-banner.png",
     "name": "Abdessalem Saadaoui",
-    "heading": "Hey! I'm Abdessalem",
+    "heading": "Hey! I'm SAADAOUI",
     "typingText": ["I'm a Full Stack Developer", 1500, "I'm a Backend Engineer", 1500],
     "description": "Dynamic Full Stack Web Developer with expertise in Java, Python, Spring Boot, FastAPI, React, and Angular. Passionate about building scalable, high-quality web applications and backend services.",
     "btnText": "Get in touch",
@@ -27,35 +27,35 @@
   ],
   "brands": [
     {
-      "src": "/images/brand-1.svg",
+      "src": "/images/brand-1.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-2.svg",
+      "src": "/images/brand-2.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-1.svg",
+      "src": "/images/brand-3.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-2.svg",
+      "src": "/images/brand-4.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-1.svg",
+      "src": "/images/brand-5.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-2.svg",
+      "src": "/images/brand-6.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-1.svg",
+      "src": "/images/brand-7.png",
       "alt": "Logolpsum"
     },
     {
-      "src": "/images/brand-2.svg",
+      "src": "/images/brand-8.png",
       "alt": "Logolpsum"
     }
   ],
