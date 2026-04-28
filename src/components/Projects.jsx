@@ -22,12 +22,14 @@ export default function Projects({ data }) {
   };
 
   var settings = {
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
-    autoplay: false,
-    autoplaySpeed: 4000,
-    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 4000,
+    cssEase: 'linear',
+    pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
