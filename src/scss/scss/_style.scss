@@ -246,6 +246,19 @@ a {
       display: none;
     }
   }
+  .about-banner {
+    img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    @include down-md {
+      max-width: 420px;
+      margin: 0 auto;
+    }
+  }
   .about-text {
     .section-heading {
       margin-bottom: 25px;

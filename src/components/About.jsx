@@ -38,7 +38,7 @@ export default function About({ data }) {
               <img src={imgSrc} alt="Thumb" />
             </div>
           </div>
-          <div className="col-lg-6 col-xl-5 px-lg-5">
+          <div className="col-lg-6 col-xl-5 ps-lg-3 ps-xl-4">
             <div
               className="about-text"
               data-aos="fade"
