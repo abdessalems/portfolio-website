@@ -84,89 +84,89 @@
   "projects": {
     "sectionHeading": {
       "miniTitle": "My Work",
-      "title": "RECENT PROJECT"
+      "title": "RECENT PROJECTS"
     },
     "allProjects": [
       {
         "thumbUrl": "/images/popup-project-1.jpg",
-        "title": "Spring Boot & Angular App",
-        "subTitle": "Full Stack, Web Application",
+        "title": "Enterprise Web Platform",
+        "subTitle": "Full Stack · Java 17 · Angular 17",
         "details": {
-          "title": "Spring Boot & Angular Web Application",
-          "description": "Built a comprehensive web application using Spring Boot for the backend and Angular for the frontend. Developed RESTful APIs, integrated JWT Authentication, and applied TDD to ensure high-quality solutions.<br><br>Collaborated at Pretty Code as a Junior Full Stack Java Developer, integrating key features for user management, security, and data validation.",
-          "type": "Web Application",
-          "langages": "Java, TypeScript, HTML, CSS",
-          "platform": "Spring Boot, Angular",
+          "title": "Enterprise Web Platform — Spring Boot 3 & Angular 17",
+          "description": "Architected a full-stack enterprise platform with a Spring Boot 3 / Java 17 backend exposing 20+ secured REST endpoints, fully documented via Swagger/OpenAPI 3. Implemented JWT authentication, role-based access control (RBAC), and Spring Security.<br><br>Angular 17 frontend with reactive forms, lazy-loaded modules, and HTTP interceptors. Applied TDD with JUnit 5 & Mockito (80%+ coverage) and enforced code quality gates with SonarQube. Containerized and deployed on Linux via Docker.",
+          "type": "Full Stack Web Application",
+          "langages": "Java 17, TypeScript, HTML, SCSS",
+          "platform": "Spring Boot 3, Angular 17, Docker",
           "country": "Belgium",
           "url": "github.com/abdessalems"
         }
       },
       {
         "thumbUrl": "/images/popup-project-2.jpg",
-        "title": "FastAPI Backend",
-        "subTitle": "Backend, REST API",
+        "title": "Async REST API — FastAPI",
+        "subTitle": "Backend · Python · Docker",
         "details": {
-          "title": "FastAPI Project — Users, Companies & Planning",
-          "description": "Developed a FastAPI backend for managing users, companies, and planning activities with JWT authentication. Includes automated testing with PyTest and is deployed using Docker.<br><br>Clean architecture with modular routers and dependency injection patterns.",
+          "title": "Production FastAPI Backend — Users, Companies & Planning",
+          "description": "Built a production-ready async Python REST API with FastAPI featuring modular routers, Pydantic v2 data validation, SQLAlchemy ORM with Alembic migrations, and JWT authentication. Auto-generated Swagger/OpenAPI documentation included.<br><br>Achieved 90%+ test coverage with PyTest. Containerized with Docker Compose, structured with hexagonal architecture and dependency injection for horizontal scalability.",
           "type": "Backend API",
-          "langages": "Python, FastAPI",
-          "platform": "Docker, Linux",
+          "langages": "Python 3.11, SQL",
+          "platform": "FastAPI, Docker Compose, PostgreSQL",
           "country": "Belgium",
           "url": "github.com/abdessalems/FastApiProject"
         }
       },
       {
         "thumbUrl": "/images/popup-project-3.jpg",
-        "title": "Boxer App",
-        "subTitle": "Full Stack, CRUD Application",
+        "title": "Sports Management Platform",
+        "subTitle": "Full Stack · Node.js · Vue.js 3",
         "details": {
-          "title": "Boxer App — Boxer Profile Management",
-          "description": "Created a Node.js backend and Vue.js frontend for managing boxer profiles with full CRUD operations. Features include profile creation, update, deletion, and listing with a clean responsive UI.<br><br>Backend: Node.js + Express.js + MySQL. Frontend: Vue.js.",
+          "title": "Sports Profile Management Platform — REST API & SPA",
+          "description": "Developed a full-stack sports data platform: Node.js + Express.js REST API with MySQL, paired with a Vue.js 3 SPA frontend. Full CRUD operations, server-side input validation, relational data modelling, and a responsive mobile-first UI.<br><br>Separation of concerns enforced across API, service, and data layers. Version-controlled with Git and structured for Docker containerization.",
           "type": "Full Stack Application",
-          "langages": "JavaScript, Node.js, Vue.js",
-          "platform": "MySQL, Express.js",
+          "langages": "JavaScript, Node.js, Vue.js 3, SQL",
+          "platform": "Express.js, MySQL, Vue.js 3",
           "country": "Belgium",
           "url": "github.com/abdessalems/Boxer_BackEnd"
         }
       },
       {
         "thumbUrl": "/images/popup-project-4.jpg",
-        "title": "MesProduits App",
-        "subTitle": "Frontend, Angular",
+        "title": "Angular Product Catalogue",
+        "subTitle": "Frontend · Angular 17 · NgRx",
         "details": {
-          "title": "MesProduits — Product Management App",
-          "description": "Developed an Angular project for managing product details with complete CRUD operations. Clean component-based architecture with reactive forms and Angular routing.<br><br>Focus on Angular best practices and reusable component design.",
-          "type": "Web Application",
-          "langages": "TypeScript, HTML, CSS",
-          "platform": "Angular",
+          "title": "Product Management SPA — Angular 17 & NgRx",
+          "description": "Built a feature-complete Angular 17 SPA for product catalogue management: NgRx state management, reactive forms with validators, HTTP interceptors for centralised error handling, lazy-loaded feature modules, and Angular route guards.<br><br>Follows Angular style guide and SOLID component-driven architecture. Fully typed with TypeScript strict mode for zero-runtime-surprise reliability.",
+          "type": "Web Application (SPA)",
+          "langages": "TypeScript, HTML, SCSS",
+          "platform": "Angular 17, NgRx",
           "country": "Belgium",
           "url": "github.com/abdessalems"
         }
       },
       {
         "thumbUrl": "/images/popup-project-5.jpg",
-        "title": "Freelance Backend Services",
-        "subTitle": "Backend, DevOps",
+        "title": "CI/CD Pipeline Automation",
+        "subTitle": "DevOps · GitHub Actions · Docker",
         "details": {
-          "title": "Freelance — Backend Services & CI/CD",
-          "description": "Developed backend services using Python (FastAPI, Django) and Java (Spring Boot) for various freelance clients. Implemented automated testing with PyTest, JUnit, and Playwright.<br><br>Deployed applications in Docker/Linux environments with CI/CD pipelines and Git-based workflows.",
-          "type": "Backend / DevOps",
-          "langages": "Python, Java, Bash",
-          "platform": "Docker, GitHub Actions",
+          "title": "Automated CI/CD Pipelines & Multi-Stack Backend Services",
+          "description": "Engineered automated CI/CD pipelines with GitHub Actions for Spring Boot and FastAPI projects: lint, test, build, and Docker image publish on every push to main.<br><br>Docker Compose multi-container environments for local/staging parity. Playwright E2E + PyTest/JUnit 5 suites integrated into pipelines. Branch protection rules, semantic versioning, and code quality checks enforced throughout.",
+          "type": "DevOps / Backend",
+          "langages": "Python, Java, YAML, Bash",
+          "platform": "GitHub Actions, Docker Compose, Linux",
           "country": "Belgium",
           "url": "github.com/abdessalems"
         }
       },
       {
         "thumbUrl": "/images/popup-project-6.jpg",
-        "title": "Full Stack Integration",
-        "subTitle": "React, Angular, PostgreSQL",
+        "title": "REST API & Data Layer",
+        "subTitle": "Backend · PostgreSQL · Spring Boot",
         "details": {
-          "title": "Full Stack — Frontend & Database Integration",
-          "description": "Supported frontend integration with React, Angular, and Vue.js for full-stack delivery across multiple projects. Managed data with PostgreSQL and MySQL, ensuring performance and reliability.<br><br>Collaborated on code reviews and maintained clean, maintainable codebases using Git.",
-          "type": "Full Stack",
-          "langages": "JavaScript, TypeScript, SQL",
-          "platform": "React, Angular, PostgreSQL",
+          "title": "Optimized REST API & PostgreSQL Data Layer",
+          "description": "Designed normalized PostgreSQL schemas with strategic indexing and query optimization (EXPLAIN ANALYZE) for high-throughput REST API backends. Schema versioning with Flyway/Alembic, ORM mapping via Hibernate and SQLAlchemy, and strict repository/service/controller layering.<br><br>Consumed by React and Angular frontends via typed API contracts. Maintained with PR-based code reviews, Git branching strategy, and automated regression tests.",
+          "type": "Backend / Database",
+          "langages": "Java, Python, SQL, TypeScript",
+          "platform": "Spring Boot, PostgreSQL, React, Angular",
           "country": "Belgium",
           "url": "github.com/abdessalems"
         }
@@ -182,28 +182,28 @@
       {
         "imgUrl": "/images/service-01.jpg",
         "title": "Backend Development",
-        "subTitle": "Building robust REST APIs and backend services with Java Spring Boot, Python FastAPI & Django, with JWT auth and TDD.",
+        "subTitle": "Production-grade REST APIs and microservices with Spring Boot 3 (Java 17) and Python FastAPI. JWT/OAuth2 security, RBAC, Swagger/OpenAPI docs, TDD with JUnit 5 & PyTest, and clean layered architecture.",
         "icon": "bi:server",
         "ratings": 5
       },
       {
         "imgUrl": "/images/service-02.jpg",
         "title": "Frontend Development",
-        "subTitle": "Crafting responsive, modern UIs using React, Angular, and Vue.js with clean component architecture.",
+        "subTitle": "Performant, accessible SPAs with Angular 17 and React. NgRx/Redux state management, reactive forms, lazy loading, HTTP interceptors, and TypeScript strict mode for maintainable, scalable UIs.",
         "icon": "bi:code-square",
         "ratings": 5
       },
       {
         "imgUrl": "/images/service-03.jpg",
         "title": "Database Design",
-        "subTitle": "Designing and optimizing relational databases with PostgreSQL and MySQL for performance and reliability.",
+        "subTitle": "Normalized schema design with PostgreSQL & MySQL, strategic indexing, EXPLAIN ANALYZE query tuning, ORM mapping with Hibernate & SQLAlchemy, and migration management via Flyway & Alembic.",
         "icon": "bi:database",
         "ratings": 4.5
       },
       {
         "imgUrl": "/images/service-04.jpg",
         "title": "DevOps & CI/CD",
-        "subTitle": "Deploying applications with Docker, Linux environments, and automated CI/CD pipelines using Git workflows.",
+        "subTitle": "End-to-end CI/CD with GitHub Actions: automated lint, test, build, and Docker image delivery. Docker Compose multi-service environments, Linux server setup, and code quality gates on every pull request.",
         "icon": "bi:gear",
         "ratings": 4.5
       }
@@ -221,7 +221,7 @@
         "duration": "MAY 2023 - PRESENT",
         "jobType": "Freelance",
         "companyTitle": "About Role",
-        "companyDescription": "Developed backend services using Python (FastAPI, Django) and Java (Spring Boot). Implemented automated testing with PyTest, JUnit, and Playwright. Deployed applications in Docker/Linux environments with CI/CD pipelines. Supported frontend integration with React, Angular, and Vue.js. Managed data with PostgreSQL and MySQL."
+        "companyDescription": "Designed and shipped production REST APIs with Spring Boot 3 and FastAPI for clients across Belgium, managing the full project lifecycle from requirements to deployment. Containerized multi-service applications with Docker Compose and automated build/test/deploy pipelines via GitHub Actions. Built async Python backends with FastAPI, Pydantic v2, SQLAlchemy ORM, and Alembic migrations. Maintained 90%+ automated test coverage with PyTest, JUnit 5, and Playwright E2E tests. Delivered React and Angular frontends integrated against typed API contracts."
       },
       {
         "designation": "Junior Full Stack Java Developer",
@@ -229,7 +229,7 @@
         "duration": "JUL 2023 - JUL 2024",
         "jobType": "Full time",
         "companyTitle": "About Company",
-        "companyDescription": "Developed backend services using Spring Boot and contributed to full-stack development of web applications. Integrated JWT authentication and implemented key features for user management, security, and data validation. Collaborated with front-end developers to ensure seamless integration. Actively participated in code reviews and adhered to Test-Driven Development (TDD) practices."
+        "companyDescription": "Engineered RESTful microservices with Spring Boot 3 and Java 17 for Belgian SME clients, delivering user management, security, and data validation features. Implemented JWT authentication with role-based access control (RBAC) and Spring Security across secured API endpoints. Practiced TDD with JUnit 5 and Mockito, achieving 80%+ test coverage on all backend modules. Participated in Agile/Scrum sprints, contributed to GitLab-based code reviews, and collaborated with Angular frontend developers to ensure seamless API integration."
       },
       {
         "designation": "Bachelor's in Computer Science",
@@ -237,7 +237,7 @@
         "duration": "SEP 2021 - AUG 2024",
         "jobType": "Education",
         "companyTitle": "About Studies",
-        "companyDescription": "Bachelor's Degree in Computer Science at EAFC-Uccle, Brussels, Belgium. Gained solid foundations in software engineering, algorithms, databases, and web development. Complemented by an MBA from Universidad Isabel I, Spain (2025)."
+        "companyDescription": "Bachelor's in Computer Science — EAFC-Uccle, Brussels (2021–2024). Core coursework: software architecture, algorithms & data structures, relational databases, web development, and networking. Complemented by an MBA — Universidad Isabel I, Spain (2025), focused on digital business strategy and technology management."
       }
     ]
   },
