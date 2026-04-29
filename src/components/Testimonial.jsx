@@ -10,7 +10,7 @@ export default function Testimonial({ data }) {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 9000,
+    speed: 12000,
     cssEase: 'linear',
     pauseOnHover: false,
     slidesToShow: 1,

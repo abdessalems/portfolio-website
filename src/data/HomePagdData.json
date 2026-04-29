@@ -3,7 +3,7 @@
     "imgUrl": "/images/home-banner.png",
     "name": "Abdessalem Saadaoui",
     "heading": "Hey! I'm SAADAOUI",
-    "typingText": ["I'm a Full Stack Developer", 1500, "I'm a Backend Engineer", 1500],
+    "typingText": [ "I'm a Software Engineer", 1500, "I'm a Functional Analyst", 1500],
     "description": "Dynamic Full Stack Web Developer with expertise in Java, Python, Spring Boot, FastAPI, React, and Angular. Passionate about building scalable, high-quality web applications and backend services.",
     "btnText": "Get in touch",
     "btnUrl": "contactus"
@@ -23,6 +23,16 @@
       "icon": "fa-solid:envelope",
       "iconBgClass": "email",
       "href": "mailto:abdessalemsaa@gmail.com"
+    },
+    {
+      "icon": "fa-brands:instagram",
+      "iconBgClass": "instagram",
+      "href": "https://www.instagram.com/baganda49/"
+    },
+    {
+      "icon": "fa-brands:facebook-f",
+      "iconBgClass": "facebook",
+      "href": "https://www.facebook.com/baganda477/"
     }
   ],
   "brands": [
@@ -71,7 +81,7 @@
       },
       {
         "title": "Projects Delivered",
-        "number": 10
+        "number": 36
       },
       {
         "title": "World Champion",
@@ -238,7 +248,7 @@
         "companyDescription": "KBO/VAT-registered independent consultant delivering full-cycle software engineering and functional analysis for Belgian clients. Design and ship production REST APIs (Spring Boot 3, FastAPI); build Angular/React frontends; containerize with Docker Compose; automate pipelines via GitHub Actions. Lead requirements elicitation, write functional specifications, model as-is/to-be processes (UML, BPMN), and translate business needs into technical solutions. Maintain 90%+ automated test coverage (PyTest, JUnit 5, Playwright). Fluent in Agile/Scrum and formal documentation for Belgian public and private sector standards."
       },
       {
-        "designation": "Junior Full Stack Java Developer",
+        "designation": "Full Stack Java Developer",
         "company": "PRETTY CODE | BRUSSELS",
         "duration": "JUL 2023 - JUL 2024",
         "jobType": "Full-time",
