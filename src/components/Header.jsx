@@ -110,7 +110,7 @@ export default function Header() {
             onClick={() => setMobileToggle(false)}
             className="px-btn d-none d-lg-inline-flex"
           >
-            Lets' Talk
+            Let's Talk
           </ScrollLink>
           <button
             className="toggler-menu d-lg-none"

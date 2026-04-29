@@ -18,7 +18,6 @@ export default function Projects({ data }) {
     setModalType(itemType);
 
     setModal(!modal);
-    console.log(modalType);
   };
 
   var settings = {
