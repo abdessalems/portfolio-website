@@ -13,26 +13,17 @@ export default function About({ data }) {
           <img
             src="/images/effect-1.svg"
             alt="Shape"
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-delay="500"
           />
         </div>
         <div className="effect-2">
           <img
             src="/images/effect-2.svg"
             alt="Shape"
-            data-aos="zoom-in"
-            data-aos-duration="1200"
-            data-aos-delay="400"
           />
         </div>
         <div className="row align-items-center justify-content-center gy-5">
           <div
             className="col-lg-6 col-xl-5"
-            data-aos="fade-right"
-            data-aos-duration="1200"
-            data-aos-delay="500"
           >
             <div className="about-banner text-center">
               <img src={imgSrc} alt="About Abdessalem Saadaoui" loading="lazy" decoding="async" />
@@ -41,9 +32,6 @@ export default function About({ data }) {
           <div className="col-lg-6 col-xl-5 ps-lg-3 ps-xl-4">
             <div
               className="about-text"
-              data-aos="fade"
-              data-aos-duration="1200"
-              data-aos-delay="400"
             >
               <div className="section-heading">
                 {miniTitle && (

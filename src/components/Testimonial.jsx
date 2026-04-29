@@ -5,14 +5,14 @@ import Slider from 'react-slick';
 export default function Testimonial({ data }) {
   const { sectionHeading, allTestimonial } = data;
   var settings = {
-    dots: true,
+    dots: false,
     arrows: false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 6000,
+    speed: 9000,
     cssEase: 'linear',
-    pauseOnHover: true,
+    pauseOnHover: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
@@ -31,7 +31,7 @@ export default function Testimonial({ data }) {
           title={sectionHeading.title}
           variant="text-center"
         />
-        <div data-aos="fade" data-aos-duration="1200" data-aos-delay="300">
+        <div>
           <Slider {...settings}>
             {allTestimonial?.map((item, index) => (
               <div key={index}>

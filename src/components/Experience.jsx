@@ -16,9 +16,6 @@ export default function Experience({ data }) {
             <div
               className="col-12"
               key={index}
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              data-aos-delay={index * 100}
             >
               <div className="ex-box">
                 <div className="row gy-4">

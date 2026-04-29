@@ -8,7 +8,7 @@ export default function Brands({ data }) {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 3000,
+    speed: 4000,
     cssEase: 'linear',
     pauseOnHover: false,
     slidesToShow: 5,
@@ -45,9 +45,6 @@ export default function Brands({ data }) {
     <div className="py-3 py-md-4 brand-section gray-bg">
       <div
         className="container"
-        data-aos="fade"
-        data-aos-duration="1200"
-        data-aos-delay="500"
       >
         <Slider {...settings} className="slider-gap-50">
           {data.map((item, index) => (

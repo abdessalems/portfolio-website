@@ -27,7 +27,7 @@ export default function Projects({ data }) {
     infinite: true,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 4000,
+    speed: "4000",
     cssEase: 'linear',
     pauseOnHover: false,
     slidesToShow: 1,
@@ -46,9 +46,6 @@ export default function Projects({ data }) {
           />
           <div
             className="full-width"
-            data-aos="fade"
-            data-aos-duration="1200"
-            data-aos-delay="400"
           >
             <Slider {...settings} className="slider-gap-24">
               {allProjects?.map((item, index) => (
