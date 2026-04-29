@@ -104,6 +104,10 @@
   .logo-dark {
     display: none;
   }
+  .logo img {
+  height: 60px;
+  width: auto;
+}
   &.menu-open {
     @include down-lg {
       .main-menu {

@@ -271,7 +271,7 @@
     "allTestimonial": [
       {
         "reviewText": "IBM Java Full Stack Developer Professional Certificate via Coursera — 14-course programme covering Spring Boot 3, Angular, REST API design, JWT authentication, Docker, and CI/CD. Practical emphasis on enterprise-grade full-stack development.",
-        "avatarImg": "/images/avatar-1.jpg",
+        "avatarImg": "/images/avatar-1.png",
         "avatarName": "IBM via Coursera",
         "avatarCompany": "Java Full Stack Developer"
       },
@@ -289,7 +289,7 @@
       },
       {
         "reviewText": "World Kickboxing Champion — WFM Türkiye (2017). African Muay Thai ISKA Titleholder (2016). Member of the Tunisian National Team with 25 professional fights in Thailand. Demonstrates elite-level discipline, focus, and resilience under pressure.",
-        "avatarImg": "/images/avatar-4.jpg",
+        "avatarImg": "/images/avatar-4.png",
         "avatarName": "WFM & ISKA Champion",
         "avatarCompany": "International Kickboxing"
       }
