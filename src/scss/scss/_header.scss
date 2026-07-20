@@ -70,8 +70,8 @@
         padding: 8px 0;
         text-transform: uppercase;
         color: var(--px-white);
-        font-size: 18px;
-        letter-spacing: 1px;
+        font-size: 15px;
+        letter-spacing: 0.5px;
         font-weight: 500;
         position: relative;
         cursor: pointer;
@@ -155,6 +155,10 @@
     .logo .brand-word {
       font-size: 22px;
     }
+  }
+  .px-btn {
+    font-size: 14px;
+    padding: 10px 24px;
   }
   &.menu-open {
     @include down-lg {
