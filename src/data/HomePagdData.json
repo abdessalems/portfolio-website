@@ -3,8 +3,15 @@
     "imgUrl": "/images/home-banner.png",
     "name": "Abdessalem Saadaoui",
     "heading": "Hey! I'm SAADAOUI",
-    "typingText": [ "I'm a Software Engineer", 1500, "I'm a Functional Analyst", 1500],
-    "description": "Dynamic Full Stack Web Developer with expertise in Java, Python, Spring Boot, FastAPI, React, and Angular. Passionate about building scalable, high-quality web applications and backend services.",
+    "typingText": [
+      "I'm a Functional Analyst",
+      1500,
+      "I'm a Full-Stack Java Developer",
+      1500,
+      "I'm a Software Engineer",
+      1500
+    ],
+    "description": "Functional Analyst & Full-Stack Java Developer with 4+ years bridging business needs and technical delivery. I specialise in requirements engineering — UML, BPMN, functional specifications and OpenAPI — grounded in hands-on Java, Spring Boot and Angular development.",
     "btnText": "Get in touch",
     "btnUrl": "contactus"
   },
@@ -70,10 +77,10 @@
     }
   ],
   "about": {
-    "imgSrc": "/images/about-banner.png",
+    "imgSrc": "/images/home-banner.png",
     "miniTitle": "About Me",
-    "title": "I AM AVAILABLE FOR <span>FULL STACK</span> DEVELOPMENT PROJECTS",
-    "description": "Results-driven Full Stack Developer based in Brussels, Belgium. I specialize in Java (Spring Boot), Python (FastAPI, Django), and modern frontend frameworks (React, Angular, Vue.js). Experienced in Agile methodologies, Test-Driven Development (TDD), and CI/CD pipelines. Also an International Kickboxing Champion with 25 professional fights.",
+    "title": "FUNCTIONAL ANALYST & <span>FULL STACK</span> JAVA DEVELOPER",
+    "description": "Functional Analyst and Full-Stack Java Developer based in Brussels, Belgium, with 4+ years bridging business and IT across enterprise and SaaS environments. I gather and document requirements (UML, BPMN, functional specs, Swagger/OpenAPI) and build the solutions in Java (Spring Boot) and Angular. Delivered analysis at enterprise scale (Leejam Sports — 200+ locations, 100,000+ members) and on HR SaaS platforms. MBA in IT Management. Trilingual — Arabic (native), English & French (B2), Dutch (A2). Available immediately. Also an International Muay Thai & Kickboxing Champion with 25 professional fights.",
     "funfacts": [
       {
         "title": "Years Experience",
@@ -240,20 +247,28 @@
     },
     "allExperience": [
       {
-        "designation": "Software Engineer & Functional Analyst",
-        "company": "SELF-EMPLOYED | BRUSSELS (KBO/VAT)",
-        "duration": "MAY 2023 - PRESENT",
-        "jobType": "Freelance",
+        "designation": "Functional Analyst & Java Developer — HR SaaS",
+        "company": "NOVA IT GROUP (YAANO / LTS CONSULTING) | BRUSSELS",
+        "duration": "JUL 2023 - AUG 2025",
+        "jobType": "SaaS · HR",
         "companyTitle": "About Role",
-        "companyDescription": "KBO/VAT-registered independent consultant delivering full-cycle software engineering and functional analysis for Belgian clients. Design and ship production REST APIs (Spring Boot 3, FastAPI); build Angular/React frontends; containerize with Docker Compose; automate pipelines via GitHub Actions. Lead requirements elicitation, write functional specifications, model as-is/to-be processes (UML, BPMN), and translate business needs into technical solutions. Maintain 90%+ automated test coverage (PyTest, JUnit 5, Playwright). Fluent in Agile/Scrum and formal documentation for Belgian public and private sector standards."
+        "companyDescription": "HR and recruitment SaaS platform, in a combined functional-analysis and development role within an Agile team. Gathered and documented business requirements from HR and recruitment stakeholders and translated them into user stories and functional specifications. Modelled recruitment workflows (candidate pipeline, onboarding, role management) ahead of implementation. Coordinated functional testing and UAT with business users. Participated in sprint planning, stand-ups, retrospectives and demos, and implemented validated workflows in Spring Boot and Angular."
       },
       {
-        "designation": "Full Stack Java Developer",
-        "company": "PRETTY CODE | BRUSSELS",
-        "duration": "JUL 2023 - JUL 2024",
-        "jobType": "Full-time",
-        "companyTitle": "About Company",
-        "companyDescription": "Engineered RESTful microservices with Spring Boot 3 and Java 17 for Belgian SME clients. Implemented JWT authentication with RBAC via Spring Security; achieved 80%+ test coverage with JUnit 5 & Mockito. Participated in functional analysis workshops to gather requirements, refine user stories, and produce technical specifications. Collaborated with Angular frontend developers in Agile/Scrum sprints; contributed to GitLab code reviews and CI/CD pipeline maintenance."
+        "designation": "Functional Analyst & Java Developer",
+        "company": "LEEJAM SPORTS — FITNESS TIME | RIYADH, SAUDI ARABIA",
+        "duration": "JAN 2019 - FEB 2022",
+        "jobType": "Enterprise",
+        "companyTitle": "About Role",
+        "companyDescription": "Largest fitness operator in Saudi Arabia and the UAE — 200+ locations, 100,000+ active members, 41+ cities, with an enterprise IT stack (IBM Cognos, SAP, custom Java systems). Bridged business stakeholders and IT across all locations: gathered, analysed, documented and validated business requirements, including membership billing and financial-reporting flows. Ran AS-IS/TO-BE process modelling for subscriptions, financial reporting, access control and HR scheduling. Produced user stories, functional specs, API documentation and KPI definitions for Cognos dashboards, coordinated functional testing and reconciliation checks on payment records, and developed Java backend modules for membership, billing, scheduling, access control and reporting."
+      },
+      {
+        "designation": "MBA — IT Management",
+        "company": "UNIVERSIDAD ISABEL I | SPAIN",
+        "duration": "2024 - 2025",
+        "jobType": "Education",
+        "companyTitle": "About Studies",
+        "companyDescription": "Master of Business Administration (MBA) in IT Management — Universidad Isabel I, Burgos, Spain. Focus on digital business strategy, technology management, Agile project management and entrepreneurship, complementing a technical profile with the business acumen for functional-analysis and project-ownership roles."
       },
       {
         "designation": "Bachelor's in Applied Computer Science",
@@ -261,15 +276,7 @@
         "duration": "SEP 2021 - AUG 2024",
         "jobType": "Education",
         "companyTitle": "About Studies",
-        "companyDescription": "Bachelor's in Applied Computer Science — EAFC-Uccle, Brussels. Specialisations: software engineering, web development (Spring Boot, Angular, React), relational databases (PostgreSQL, MySQL), algorithms & data structures, networks, and UML/system modelling. Final-year project: full-stack enterprise application with Java Spring Boot backend and Angular frontend."
-      },
-      {
-        "designation": "MBA — Technology Management",
-        "company": "UNIVERSIDAD ISABEL I | SPAIN",
-        "duration": "2024 - 2025",
-        "jobType": "Education",
-        "companyTitle": "About Studies",
-        "companyDescription": "Master of Business Administration (MBA) — Universidad Isabel I, Burgos, Spain. Focus: digital business strategy, technology management, Agile project management, and entrepreneurship. Complements technical engineering profile with business acumen for client-facing consultancy and project ownership roles in the Belgian tech market."
+        "companyDescription": "Bachelor's in Applied Computer Science — EAFC-Uccle, Brussels. Specialisations: software engineering, web development (Spring Boot, Angular, React), relational databases (PostgreSQL, MySQL), algorithms & data structures, networks, and UML/system modelling."
       }
     ]
   },
@@ -312,8 +319,18 @@
     },
     "contactImg": "/images/contact-us.png",
     "contactInfo": [
-      { "title": "Write an e-mail", "email": "abdessalemsaa@gmail.com" },
-      { "title": "Give me a call", "tel": "+32 465 620 488" }
+      {
+        "title": "Write an e-mail",
+        "email": "abdessalemsaa@gmail.com"
+      },
+      {
+        "title": "Give me a call",
+        "tel": "+32 465 62 04 88"
+      },
+      {
+        "title": "Visit my website",
+        "web": "www.saadaoui.it.com"
+      }
     ]
   }
 }

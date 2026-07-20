@@ -1,0 +1,445 @@
+{
+  "hero": {
+    "imgUrl": "/images/contact-us.png",
+    "name": "Abdessalem Saadaoui",
+    "nickname": "\"BAGANDA\"",
+    "heading": "World Kickboxing Champion",
+    "description": "International Muay Thai & Kickboxing fighter. WFM World Champion (Türkiye, 2017) and ISKA African Titleholder (2016). Turned professional with 25 pro fights between 2017 and 2019 across Thailand, Malaysia, Côte d'Ivoire and the Gulf — after a national career as a 5× Tunisian Champion.",
+    "record": {
+      "fights": 25,
+      "wins": 19,
+      "losses": 4,
+      "draws": 2,
+      "kos": 11
+    },
+    "titles": [
+      "WFM World Champion — Türkiye, 2017",
+      "ISKA African Titleholder — 2016",
+      "5× Tunisian National Champion — since 2008",
+      "25 Pro Fights (2017–2019) — Thailand · Malaysia · Côte d'Ivoire · Gulf"
+    ],
+    "social": [
+      {
+        "icon": "fa-brands:facebook-f",
+        "iconBgClass": "facebook",
+        "href": "https://www.facebook.com/baganda477/"
+      },
+      {
+        "icon": "fa-brands:instagram",
+        "iconBgClass": "instagram",
+        "href": "https://www.instagram.com/baganda49/"
+      }
+    ]
+  },
+  "fightRecord": {
+    "sectionHeading": {
+      "miniTitle": "In The Ring",
+      "title": "Professional <span>Fight Record</span>"
+    },
+    "note": "Professional career 2017–2019: 25 pro fights across Thailand, Malaysia, Côte d'Ivoire and the Gulf. A representative selection is shown — replace opponents, methods and rounds with your real results in src/data/BoxingPageData.json.",
+    "fights": [
+      {
+        "date": "2019",
+        "event": "Professional Bout",
+        "opponent": "Opponent Name",
+        "location": "Kuala Lumpur, Malaysia",
+        "result": "Win",
+        "method": "KO",
+        "round": "2"
+      },
+      {
+        "date": "2019",
+        "event": "Professional Bout",
+        "opponent": "Opponent Name",
+        "location": "Dubai, UAE (Gulf)",
+        "result": "Win",
+        "method": "Decision",
+        "round": "3"
+      },
+      {
+        "date": "2019",
+        "event": "Professional Bout",
+        "opponent": "Opponent Name",
+        "location": "Abidjan, Côte d'Ivoire",
+        "result": "Win",
+        "method": "TKO",
+        "round": "3"
+      },
+      {
+        "date": "2019",
+        "event": "Muay Thai (Pro)",
+        "opponent": "Opponent Name",
+        "location": "Bangkok, Thailand",
+        "result": "Loss",
+        "method": "Decision",
+        "round": "5"
+      },
+      {
+        "date": "2018",
+        "event": "Muay Thai (Pro)",
+        "opponent": "Opponent Name",
+        "location": "Phuket, Thailand",
+        "result": "Win",
+        "method": "KO",
+        "round": "2"
+      },
+      {
+        "date": "2018",
+        "event": "Professional Bout",
+        "opponent": "Opponent Name",
+        "location": "Kuala Lumpur, Malaysia",
+        "result": "Win",
+        "method": "Decision",
+        "round": "3"
+      },
+      {
+        "date": "2018",
+        "event": "Professional Bout",
+        "opponent": "Opponent Name",
+        "location": "Doha, Qatar (Gulf)",
+        "result": "Win",
+        "method": "TKO",
+        "round": "4"
+      },
+      {
+        "date": "2018",
+        "event": "Professional Bout",
+        "opponent": "Opponent Name",
+        "location": "Abidjan, Côte d'Ivoire",
+        "result": "Draw",
+        "method": "Decision",
+        "round": "3"
+      },
+      {
+        "date": "2017",
+        "event": "WFM World Championship",
+        "opponent": "Opponent Name",
+        "location": "Istanbul, Türkiye",
+        "result": "Win",
+        "method": "Decision",
+        "round": "5"
+      },
+      {
+        "date": "2017",
+        "event": "Muay Thai (Pro)",
+        "opponent": "Opponent Name",
+        "location": "Bangkok, Thailand",
+        "result": "Win",
+        "method": "KO",
+        "round": "2"
+      },
+      {
+        "date": "2017",
+        "event": "Professional Bout",
+        "opponent": "Opponent Name",
+        "location": "Kuala Lumpur, Malaysia",
+        "result": "Win",
+        "method": "Decision",
+        "round": "3"
+      }
+    ]
+  },
+  "amateurRecord": {
+    "sectionHeading": {
+      "miniTitle": "The Road Up",
+      "title": "Amateur & <span>National Career</span>"
+    },
+    "note": "National and continental career 2008–2016: 5× Tunisian National Champion and ISKA African Titleholder, before turning professional. Replace details with your real results in src/data/BoxingPageData.json.",
+    "fights": [
+      {
+        "date": "2016",
+        "event": "ISKA African Title",
+        "opponent": "Opponent Name",
+        "location": "Tunis, Tunisia",
+        "result": "Win",
+        "method": "TKO",
+        "round": "3"
+      },
+      {
+        "date": "2015",
+        "event": "Tunisian National Championship",
+        "opponent": "Opponent Name",
+        "location": "Tunis, Tunisia",
+        "result": "Win",
+        "method": "Decision",
+        "round": "5"
+      },
+      {
+        "date": "2013",
+        "event": "Tunisian National Championship",
+        "opponent": "Opponent Name",
+        "location": "Tunis, Tunisia",
+        "result": "Win",
+        "method": "Decision",
+        "round": "5"
+      },
+      {
+        "date": "2012",
+        "event": "Regional Championship",
+        "opponent": "Opponent Name",
+        "location": "Sfax, Tunisia",
+        "result": "Win",
+        "method": "KO",
+        "round": "2"
+      },
+      {
+        "date": "2011",
+        "event": "Tunisian National Championship",
+        "opponent": "Opponent Name",
+        "location": "Tunis, Tunisia",
+        "result": "Win",
+        "method": "Decision",
+        "round": "5"
+      },
+      {
+        "date": "2009",
+        "event": "Tunisian National Championship",
+        "opponent": "Opponent Name",
+        "location": "Tunis, Tunisia",
+        "result": "Win",
+        "method": "Decision",
+        "round": "3"
+      },
+      {
+        "date": "2008",
+        "event": "Tunisian National Championship (Debut)",
+        "opponent": "Opponent Name",
+        "location": "Tunis, Tunisia",
+        "result": "Win",
+        "method": "Decision",
+        "round": "3"
+      }
+    ]
+  },
+  "gallery": {
+    "sectionHeading": {
+      "miniTitle": "Career Moments",
+      "title": "Photo <span>Gallery</span>"
+    },
+    "photos": [
+      {
+        "src": "/images/boxe/292442014_578668430357977_1017982491895851396_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/37135672_1811281178964197_6966506270589190144_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/37697568_1824814874277494_8968711352721866752_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/38757677_1849630568462591_1445886785849655296_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/38791644_1849630635129251_437358954998136832_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/44318073_1944700468955600_915539087358689280_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/44689933_1950871398338507_3931493027012411392_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/46519060_2106137529443981_916369673904193536_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/469171509_8850938184998426_375844687691544893_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/469201091_8850936591665252_5625550347503686080_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/469229300_8850936751665236_6054412826429073380_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/469249643_8850938224998422_1923119560998174363_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/469303643_8850938164998428_6027163266422443563_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/469334901_8850936564998588_5329016081417509845_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/469353082_8850936571665254_8607015047588299220_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/469353792_8850936638331914_6007566992455620825_n%20(1).jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/469386125_8850937904998454_3353999543858170549_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/469424221_8850936804998564_840402731736771680_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/469477831_8850936781665233_4424878381263501773_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/469492361_8850936651665246_4646647185917126360_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/480701534_9406330132757981_6781043692809389972_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/487702668_9627602613964064_6090209735579003721_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/490990976_9741897562534568_1979352751565594211_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/50107952_2174529499271450_2868975073543323648_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/511259939_23944506451881686_9060303481297544198_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/511293399_23937445545921110_5098438402707555672_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/513163134_23958165640515767_805962003648244627_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/513198519_23958165620515769_6132896407702458384_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/513371154_23937278635937801_4182818069403867175_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/513602307_23958165623849102_8969959410327686180_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/513825486_23958165630515768_6744973574002948431_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/513870714_23958164493849215_1410519694499074702_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/513879738_23958165660515765_7497163694057748717_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/513910162_23958164767182521_6644839460156509263_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/514001380_23942739815391683_3329336840656289590_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/514070676_23958164497182548_7022963575689061214_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/514101628_23958165767182421_6989637374093006090_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/514141118_23958165643849100_1176240572961062201_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/514200685_23958165753849089_9030280455937286539_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/514513261_23958164573849207_5207677214295274863_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/514743620_23958165593849105_2677565406769401784_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/514746475_23958165743849090_1757042721238358994_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/558458402_24891158883848522_8977821715737261062_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/558991298_24891155967182147_8973413901886239763_n.jpg",
+        "caption": ""
+      },
+      {
+        "src": "/images/boxe/559879004_24891449827152761_3566619539955994833_n.jpg",
+        "caption": ""
+      }
+    ]
+  },
+  "videos": {
+    "sectionHeading": {
+      "miniTitle": "Highlights",
+      "title": "Fight <span>Videos</span>"
+    },
+    "note": "Add YouTube videos below. youtubeId is the part after 'watch?v=' (or after '/shorts/'). Set \"vertical\": true for a YouTube Short.",
+    "items": [
+      {
+        "youtubeId": "NJbuLEr02kw",
+        "title": "Fight — Full Bout",
+        "start": 30
+      },
+      {
+        "youtubeId": "ddRRAU2yTh8",
+        "title": "Fight 1"
+      },
+      {
+        "youtubeId": "vr1vbRjzvXQ",
+        "title": "Fight 2"
+      },
+      {
+        "youtubeId": "nqeAhTxsSDY",
+        "title": "Fight 3"
+      },
+      {
+        "youtubeId": "G2Vv_SSFkBk",
+        "title": "Fight 4"
+      },
+      {
+        "youtubeId": "rARXl3k4Qe8",
+        "title": "Fight 5"
+      },
+      {
+        "youtubeId": "ttUgBEnARug",
+        "title": "Training Session",
+        "start": 2
+      },
+      {
+        "youtubeId": "f9p1qtcsKY0",
+        "title": "Highlight"
+      }
+    ]
+  }
+}

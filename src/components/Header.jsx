@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
+import Logo from './Logo';
 
 export default function Header() {
   const [mobileToggle, setMobileToggle] = useState(false);
@@ -27,28 +28,16 @@ export default function Header() {
     >
       <div className="container">
         <div className="logo">
-          <Link className="navbar-brand" href="#">
-            <img
-              className="logo-light"
-              title
-              alt="Logo"
-              src="/images/logo-light.png"
-            />
+          <Link className="navbar-brand" to="/">
+            <Logo />
           </Link>
         </div>
         {/* / */}
         <ul className="main-menu">
           <li>
-            <ScrollLink
-              to="home"
-              spy={true}
-              smooth={true}
-              offset={-80}
-              duration={500}
-              onClick={() => setMobileToggle(false)}
-            >
+            <Link to="/" onClick={() => setMobileToggle(false)}>
               Home
-            </ScrollLink>
+            </Link>
           </li>
           <li>
             <ScrollLink
@@ -97,6 +86,11 @@ export default function Header() {
             >
               Contact
             </ScrollLink>
+          </li>
+          <li>
+            <Link to="/boxing" onClick={() => setMobileToggle(false)}>
+              Boxing
+            </Link>
           </li>
         </ul>
         {/* Top Menu */}

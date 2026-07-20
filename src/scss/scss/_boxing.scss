@@ -1,0 +1,446 @@
+/*------------------------------------------------------------------
+  Boxing Career Page
+-------------------------------------------------------------------*/
+
+.boxing-hero {
+  padding-top: 160px;
+
+  .boxing-eyebrow {
+    display: inline-block;
+    margin-bottom: 18px;
+    span {
+      color: var(--px-theme);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+      font-size: 14px;
+      position: relative;
+      padding-left: 40px;
+    }
+    span::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 30px;
+      height: 2px;
+      background: var(--px-theme);
+    }
+  }
+
+  .boxing-hero-text {
+    h1 {
+      font-size: 48px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      .nickname {
+        color: var(--px-theme);
+        display: block;
+        font-size: 26px;
+        font-weight: 500;
+      }
+    }
+    p {
+      color: var(--px-text);
+      max-width: 540px;
+    }
+  }
+
+  .boxing-titles {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 0;
+    li {
+      color: var(--px-heading);
+      font-weight: 500;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      svg {
+        color: var(--px-theme);
+        flex: none;
+      }
+    }
+  }
+
+  .social-icon.boxing-social {
+    margin-top: 28px;
+  }
+
+  .boxing-hero-media {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+  }
+}
+
+.boxing-record-bar {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+
+  .record-item {
+    background: rgba(var(--px-theme-rgb), 0.06);
+    border: 1px solid rgba(var(--px-theme-rgb), 0.15);
+    border-radius: 14px;
+    padding: 26px 16px;
+    text-align: center;
+
+    .num {
+      display: block;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--px-heading);
+    }
+    .label {
+      display: block;
+      margin-top: 8px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--px-text);
+    }
+
+    &.win .num {
+      color: var(--px-theme);
+    }
+    &.loss .num {
+      color: #ef4444;
+    }
+    &.draw .num {
+      color: #f59e0b;
+    }
+    &.ko .num {
+      color: var(--px-heading);
+    }
+  }
+
+  @media (max-width: $px-media-md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: $px-media-xsm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Fight record table */
+.fight-table-wrap {
+  overflow: auto;
+  border-radius: 14px;
+  max-height: 460px;
+  border: 1px solid rgba(var(--px-theme-rgb), 0.12);
+
+  /* Slim custom scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(var(--px-theme-rgb), 0.5) transparent;
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(var(--px-theme-rgb), 0.4);
+    border-radius: 8px;
+  }
+
+  @media (max-width: $px-media-sm) {
+    max-height: none;
+    border: none;
+  }
+}
+
+.fight-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+
+  thead th {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    text-align: left;
+    padding: 14px 18px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--px-theme);
+    background: #102322;
+    border-bottom: 1px solid rgba(var(--px-theme-rgb), 0.25);
+    white-space: nowrap;
+  }
+
+  tbody td {
+    padding: 12px 18px;
+    color: var(--px-text);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    vertical-align: middle;
+  }
+
+  tbody tr:hover td {
+    background: rgba(var(--px-theme-rgb), 0.04);
+  }
+
+  .result-badge {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    &.win {
+      background: rgba(var(--px-theme-rgb), 0.15);
+      color: var(--px-theme);
+    }
+    &.loss {
+      background: rgba(239, 68, 68, 0.15);
+      color: #ef4444;
+    }
+    &.draw {
+      background: rgba(245, 158, 11, 0.15);
+      color: #f59e0b;
+    }
+  }
+
+  /* Mobile: stack rows into cards */
+  @media (max-width: $px-media-sm) {
+    min-width: 0;
+    thead {
+      display: none;
+    }
+    tbody tr {
+      display: block;
+      border: 1px solid rgba(var(--px-theme-rgb), 0.15);
+      border-radius: 12px;
+      margin-bottom: 14px;
+      padding: 6px 4px;
+    }
+    tbody td {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      border: none;
+      padding: 10px 16px;
+      &::before {
+        content: attr(data-label);
+        color: var(--px-heading);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* Gallery */
+.gallery-item {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 4 / 3;
+  outline: none;
+
+  &:focus-visible {
+    box-shadow: 0 0 0 3px rgba(var(--px-theme-rgb), 0.7);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .gallery-zoom {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--px-theme-rgb), 0.35);
+    color: #fff;
+    font-size: 34px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .gallery-caption {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 14px 16px;
+    font-size: 14px;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.08);
+    }
+    .gallery-zoom {
+      opacity: 1;
+    }
+    .gallery-caption {
+      transform: translateY(0);
+    }
+  }
+}
+
+.gallery-more {
+  text-align: center;
+  margin-top: 44px;
+}
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+
+  .lightbox-bg {
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 6, 8, 0.92);
+    backdrop-filter: blur(4px);
+  }
+
+  .lightbox-stage {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    width: 100%;
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      max-height: 80vh;
+      border-radius: 12px;
+      object-fit: contain;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .lightbox-meta {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: var(--px-text);
+    font-size: 14px;
+  }
+  .lightbox-counter {
+    color: var(--px-theme);
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+
+  .lightbox-close,
+  .lightbox-nav {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--px-theme-rgb), 0.12);
+    border: 1px solid rgba(var(--px-theme-rgb), 0.35);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    &:hover {
+      background: var(--px-theme);
+      color: var(--px-black);
+    }
+  }
+
+  .lightbox-close {
+    top: 24px;
+    right: 24px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 18px;
+  }
+
+  .lightbox-nav {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    font-size: 24px;
+
+    &.prev {
+      left: 24px;
+    }
+    &.next {
+      right: 24px;
+    }
+
+    @media (max-width: $px-media-sm) {
+      width: 44px;
+      height: 44px;
+      &.prev {
+        left: 10px;
+      }
+      &.next {
+        right: 10px;
+      }
+    }
+  }
+}
+
+/* Videos */
+.video-card {
+  .video-frame {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #000;
+
+    iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+
+  .video-title {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    svg {
+      color: var(--px-theme);
+    }
+  }
+
+  &.vertical .video-frame {
+    padding-bottom: 0;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
