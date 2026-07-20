@@ -109,13 +109,52 @@
   width: auto;
 }
   .logo .brand-logo {
-    height: 52px;
-    width: auto;
-    display: block;
-    transition: opacity 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform 0.3s ease;
   }
   .logo .navbar-brand:hover .brand-logo {
-    opacity: 0.85;
+    transform: translateY(-1px);
+  }
+  .logo .brand-emblem {
+    width: 48px;
+    height: 48px;
+    flex: none;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #34e3cf, #12a594);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 16px rgba(var(--px-theme-rgb), 0.35);
+  }
+  .logo .brand-emblem svg {
+    width: 30px;
+    height: 30px;
+  }
+  .logo .brand-word {
+    font-family: $px-font;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    color: #eef2f7;
+  }
+  .logo .brand-it {
+    color: var(--px-theme);
+  }
+  @include down-sm {
+    .logo .brand-emblem {
+      width: 42px;
+      height: 42px;
+    }
+    .logo .brand-emblem svg {
+      width: 26px;
+      height: 26px;
+    }
+    .logo .brand-word {
+      font-size: 22px;
+    }
   }
   &.menu-open {
     @include down-lg {
