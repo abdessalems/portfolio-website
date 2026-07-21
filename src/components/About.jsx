@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
 import parser from 'html-react-parser';
+import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
 export default function About({ data }) {
@@ -44,15 +45,31 @@ export default function About({ data }) {
               </div>
               <p>{description}</p>
               <div className="review-box">
-                {funfacts?.map((item, index) => (
-                  <div className="r-box" key={index}>
-                    <h3>
-                      {item.number}
-                      <span>+</span>
-                    </h3>
-                    <label>{item.title}</label>
-                  </div>
-                ))}
+                {funfacts?.map((item, index) => {
+                  const inner = (
+                    <>
+                      <h3>
+                        {item.number}
+                        <span>+</span>
+                      </h3>
+                      <label>{item.title}</label>
+                      {item.link && (
+                        <span className="r-box-cta">
+                          {item.linkText || 'See more'} <Icon icon="bi:arrow-right" />
+                        </span>
+                      )}
+                    </>
+                  );
+                  return item.link ? (
+                    <Link to={item.link} className="r-box r-box-link" key={index}>
+                      {inner}
+                    </Link>
+                  ) : (
+                    <div className="r-box" key={index}>
+                      {inner}
+                    </div>
+                  );
+                })}
               </div>
               <div className="btn-bar">
                 <ScrollLink

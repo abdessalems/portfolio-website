@@ -289,6 +289,31 @@ a {
         margin-left: 10px;
       }
     }
+    .r-box-link {
+      text-decoration: none;
+      border-color: rgba(var(--px-theme-rgb), 0.4);
+      transition: all 0.3s ease;
+      .r-box-cta {
+        margin-top: 8px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--px-theme);
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        svg {
+          transition: transform 0.3s ease;
+        }
+      }
+      &:hover {
+        background: rgba(var(--px-theme-rgb), 0.12);
+        border-color: var(--px-theme);
+        transform: translateY(-3px);
+        .r-box-cta svg {
+          transform: translateX(3px);
+        }
+      }
+    }
   }
 }
 

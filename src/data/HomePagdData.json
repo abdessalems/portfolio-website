@@ -6,12 +6,10 @@
     "typingText": [
       "I'm a Functional Analyst",
       1500,
-      "I'm a Full-Stack Java Developer",
-      1500,
-      "I'm a Software Engineer",
+      "I'm a Java Developer",
       1500
     ],
-    "description": "Functional Analyst & Full-Stack Java Developer with 4+ years bridging business needs and technical delivery. I specialise in requirements engineering — UML, BPMN, functional specifications and OpenAPI — grounded in hands-on Java, Spring Boot and Angular development.",
+    "description": "Functional Analyst with 4+ years of experience bridging business needs and technical delivery in enterprise and SaaS environments. My core strength is requirements engineering — gathering, analysing and documenting business requirements, modelling processes with UML & BPMN, and writing functional specifications and API documentation (Swagger/OpenAPI) — grounded in hands-on Java and Spring Boot development.",
     "btnText": "Get in touch",
     "btnUrl": "contactus"
   },
@@ -79,8 +77,8 @@
   "about": {
     "imgSrc": "/images/home-banner.png",
     "miniTitle": "About Me",
-    "title": "FUNCTIONAL ANALYST & <span>FULL STACK</span> JAVA DEVELOPER",
-    "description": "Functional Analyst and Full-Stack Java Developer based in Brussels, Belgium, with 4+ years bridging business and IT across enterprise and SaaS environments. I gather and document requirements (UML, BPMN, functional specs, Swagger/OpenAPI) and build the solutions in Java (Spring Boot) and Angular. Delivered analysis at enterprise scale (Leejam Sports — 200+ locations, 100,000+ members) and on HR SaaS platforms. MBA in IT Management. Trilingual — Arabic (native), English & French (B2), Dutch (A2). Available immediately. Also an International Muay Thai & Kickboxing Champion with 25 professional fights.",
+    "title": "FUNCTIONAL ANALYST & <span>JAVA</span> DEVELOPER",
+    "description": "Functional Analyst based in Brussels, Belgium, with 4+ years bridging business needs and technical delivery across enterprise and SaaS environments. I gather, analyse and document business requirements, model processes with UML & BPMN, write functional specifications and API documentation (Swagger/OpenAPI), and facilitate stakeholders from C-level to end users — grounded in hands-on Java and Spring Boot development. Delivered functional analysis at enterprise scale (Leejam Sports — 200+ locations, 100,000+ members) and on HR & logistics SaaS platforms, with a strong interest in payment systems. MBA in IT Management (2025). Trilingual — Arabic (native), English & French (B2), Dutch (A2, improving). Available immediately. Before IT, an international professional Muay Thai & Kickboxing champion.",
     "funfacts": [
       {
         "title": "Years Experience",
@@ -88,11 +86,13 @@
       },
       {
         "title": "Projects Delivered",
-        "number": 36
+        "number": 15
       },
       {
-        "title": "professional fights",
-        "number": 25
+        "title": "Professional Fights",
+        "number": 25,
+        "link": "/boxing",
+        "linkText": "See my boxing career"
       }
     ],
     "btnText": "Get in touch",
@@ -106,84 +106,84 @@
     "allProjects": [
       {
         "thumbUrl": "/images/popup-project-1.jpg",
-        "title": "Enterprise Web Platform",
-        "subTitle": "Full Stack · Java 17 · Angular 17",
+        "title": "Enterprise Requirements Analysis",
+        "subTitle": "Functional Analysis · AS-IS / TO-BE · UML",
         "details": {
-          "title": "Enterprise Web Platform — Spring Boot 3 & Angular 17",
-          "description": "Led requirements analysis and functional specification before implementation. Architected a full-stack enterprise platform with a Spring Boot 3 / Java 17 backend exposing 20+ secured REST endpoints, fully documented via Swagger/OpenAPI 3. Implemented JWT authentication, RBAC, and Spring Security.<br><br>Angular 17 frontend with reactive forms, lazy-loaded modules, and HTTP interceptors. Applied TDD with JUnit 5 & Mockito (80%+ coverage) and enforced code quality gates with SonarQube. Containerized and deployed on Linux via Docker.",
-          "type": "Full Stack Web Application",
-          "langages": "Java 17, TypeScript, HTML, SCSS",
-          "platform": "Spring Boot 3, Angular 17, Docker",
+          "title": "Enterprise Requirements & Functional Analysis",
+          "description": "Led the functional analysis of an enterprise platform end-to-end: elicited and documented business requirements, ran AS-IS / TO-BE process modelling, and produced functional specifications, user stories and acceptance criteria consumed by the development and QA teams.<br><br>Facilitated stakeholder sessions from operations to management, defined 20+ secured REST endpoints as integration contracts (documented in Swagger/OpenAPI), and validated the delivered Spring Boot / Angular solution against the documented requirements.",
+          "type": "Functional Analysis · Enterprise",
+          "langages": "User Stories, Functional Specs, UML",
+          "platform": "Jira, Confluence, Swagger/OpenAPI",
           "country": "Belgium",
           "url": "github.com/abdessalems"
         }
       },
       {
         "thumbUrl": "/images/popup-project-2.jpg",
-        "title": "Async REST API — FastAPI",
-        "subTitle": "Backend · Python · Docker",
+        "title": "Swagger API Documentation",
+        "subTitle": "Functional Analysis · Swagger / OpenAPI",
         "details": {
-          "title": "Production FastAPI Backend — Users, Companies & Planning",
-          "description": "Built a production-ready async Python REST API with FastAPI featuring modular routers, Pydantic v2 data validation, SQLAlchemy ORM with Alembic migrations, and JWT authentication. Auto-generated Swagger/OpenAPI documentation included.<br><br>Achieved 90%+ test coverage with PyTest. Containerized with Docker Compose, structured with hexagonal architecture and dependency injection for horizontal scalability.",
-          "type": "Backend API",
-          "langages": "Python 3.11, SQL",
-          "platform": "FastAPI, Docker Compose, PostgreSQL",
+          "title": "Swagger API Documentation & Specification",
+          "description": "Design-first API specification project: defined the integration contracts between systems and documented every endpoint with Swagger / OpenAPI 3 before implementation. Produced the functional deliverables that drive delivery — user stories, acceptance criteria, request/response schemas, error contracts and a versioning strategy.<br><br>Facilitated the specification with stakeholders and translated business rules into precise, testable API definitions, then validated the running FastAPI implementation against the documented contract. Demonstrates direct experience specifying integration contracts and bridging business needs with engineering.",
+          "type": "Functional Analysis · API Documentation",
+          "langages": "OpenAPI 3, Swagger, Markdown",
+          "platform": "Swagger / OpenAPI, FastAPI, PostgreSQL",
           "country": "Belgium",
           "url": "github.com/abdessalems/FastApiProject"
         }
       },
       {
         "thumbUrl": "/images/popup-project-3.png",
-        "title": "Sports Management Platform",
-        "subTitle": "Full Stack · Node.js · Vue.js 3",
+        "title": "Business Process Modelling",
+        "subTitle": "Functional Analysis · BPMN · UML",
         "details": {
-          "title": "Sports Profile Management Platform — REST API & SPA",
-          "description": "Developed a full-stack sports data platform: Node.js + Express.js REST API with MySQL, paired with a Vue.js 3 SPA frontend. Full CRUD operations, server-side input validation, relational data modelling, and a responsive mobile-first UI.<br><br>Separation of concerns enforced across API, service, and data layers. Version-controlled with Git and structured for Docker containerization.",
-          "type": "Full Stack Application",
-          "langages": "JavaScript, Node.js, Vue.js 3, SQL",
-          "platform": "Express.js, MySQL, Vue.js 3",
+          "title": "Business Process Modelling — BPMN & UML",
+          "description": "Modelled the business workflows of a sports management domain before implementation: mapped AS-IS processes, designed optimised TO-BE flows, and produced BPMN process diagrams and UML models that aligned business owners with the engineering team.<br><br>Defined the data model, CRUD operations and validation rules as functional requirements, then supported the build of the REST API and SPA against those specifications.",
+          "type": "Process Modelling · BPMN",
+          "langages": "BPMN, UML, Functional Specs",
+          "platform": "PlantUML, draw.io, Visio",
           "country": "Belgium",
           "url": "github.com/abdessalems/Boxer_BackEnd"
         }
       },
       {
         "thumbUrl": "/images/popup-project-4.jpg",
-        "title": "Angular Product Catalogue",
-        "subTitle": "Frontend · Angular 17 · NgRx",
+        "title": "UAT & Functional Testing",
+        "subTitle": "Functional Analysis · UAT · Test Cases",
         "details": {
-          "title": "Product Management SPA — Angular 17 & NgRx",
-          "description": "Built a feature-complete Angular 17 SPA for product catalogue management: NgRx state management, reactive forms with validators, HTTP interceptors for centralised error handling, lazy-loaded feature modules, and Angular route guards.<br><br>Follows Angular style guide and SOLID component-driven architecture. Fully typed with TypeScript strict mode for zero-runtime-surprise reliability.",
-          "type": "Web Application (SPA)",
-          "langages": "TypeScript, HTML, SCSS",
-          "platform": "Angular 17, NgRx",
+          "title": "UAT & Functional Testing Coordination",
+          "description": "Coordinated functional testing and User Acceptance Testing (UAT) with business users: authored test cases from the acceptance criteria, validated system behaviour against requirements, tracked and triaged defects, and ran reconciliation checks on the data.<br><br>Bridged business stakeholders and the development team through the test cycle, signed off features against functional specifications, and kept a clear defect-to-requirement traceability throughout.",
+          "type": "Functional Testing · UAT",
+          "langages": "Test Cases, Acceptance Criteria",
+          "platform": "Jira, Confluence, Test Plans",
           "country": "Belgium",
           "url": "github.com/abdessalems"
         }
       },
       {
         "thumbUrl": "/images/popup-project-5.jpg",
-        "title": "CI/CD Pipeline Automation",
-        "subTitle": "DevOps · GitHub Actions · Docker",
+        "title": "API Integration Contracts",
+        "subTitle": "Functional Analysis · OpenAPI · Integration",
         "details": {
-          "title": "Automated CI/CD Pipelines & Multi-Stack Backend Services",
-          "description": "Defined deployment requirements and infrastructure specifications before implementation. Engineered automated CI/CD pipelines with GitHub Actions for Spring Boot and FastAPI projects: lint, test, build, and Docker image publish on every push to main.<br><br>Docker Compose multi-container environments for local/staging parity. Playwright E2E + PyTest/JUnit 5 suites integrated into pipelines. Branch protection, semantic versioning, and SonarQube quality gates enforced throughout.",
-          "type": "DevOps / Backend",
-          "langages": "Python, Java, YAML, Bash",
-          "platform": "GitHub Actions, Docker Compose, Linux",
+          "title": "System Integration Contracts & Specifications",
+          "description": "Specified the integration contracts between systems: analysed the data exchanged, defined request/response schemas, error handling and versioning, and documented each contract in OpenAPI so producer and consumer teams could build in parallel.<br><br>Facilitated alignment sessions between the teams, maintained the specifications as the single source of truth, and validated that the delivered integrations matched the agreed contracts.",
+          "type": "Integration Analysis · API",
+          "langages": "OpenAPI, Integration Specs",
+          "platform": "Swagger/OpenAPI, Confluence, Postman",
           "country": "Belgium",
           "url": "github.com/abdessalems"
         }
       },
       {
         "thumbUrl": "/images/popup-project-6.jpg",
-        "title": "REST API & Data Layer",
-        "subTitle": "Backend · PostgreSQL · Spring Boot",
+        "title": "Data & Reporting Analysis",
+        "subTitle": "Functional Analysis · KPIs · Dashboards",
         "details": {
-          "title": "Optimized REST API & PostgreSQL Data Layer",
-          "description": "Designed normalized PostgreSQL schemas with strategic indexing and query optimization (EXPLAIN ANALYZE) for high-throughput REST API backends. Schema versioning with Flyway/Alembic, ORM mapping via Hibernate and SQLAlchemy, and strict repository/service/controller layering.<br><br>Consumed by React and Angular frontends via typed API contracts. Maintained with PR-based code reviews, Git branching strategy, and automated regression tests.",
-          "type": "Backend / Database",
-          "langages": "Java, Python, SQL, TypeScript",
-          "platform": "Spring Boot, PostgreSQL, React, Angular",
+          "title": "Data & Reporting Analysis — KPI Definitions",
+          "description": "Translated finance and operations reporting needs into functional specifications: defined KPIs, report layouts and the underlying data model for financial and operational dashboards (in the style of the IBM Cognos work at Leejam).<br><br>Documented billing, payment-status and reconciliation logic, specified the data flows behind each metric, and coordinated validation of the reports against the business rules with the stakeholders.",
+          "type": "Data Analysis · Reporting",
+          "langages": "KPI Definitions, Data Mapping",
+          "platform": "IBM Cognos, SQL, Dashboards",
           "country": "Belgium",
           "url": "github.com/abdessalems"
         }
@@ -192,50 +192,50 @@
   },
   "service": {
     "sectionHeading": {
-      "miniTitle": "SERVICES",
-      "title": "Services I <span>provide</span>"
+      "miniTitle": "What I Do",
+      "title": "Core <span>Competencies</span>"
     },
     "allService": [
       {
+        "imgUrl": "/images/service-03.jpg",
+        "title": "Functional Analysis",
+        "subTitle": "Bridging business and IT: AS-IS / TO-BE process modelling, gap analysis, feasibility and impact analysis. Translating complex business needs into clear, actionable specifications for engineering and QA teams.",
+        "icon": "bi:diagram-3",
+        "ratings": 5
+      },
+      {
+        "imgUrl": "/images/service-04.jpg",
+        "title": "Requirements Engineering",
+        "subTitle": "Gathering, analysing and documenting business requirements. Writing functional specifications, user stories and acceptance criteria — the backbone of every successful delivery.",
+        "icon": "bi:card-checklist",
+        "ratings": 5
+      },
+      {
         "imgUrl": "/images/service-01.jpg",
-        "title": "Backend Development",
-        "subTitle": "Production-grade REST APIs and microservices with Spring Boot 3 (Java 17) and Python FastAPI. JWT/OAuth2 security, RBAC, Swagger/OpenAPI, TDD with JUnit 5 & PyTest, clean layered architecture.",
-        "icon": "bi:server",
+        "title": "Process & API Modelling",
+        "subTitle": "Modelling workflows and integration contracts with UML and BPMN (PlantUML, Visio, draw.io) and documenting APIs with Swagger / OpenAPI — clear diagrams that align business and engineering.",
+        "icon": "bi:diagram-2",
         "ratings": 5
       },
       {
         "imgUrl": "/images/service-02.jpg",
-        "title": "Frontend Development",
-        "subTitle": "Performant, accessible SPAs with Angular 17 and React. NgRx/Redux state management, reactive forms, lazy loading, HTTP interceptors, and TypeScript strict mode.",
-        "icon": "bi:code-square",
+        "title": "Stakeholder Management",
+        "subTitle": "Facilitating stakeholders from C-level to end users: workshops, interviews, requirement validation sessions and demos. Keeping business and delivery teams aligned throughout the project.",
+        "icon": "bi:people",
         "ratings": 5
       },
       {
         "imgUrl": "/images/service-03.jpg",
-        "title": "Functional Analysis",
-        "subTitle": "Bridging business and IT: requirements elicitation, user story mapping, as-is/to-be process modelling (UML, BPMN), functional specifications, and UAT support for Agile and waterfall projects.",
-        "icon": "bi:diagram-3",
-        "ratings": 4.5
-      },
-      {
-        "imgUrl": "/images/service-04.jpg",
-        "title": "API Design & Docs",
-        "subTitle": "Design-first REST API specifications with OpenAPI 3 / Swagger. Contract-driven development, versioning strategy, integration documentation, and developer portals for internal and third-party consumers.",
-        "icon": "bi:file-earmark-code",
+        "title": "Functional Testing & UAT",
+        "subTitle": "Coordinating functional testing and UAT with business users: test case documentation, defect tracking, reconciliation checks, and validating system behaviour against requirements.",
+        "icon": "bi:clipboard-check",
         "ratings": 4.5
       },
       {
         "imgUrl": "/images/service-01.jpg",
-        "title": "Database Design",
-        "subTitle": "Normalized schema design with PostgreSQL & MySQL, strategic indexing, EXPLAIN ANALYZE query tuning, ORM mapping with Hibernate & SQLAlchemy, migration management via Flyway & Alembic.",
-        "icon": "bi:database",
-        "ratings": 4.5
-      },
-      {
-        "imgUrl": "/images/service-02.jpg",
-        "title": "DevOps & CI/CD",
-        "subTitle": "End-to-end CI/CD with GitHub Actions: automated lint, test, build, and Docker image delivery. Docker Compose multi-service environments, Linux server setup, code quality gates on every pull request.",
-        "icon": "bi:gear",
+        "title": "Java & Spring Boot",
+        "subTitle": "Hands-on Java and Spring Boot development with REST APIs and Angular — technical depth that enables close, well-informed collaboration with engineering teams. Strong interest in payment systems.",
+        "icon": "bi:server",
         "ratings": 4.5
       }
     ]
@@ -247,43 +247,75 @@
     },
     "allExperience": [
       {
-        "designation": "Functional Analyst & Java Developer — HR SaaS",
+        "designation": "Functional Analyst & Java Developer — Logistics SaaS",
+        "company": "SELF-EMPLOYED | REMOTE, BELGIUM",
+        "duration": "SEP 2025 - PRESENT",
+        "jobType": "Self-Employed",
+        "companyTitle": "About Role",
+        "companyDescription": "Self-employed, delivering an end-to-end SaaS platform for a Belgian logistics company — combining functional analysis and development. Mapped existing paper-based processes (AS-IS), defined optimised digital workflows (TO-BE) and documented functional requirements. Translated operational pain points — manual route planning, no dispatcher visibility, paper delivery confirmation — into concrete functional and technical specifications. Defined API specifications (OpenAPI), user stories and acceptance criteria per module, and facilitated sessions with dispatchers and operations managers. Delivered the platform end-to-end (backend, web dashboard, mobile app). Outcome: ~40% reduction in route-planning time and full digitalisation of paper-based logistics workflows."
+      },
+      {
+        "designation": "Functional Analyst — HR SaaS",
         "company": "NOVA IT GROUP (YAANO / LTS CONSULTING) | BRUSSELS",
-        "duration": "JUL 2023 - AUG 2025",
+        "duration": "AUG 2024 - AUG 2025",
         "jobType": "SaaS · HR",
         "companyTitle": "About Role",
-        "companyDescription": "HR and recruitment SaaS platform, in a combined functional-analysis and development role within an Agile team. Gathered and documented business requirements from HR and recruitment stakeholders and translated them into user stories and functional specifications. Modelled recruitment workflows (candidate pipeline, onboarding, role management) ahead of implementation. Coordinated functional testing and UAT with business users. Participated in sprint planning, stand-ups, retrospectives and demos, and implemented validated workflows in Spring Boot and Angular."
+        "companyDescription": "Functional analysis role on an HR & recruitment SaaS platform within an Agile team. Gathered and documented business requirements from HR and recruitment stakeholders and translated them into user stories and functional specifications. Modelled recruitment workflows (candidate pipeline, onboarding, role management) ahead of implementation. Coordinated functional testing and UAT with business users. Participated in sprint planning, stand-ups, retrospectives and demo sessions as functional analyst."
+      },
+      {
+        "designation": "Java Backend Developer (Student) — HR SaaS",
+        "company": "NOVA IT GROUP (YAANO / LTS CONSULTING) | BRUSSELS",
+        "duration": "JUL 2023 - AUG 2024",
+        "jobType": "Developer",
+        "companyTitle": "About Role",
+        "companyDescription": "Student developer role on the HR & recruitment SaaS platform within an Agile team. Implemented recruitment workflows (candidate pipeline, onboarding, role management) in Spring Boot, integrated with the Angular frontend. Participated in sprint planning, stand-ups and demo sessions as a developer."
       },
       {
         "designation": "Functional Analyst & Java Developer",
         "company": "LEEJAM SPORTS — FITNESS TIME | RIYADH, SAUDI ARABIA",
-        "duration": "JAN 2019 - FEB 2022",
+        "duration": "JAN 2019 - JAN 2021",
         "jobType": "Enterprise",
         "companyTitle": "About Role",
         "companyDescription": "Largest fitness operator in Saudi Arabia and the UAE — 200+ locations, 100,000+ active members, 41+ cities, with an enterprise IT stack (IBM Cognos, SAP, custom Java systems). Bridged business stakeholders and IT across all locations: gathered, analysed, documented and validated business requirements, including membership billing and financial-reporting flows. Ran AS-IS/TO-BE process modelling for subscriptions, financial reporting, access control and HR scheduling. Produced user stories, functional specs, API documentation and KPI definitions for Cognos dashboards, coordinated functional testing and reconciliation checks on payment records, and developed Java backend modules for membership, billing, scheduling, access control and reporting."
       },
       {
-        "designation": "MBA — IT Management",
-        "company": "UNIVERSIDAD ISABEL I | SPAIN",
-        "duration": "2024 - 2025",
+        "designation": "MBA — Management in Information Technology",
+        "company": "UNIVERSIDAD ISABEL I | MADRID, SPAIN",
+        "duration": "OCT 2024 - AUG 2025",
         "jobType": "Education",
         "companyTitle": "About Studies",
-        "companyDescription": "Master of Business Administration (MBA) in IT Management — Universidad Isabel I, Burgos, Spain. Focus on digital business strategy, technology management, Agile project management and entrepreneurship, complementing a technical profile with the business acumen for functional-analysis and project-ownership roles."
+        "companyDescription": "MBA in Management in Information Technology — Universidad Isabel I, Madrid, Spain. IT management, digital strategy, business innovation and change management. Graduated August 2025."
       },
       {
-        "designation": "Bachelor's in Applied Computer Science",
-        "company": "EAFC-UCCLE | BRUSSELS",
-        "duration": "SEP 2021 - AUG 2024",
+        "designation": "Bachelor — Software & Network Project Management",
+        "company": "EFFICOM LILLE / CAMPUS EDUCTIVE LIBERTÉ | LILLE, FRANCE",
+        "duration": "SEP 2021 - JUL 2024",
         "jobType": "Education",
         "companyTitle": "About Studies",
-        "companyDescription": "Bachelor's in Applied Computer Science — EAFC-Uccle, Brussels. Specialisations: software engineering, web development (Spring Boot, Angular, React), relational databases (PostgreSQL, MySQL), algorithms & data structures, networks, and UML/system modelling."
+        "companyDescription": "Bachelor in Software & Network Project Management — EFFICOM Lille / Campus Eductive Liberté, Lille, France. Software project management, requirements analysis, DevOps practices and Agile/Scrum delivery."
+      },
+      {
+        "designation": "Bachelor in Information Technology",
+        "company": "ESPRIT | TUNISIA",
+        "duration": "AUG 2014 - JUL 2017",
+        "jobType": "Education",
+        "companyTitle": "About Studies",
+        "companyDescription": "Bachelor in Information Technology — ESPRIT, Tunisia. Programming, computer networks, databases and information systems analysis."
+      },
+      {
+        "designation": "High School Diploma — Computer Science",
+        "company": "MÉDENINE | TUNISIA",
+        "duration": "SEP 2010 - JUL 2014",
+        "jobType": "Education",
+        "companyTitle": "About Studies",
+        "companyDescription": "High School Diploma in Computer Science — Médenine, Tunisia. Scientific baccalaureate with a computer science specialisation: algorithmics, programming fundamentals and information systems."
       }
     ]
   },
   "testimonial": {
     "sectionHeading": {
-      "miniTitle": "Certifications",
-      "title": "Education & <span>Certifications</span>"
+      "miniTitle": "Continuous Learning",
+      "title": "Courses & <span>Certifications</span>"
     },
     "allTestimonial": [
       {
@@ -314,8 +346,8 @@
   },
   "contact": {
     "sectionHeading": {
-      "title": "Let's Discuss Your Project",
-      "subTitle": "Always available for freelancing if the right project comes along. Feel free to contact me."
+      "title": "Let's Work Together",
+      "subTitle": "Available immediately for Functional Analyst and Java Developer roles in Brussels and remote. Feel free to reach out."
     },
     "contactImg": "/images/contact-us.png",
     "contactInfo": [
