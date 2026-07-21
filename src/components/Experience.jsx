@@ -30,7 +30,16 @@ export default function Experience({ data }) {
                   <div className="col-md-8 col-lg-9">
                     <div className="ex-right">
                       <h5>{item.companyTitle}</h5>
-                      <p className="m-0">{item.companyDescription}</p>
+                      <p className={item.tech?.length ? '' : 'm-0'}>
+                        {item.companyDescription}
+                      </p>
+                      {item.tech?.length > 0 && (
+                        <ul className="ex-tags">
+                          {item.tech.map((t, i) => (
+                            <li key={i}>{t}</li>
+                          ))}
+                        </ul>
+                      )}
                     </div>
                   </div>
                 </div>

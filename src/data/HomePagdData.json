@@ -22,7 +22,7 @@
     {
       "icon": "fa-brands:linkedin-in",
       "iconBgClass": "linkedin",
-      "href": "https://linkedin.com/in/abdussalem-saadaoui-10bb7018a"
+      "href": "https://www.linkedin.com/in/saadaoui-abdessalem-10bb7018a"
     },
     {
       "icon": "fa-solid:envelope",
@@ -78,7 +78,7 @@
     "imgSrc": "/images/home-banner.png",
     "miniTitle": "About Me",
     "title": "FUNCTIONAL ANALYST & <span>JAVA</span> DEVELOPER",
-    "description": "Functional Analyst based in Brussels, Belgium, with 4+ years bridging business needs and technical delivery across enterprise and SaaS environments. I gather, analyse and document business requirements, model processes with UML & BPMN, write functional specifications and API documentation (Swagger/OpenAPI), and facilitate stakeholders from C-level to end users — grounded in hands-on Java and Spring Boot development. Delivered functional analysis at enterprise scale (Leejam Sports — 200+ locations, 100,000+ members) and on HR & logistics SaaS platforms, with a strong interest in payment systems. MBA in IT Management (2025). Trilingual — Arabic (native), English & French (B2), Dutch (A2, improving). Available immediately. Before IT, an international professional Muay Thai & Kickboxing champion.",
+    "description": "Functional Analyst based in Brussels, Belgium, with 4+ years bridging business needs and technical delivery across enterprise and SaaS environments. I gather, analyse and document business requirements, model processes with UML & BPMN, write functional specifications and API documentation (Swagger/OpenAPI), and manage stakeholders — embedded with hands-on Java and Spring Boot development for close, clear collaboration with IT teams. Delivered functional analysis at enterprise scale across the Finance, Fitness, HR and logistics sectors (including Leejam Sports — 200+ locations, 100,000+ members). MBA in IT Management (2025). Trilingual — Arabic (native), English & French (B2), Dutch (A2, improving). Available immediately. Before IT, an international professional Muay Thai & Kickboxing champion.",
     "funfacts": [
       {
         "title": "Years Experience",
@@ -234,7 +234,7 @@
       {
         "imgUrl": "/images/service-01.jpg",
         "title": "Java & Spring Boot",
-        "subTitle": "Hands-on Java and Spring Boot development with REST APIs and Angular — technical depth that enables close, well-informed collaboration with engineering teams. Strong interest in payment systems.",
+        "subTitle": "Hands-on development with Java, Spring Boot, FastAPI and REST APIs, plus Angular and React — technical depth that enables close, well-informed collaboration with IT teams. Domains of interest: finance, transaction processing and high tech.",
         "icon": "bi:server",
         "ratings": 4.5
       }
@@ -248,11 +248,12 @@
     "allExperience": [
       {
         "designation": "Functional Analyst & Java Developer — Logistics SaaS",
-        "company": "SELF-EMPLOYED | REMOTE, BELGIUM",
+        "company": "SELF-EMPLOYED | HYBRID, BELGIUM",
         "duration": "SEP 2025 - PRESENT",
         "jobType": "Self-Employed",
         "companyTitle": "About Role",
-        "companyDescription": "Self-employed, delivering an end-to-end SaaS platform for a Belgian logistics company — combining functional analysis and development. Mapped existing paper-based processes (AS-IS), defined optimised digital workflows (TO-BE) and documented functional requirements. Translated operational pain points — manual route planning, no dispatcher visibility, paper delivery confirmation — into concrete functional and technical specifications. Defined API specifications (OpenAPI), user stories and acceptance criteria per module, and facilitated sessions with dispatchers and operations managers. Delivered the platform end-to-end (backend, web dashboard, mobile app). Outcome: ~40% reduction in route-planning time and full digitalisation of paper-based logistics workflows."
+        "companyDescription": "Self-employed, delivering an end-to-end SaaS platform for a Belgian logistics company — combining functional analysis and development. Mapped existing paper-based processes (AS-IS), defined optimised digital workflows (TO-BE) and documented functional requirements. Translated operational pain points — manual route planning, no dispatcher visibility, paper delivery confirmation — into concrete functional and technical specifications. Defined API specifications (Swagger/OpenAPI), user stories and acceptance criteria per module, and facilitated sessions with dispatchers and operations managers. Delivered the platform with end-to-end (E2E) testing across backend, web dashboard and mobile app. Outcome: ~40% reduction in route-planning time and full digitalisation of paper-based logistics workflows.",
+        "tech": ["Jira / Agile", "Swagger / OpenAPI", "UML", "PlantUML", "BPMN", "Java · Spring Boot", "Angular", "FastAPI", "PostgreSQL", "Docker"]
       },
       {
         "designation": "Functional Analyst — HR SaaS",
@@ -260,39 +261,42 @@
         "duration": "AUG 2024 - AUG 2025",
         "jobType": "SaaS · HR",
         "companyTitle": "About Role",
-        "companyDescription": "Functional analysis role on an HR & recruitment SaaS platform within an Agile team. Gathered and documented business requirements from HR and recruitment stakeholders and translated them into user stories and functional specifications. Modelled recruitment workflows (candidate pipeline, onboarding, role management) ahead of implementation. Coordinated functional testing and UAT with business users. Participated in sprint planning, stand-ups, retrospectives and demo sessions as functional analyst."
+        "companyDescription": "Functional analysis role on an HR & recruitment SaaS platform within an Agile team. Gathered and documented business requirements from HR and recruitment stakeholders and translated them into user stories and functional specifications. Modelled recruitment workflows (candidate pipeline, onboarding, role management) ahead of implementation. Coordinated functional testing, non-regression testing (NRT) and UAT with business users. Participated in sprint planning, stand-ups, retrospectives and demo sessions as functional analyst.",
+        "tech": ["Jira / Agile", "Swagger / OpenAPI", "UML", "Visio", "Java · Spring Boot", "Angular", "MySQL", "CI/CD", "GitHub", "Docker"]
       },
       {
-        "designation": "Java Backend Developer (Student) — HR SaaS",
+        "designation": "Java Backend Developer (Internship) — HR SaaS",
         "company": "NOVA IT GROUP (YAANO / LTS CONSULTING) | BRUSSELS",
         "duration": "JUL 2023 - AUG 2024",
-        "jobType": "Developer",
+        "jobType": "Internship",
         "companyTitle": "About Role",
-        "companyDescription": "Student developer role on the HR & recruitment SaaS platform within an Agile team. Implemented recruitment workflows (candidate pipeline, onboarding, role management) in Spring Boot, integrated with the Angular frontend. Participated in sprint planning, stand-ups and demo sessions as a developer."
+        "companyDescription": "Developer role (internship) on the HR & recruitment SaaS platform within an Agile team. Implemented recruitment workflows (candidate pipeline, onboarding, role management) in Spring Boot, integrated with the Angular frontend. Participated in sprint planning, stand-ups and demo sessions as a developer.",
+        "tech": ["Jira / Agile", "Swagger / OpenAPI", "UML", "Visio", "Java · Spring Boot", "Angular", "MySQL", "CI/CD", "GitHub", "Docker"]
       },
       {
-        "designation": "Functional Analyst & Java Developer",
+        "designation": "Functional Analyst & Java Developer — Finance & Fitness",
         "company": "LEEJAM SPORTS — FITNESS TIME | RIYADH, SAUDI ARABIA",
         "duration": "JAN 2019 - JAN 2021",
         "jobType": "Enterprise",
         "companyTitle": "About Role",
-        "companyDescription": "Largest fitness operator in Saudi Arabia and the UAE — 200+ locations, 100,000+ active members, 41+ cities, with an enterprise IT stack (IBM Cognos, SAP, custom Java systems). Bridged business stakeholders and IT across all locations: gathered, analysed, documented and validated business requirements, including membership billing and financial-reporting flows. Ran AS-IS/TO-BE process modelling for subscriptions, financial reporting, access control and HR scheduling. Produced user stories, functional specs, API documentation and KPI definitions for Cognos dashboards, coordinated functional testing and reconciliation checks on payment records, and developed Java backend modules for membership, billing, scheduling, access control and reporting."
+        "companyDescription": "Largest fitness operator in Saudi Arabia and the UAE — 200+ locations, 100,000+ active members, 41+ cities, with an enterprise IT environment (SAP and custom Java systems). Bridged business stakeholders and IT across multiple locations: gathered, analysed, documented and validated business requirements, including membership billing and financial-reporting flows. Ran AS-IS/TO-BE process modelling for subscriptions, financial reporting, access control, HR scheduling and payments, and defined the new processes for digital-transformation initiatives. Translated complex finance and operations needs into functional specifications (including recurring-billing and payment-status logic), produced user stories, functional specs, API documentation and KPI definitions for operational dashboards, coordinated functional testing and reconciliation checks on payment records, and developed Java backend modules for membership, payments, billing, scheduling, access control and reporting.",
+        "tech": ["Jira / Agile", "SAP", "Swagger / OpenAPI", "UML", "PlantUML", "JWT", "Java · Spring Boot", "React", "PostgreSQL", "CI/CD", "GitHub"]
       },
       {
-        "designation": "MBA — Management in Information Technology",
+        "designation": "MBA — Management in Information Technology (Remote)",
         "company": "UNIVERSIDAD ISABEL I | MADRID, SPAIN",
         "duration": "OCT 2024 - AUG 2025",
         "jobType": "Education",
         "companyTitle": "About Studies",
-        "companyDescription": "MBA in Management in Information Technology — Universidad Isabel I, Madrid, Spain. IT management, digital strategy, business innovation and change management. Graduated August 2025."
+        "companyDescription": "MBA in Management in Information Technology (Remote) — Universidad Isabel I, Madrid, Spain. IT management, digital strategy, business innovation and change management. Graduated August 2025."
       },
       {
         "designation": "Bachelor — Software & Network Project Management",
-        "company": "EFFICOM LILLE / CAMPUS EDUCTIVE LIBERTÉ | LILLE, FRANCE",
+        "company": "EFFICOM LILLE / CAMPUS LIBERTÉ | LILLE, FRANCE",
         "duration": "SEP 2021 - JUL 2024",
         "jobType": "Education",
         "companyTitle": "About Studies",
-        "companyDescription": "Bachelor in Software & Network Project Management — EFFICOM Lille / Campus Eductive Liberté, Lille, France. Software project management, requirements analysis, DevOps practices and Agile/Scrum delivery."
+        "companyDescription": "Bachelor in Software & Network Project Management — EFFICOM Lille / Campus Liberté, Lille, France. Software project management, requirements analysis, DevOps practices and Agile/Scrum delivery."
       },
       {
         "designation": "Bachelor in Information Technology",
@@ -300,7 +304,7 @@
         "duration": "AUG 2014 - JUL 2017",
         "jobType": "Education",
         "companyTitle": "About Studies",
-        "companyDescription": "Bachelor in Information Technology — ESPRIT, Tunisia. Programming, computer networks, databases and information systems analysis."
+        "companyDescription": "Bachelor in Information Technology — ESPRIT, Tunisia. Programming, hashing, algorithms, computer networks, databases and information systems analysis."
       },
       {
         "designation": "High School Diploma — Computer Science",

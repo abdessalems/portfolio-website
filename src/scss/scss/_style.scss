@@ -545,6 +545,24 @@ a {
       color: var(--px-white);
       opacity: 0.8;
     }
+    .ex-tags {
+      list-style: none;
+      padding: 0;
+      margin: 18px 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      li {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1;
+        padding: 7px 12px;
+        border-radius: 30px;
+        color: var(--px-theme);
+        background: rgba(var(--px-theme-rgb), 0.08);
+        border: 1px solid rgba(var(--px-theme-rgb), 0.25);
+      }
+    }
   }
 }
 
