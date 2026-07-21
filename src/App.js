@@ -10,6 +10,8 @@ function App() {
   useEffect(() => {
     Aos.init({
       once: true,
+      disable: () =>
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches,
     });
   }, []);
   return (

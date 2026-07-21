@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Brands from '../components/Brands';
 import Projects from '../components/Projects';
 import Testimonial from '../components/Testimonial';
@@ -21,6 +21,12 @@ export default function Home() {
     testimonial,
     contact,
   } = HomePagdData;
+
+  useEffect(() => {
+    document.title =
+      'Abdessalem Saadaoui — Functional Analyst & Java Developer';
+  }, []);
+
   return (
     <>
       <Hero data={hero} socialData={socialBtns} />

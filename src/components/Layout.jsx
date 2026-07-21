@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
 import CustomCursor from './CustomCursor';
+import ScrollTools from './ScrollTools';
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -11,6 +12,7 @@ export default function Layout() {
   }, [pathname]);
   return (
     <>
+      <ScrollTools />
       <Header />
       <main>
         <Outlet />
