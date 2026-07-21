@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState(null); // 'success' | 'error' | null
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -21,24 +22,31 @@ export default function ContactForm() {
   const onSubmit = async event => {
     event.preventDefault();
     setLoading(true);
-    const formData = new FormData(event.target);
+    setStatus(null);
+    const payload = new FormData(event.target);
+    payload.append('access_key', 'f4ab8044-fb2b-4f11-8899-fe4767b17b60');
 
-    formData.append('access_key', 'f4ab8044-fb2b-4f11-8899-fe4767b17b60');
+    const json = JSON.stringify(Object.fromEntries(payload));
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: json,
+      }).then(res => res.json());
 
-    const res = await fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: json,
-    }).then(res => res.json());
-
-    if (res.success) {
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      if (res.success) {
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setStatus('success');
+      } else {
+        setStatus('error');
+      }
+    } catch (err) {
+      setStatus('error');
+    } finally {
       setLoading(false);
     }
   };
@@ -106,11 +114,27 @@ export default function ContactForm() {
             <button
               className={`px-btn w-100 ${loading ? 'disabled' : ''}`}
               type="submit"
+              disabled={loading}
             >
               {loading ? 'Sending...' : 'Send Message'}
             </button>
           </div>
         </div>
+        {status === 'success' && (
+          <div className="col-12">
+            <p className="form-note form-note-success" role="status">
+              ✓ Thanks! Your message has been sent — I'll get back to you soon.
+            </p>
+          </div>
+        )}
+        {status === 'error' && (
+          <div className="col-12">
+            <p className="form-note form-note-error" role="alert">
+              ✕ Something went wrong. Please try again, or email me directly at
+              abdessalemsaa@gmail.com.
+            </p>
+          </div>
+        )}
       </div>
     </form>
   );

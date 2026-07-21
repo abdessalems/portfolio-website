@@ -348,6 +348,18 @@
       }
     ]
   },
+  "languages": {
+    "sectionHeading": {
+      "miniTitle": "Languages",
+      "title": "Languages I <span>Speak</span>"
+    },
+    "list": [
+      { "name": "Arabic", "level": "Native", "value": 100 },
+      { "name": "English", "level": "B2 — Upper-Intermediate", "value": 70 },
+      { "name": "French", "level": "B2 — Upper-Intermediate", "value": 70 },
+      { "name": "Dutch", "level": "A2 — Basic (improving)", "value": 35 }
+    ]
+  },
   "contact": {
     "sectionHeading": {
       "title": "Let's Work Together",

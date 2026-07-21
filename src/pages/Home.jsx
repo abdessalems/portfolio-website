@@ -7,6 +7,7 @@ import About from '../components/About';
 import Service from '../components/Service';
 import HomePagdData from '../data/HomePagdData.json';
 import Experience from '../components/Experience';
+import Languages from '../components/Languages';
 import Contact from '../components/Contact';
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
     projects,
     service,
     experience,
+    languages,
     testimonial,
     contact,
   } = HomePagdData;
@@ -35,6 +37,7 @@ export default function Home() {
       <Projects data={projects} />
       <Service data={service} />
       <Experience data={experience} />
+      <Languages data={languages} />
       <Testimonial data={testimonial} />
       <Contact data={contact} socialData={socialBtns} />
     </>
