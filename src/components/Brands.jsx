@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import React from 'react';
 import Slider from 'react-slick';
 
@@ -49,8 +50,19 @@ export default function Brands({ data }) {
         <Slider {...settings} className="slider-gap-50">
           {data.map((item, index) => (
             <div key={index}>
-              <div className="pt-3 pb-3 text-center d-flex align-items-center justify-content-center w-100">
-                <img src={item.src} alt={item.alt} className="w-100" />
+              {/*
+                The tools, named. A logo on its own asks the reader to
+                recognise it; the label means a recruiter scanning for
+                "Swagger" finds the word, not only the mark.
+              */}
+              <div className="pt-3 pb-3 d-flex flex-column align-items-center justify-content-center gap-2 w-100">
+                <Icon icon={item.icon} style={{ fontSize: '38px' }} aria-hidden="true" />
+                <span
+                  className="text-center"
+                  style={{ fontSize: '13px', fontWeight: 500, opacity: 0.75 }}
+                >
+                  {item.label}
+                </span>
               </div>
             </div>
           ))}

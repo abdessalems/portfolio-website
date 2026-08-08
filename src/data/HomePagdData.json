@@ -42,36 +42,44 @@
   ],
   "brands": [
     {
-      "src": "/images/brand-1.png",
-      "alt": "Logolpsum"
+      "icon": "logos:jira",
+      "label": "Jira"
     },
     {
-      "src": "/images/brand-2.png",
-      "alt": "Logolpsum"
+      "icon": "logos:confluence",
+      "label": "Confluence"
     },
     {
-      "src": "/images/brand-3.png",
-      "alt": "Logolpsum"
+      "icon": "logos:swagger",
+      "label": "Swagger"
     },
     {
-      "src": "/images/brand-4.png",
-      "alt": "Logolpsum"
+      "icon": "simple-icons:openapiinitiative",
+      "label": "OpenAPI"
     },
     {
-      "src": "/images/brand-5.png",
-      "alt": "Logolpsum"
+      "icon": "logos:java",
+      "label": "Java"
     },
     {
-      "src": "/images/brand-6.png",
-      "alt": "Logolpsum"
+      "icon": "logos:spring-icon",
+      "label": "Spring Boot"
     },
     {
-      "src": "/images/brand-7.png",
-      "alt": "Logolpsum"
+      "icon": "logos:angular-icon",
+      "label": "Angular"
     },
     {
-      "src": "/images/brand-8.png",
-      "alt": "Logolpsum"
+      "icon": "logos:postgresql",
+      "label": "PostgreSQL"
+    },
+    {
+      "icon": "logos:docker",
+      "label": "Docker"
+    },
+    {
+      "icon": "logos:git-icon",
+      "label": "Git"
     }
   ],
   "about": {
@@ -253,7 +261,18 @@
         "jobType": "Self-Employed",
         "companyTitle": "About Role",
         "companyDescription": "Self-employed, delivering an end-to-end SaaS platform for a Belgian logistics company — combining functional analysis and development. Mapped existing paper-based processes (AS-IS), defined optimised digital workflows (TO-BE) and documented functional requirements. Translated operational pain points — manual route planning, no dispatcher visibility, paper delivery confirmation — into concrete functional and technical specifications. Defined API specifications (Swagger/OpenAPI), user stories and acceptance criteria per module, and facilitated sessions with dispatchers and operations managers. Delivered the platform with end-to-end (E2E) testing across backend, web dashboard and mobile app. Outcome: ~40% reduction in route-planning time and full digitalisation of paper-based logistics workflows.",
-        "tech": ["Jira / Agile", "Swagger / OpenAPI", "UML", "PlantUML", "BPMN", "Java · Spring Boot", "Angular", "FastAPI", "PostgreSQL", "Docker"]
+        "tech": [
+          "Jira / Agile",
+          "Swagger / OpenAPI",
+          "UML",
+          "PlantUML",
+          "BPMN",
+          "Java · Spring Boot",
+          "Angular",
+          "FastAPI",
+          "PostgreSQL",
+          "Docker"
+        ]
       },
       {
         "designation": "Functional Analyst — HR SaaS",
@@ -262,7 +281,18 @@
         "jobType": "SaaS · HR",
         "companyTitle": "About Role",
         "companyDescription": "Functional analysis role on an HR & recruitment SaaS platform within an Agile team. Gathered and documented business requirements from HR and recruitment stakeholders and translated them into user stories and functional specifications. Modelled recruitment workflows (candidate pipeline, onboarding, role management) ahead of implementation. Coordinated functional testing, non-regression testing (NRT) and UAT with business users. Participated in sprint planning, stand-ups, retrospectives and demo sessions as functional analyst.",
-        "tech": ["Jira / Agile", "Swagger / OpenAPI", "UML", "Visio", "Java · Spring Boot", "Angular", "MySQL", "CI/CD", "GitHub", "Docker"]
+        "tech": [
+          "Jira / Agile",
+          "Swagger / OpenAPI",
+          "UML",
+          "Visio",
+          "Java · Spring Boot",
+          "Angular",
+          "MySQL",
+          "CI/CD",
+          "GitHub",
+          "Docker"
+        ]
       },
       {
         "designation": "Java Backend Developer (Internship) — HR SaaS",
@@ -271,7 +301,18 @@
         "jobType": "Internship",
         "companyTitle": "About Role",
         "companyDescription": "Developer role (internship) on the HR & recruitment SaaS platform within an Agile team. Implemented recruitment workflows (candidate pipeline, onboarding, role management) in Spring Boot, integrated with the Angular frontend. Participated in sprint planning, stand-ups and demo sessions as a developer.",
-        "tech": ["Jira / Agile", "Swagger / OpenAPI", "UML", "Visio", "Java · Spring Boot", "Angular", "MySQL", "CI/CD", "GitHub", "Docker"]
+        "tech": [
+          "Jira / Agile",
+          "Swagger / OpenAPI",
+          "UML",
+          "Visio",
+          "Java · Spring Boot",
+          "Angular",
+          "MySQL",
+          "CI/CD",
+          "GitHub",
+          "Docker"
+        ]
       },
       {
         "designation": "Functional Analyst & Java Developer — Finance & Fitness",
@@ -280,7 +321,19 @@
         "jobType": "Enterprise",
         "companyTitle": "About Role",
         "companyDescription": "Largest fitness operator in Saudi Arabia and the UAE — 200+ locations, 100,000+ active members, 41+ cities, with an enterprise IT environment (SAP and custom Java systems). Bridged business stakeholders and IT across multiple locations: gathered, analysed, documented and validated business requirements, including membership billing and financial-reporting flows. Ran AS-IS/TO-BE process modelling for subscriptions, financial reporting, access control, HR scheduling and payments, and defined the new processes for digital-transformation initiatives. Translated complex finance and operations needs into functional specifications (including recurring-billing and payment-status logic), produced user stories, functional specs, API documentation and KPI definitions for operational dashboards, coordinated functional testing and reconciliation checks on payment records, and developed Java backend modules for membership, payments, billing, scheduling, access control and reporting.",
-        "tech": ["Jira / Agile", "SAP", "Swagger / OpenAPI", "UML", "PlantUML", "JWT", "Java · Spring Boot", "React", "PostgreSQL", "CI/CD", "GitHub"]
+        "tech": [
+          "Jira / Agile",
+          "SAP",
+          "Swagger / OpenAPI",
+          "UML",
+          "PlantUML",
+          "JWT",
+          "Java · Spring Boot",
+          "React",
+          "PostgreSQL",
+          "CI/CD",
+          "GitHub"
+        ]
       },
       {
         "designation": "MBA — Management in Information Technology (Remote)",
@@ -354,10 +407,26 @@
       "title": "Languages I <span>Speak</span>"
     },
     "list": [
-      { "name": "Arabic", "level": "Native", "value": 100 },
-      { "name": "English", "level": "B2 — Upper-Intermediate", "value": 70 },
-      { "name": "French", "level": "B2 — Upper-Intermediate", "value": 70 },
-      { "name": "Dutch", "level": "A2 — Basic (improving)", "value": 35 }
+      {
+        "name": "Arabic",
+        "level": "Native",
+        "value": 100
+      },
+      {
+        "name": "English",
+        "level": "B2 — Upper-Intermediate",
+        "value": 70
+      },
+      {
+        "name": "French",
+        "level": "B2 — Upper-Intermediate",
+        "value": 70
+      },
+      {
+        "name": "Dutch",
+        "level": "A2 — Basic (improving)",
+        "value": 35
+      }
     ]
   },
   "contact": {
