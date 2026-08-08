@@ -68,7 +68,7 @@ img {
 }
 
 .gray-bg {
-  background: rgba(var(--px-theme-rgb), 0.1);
+  background: var(--px-section-bg);
 }
 .theme-bg {
   background: var(--px-theme);
@@ -113,7 +113,7 @@ img {
       border-radius: 4px;
       padding: 5px 12px;
       display: inline-block;
-      color: var(--px-white);
+      color: var(--px-strong);
       font-weight: 400;
       font-size: 16px;
       line-height: 20px;
@@ -146,7 +146,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
-  background-color: var(--px-white);
+  background-color: var(--px-strong);
   position: relative;
   @include down-lg {
     padding: 18px;

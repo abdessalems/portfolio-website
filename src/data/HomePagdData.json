@@ -83,7 +83,7 @@
     }
   ],
   "about": {
-    "imgSrc": "/images/home-banner.png",
+    "imgSrc": "/images/about-banner.png",
     "miniTitle": "About Me",
     "title": "FUNCTIONAL ANALYST & <span>JAVA</span> DEVELOPER",
     "description": "Functional Analyst based in Brussels, Belgium, with 4+ years bridging business needs and technical delivery across enterprise and SaaS environments. I gather, analyse and document business requirements, model processes with UML & BPMN, write functional specifications and API documentation (Swagger/OpenAPI), and manage stakeholders — embedded with hands-on Java and Spring Boot development for close, clear collaboration with IT teams. Delivered functional analysis at enterprise scale across the Finance, Fitness, HR and logistics sectors (including Leejam Sports — 200+ locations, 100,000+ members). MBA in IT Management (2025). Trilingual — Arabic (native), English & French (B2), Dutch (A2, improving). Available immediately. Before IT, an international professional Muay Thai & Kickboxing champion.",

@@ -6,7 +6,7 @@
   border-radius: 40px;
   border: 2px solid var(--px-theme);
   background-color: var(--px-theme);
-  color: var(--px-white);
+  color: var(--px-on-theme);
   text-decoration: none;
   transition: ease all 0.35s;
   font-weight: 500;
@@ -19,13 +19,13 @@
   }
   &:hover {
     background-color: var(--px-black);
-    color: var(--px-white);
+    color: var(--px-on-theme);
     border: 2px solid var(--px-white);
   }
   &.dark {
     background: var(--px-black);
     border: 1px solid var(--px-black);
-    color: var(--px-white);
+    color: var(--px-on-theme);
     &:hover {
       background: var(--px-white);
       color: var(--px-black);
@@ -34,7 +34,7 @@
   &.light {
     background: var(--px-surface);
     border: 1px solid var(--px-border);
-    color: var(--px-white);
+    color: var(--px-on-theme);
     &:hover {
       background: var(--px-white);
       color: var(--px-black);
@@ -47,7 +47,7 @@
     &:hover {
       background: var(--px-surface-hover);
       border: 1px solid var(--px-border);
-      color: var(--px-white);
+      color: var(--px-on-theme);
     }
   }
 }
@@ -60,8 +60,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: var(--px-white);
-    border: 2px solid var(--px-white);
+    /* Outlined icons sitting on the page, not on the teal — both the ring and
+       the glyph have to follow the theme or they vanish on light. */
+    color: var(--px-strong);
+    border: 2px solid var(--px-strong);
     margin-right: 8px;
     position: relative;
     transition: ease top 0.35s;

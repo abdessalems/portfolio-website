@@ -11,11 +11,21 @@
   --px-theme: #{$px-theme};
   --px-theme-rgb: #{$px-theme-rgb};
   --px-black: #{$px-black};
+  /*
+   * `--px-white` stays literally white in both themes, because it is used for
+   * backgrounds as well as text — a project card is meant to be a white card.
+   *
+   * Text that merely meant "the bright foreground" uses `--px-strong`, which
+   * flips; text sitting on the teal itself uses `--px-on-theme`, which does not.
+   */
   --px-white: #{$px-white};
+  --px-on-theme: #{$px-white};
+  --px-strong: #{$px-white};
   --px-text: #{$px-text};
   --px-heading: #{$px-heading};
 
   /* Page and panels */
+  --px-section-bg: rgba(#{$px-theme-rgb}, 0.1);
   --px-bg: linear-gradient(135deg, #0f1318 0%, #0c1014 35%, #090c10 65%, #07090c 100%);
   --px-surface: rgba(255, 255, 255, 0.05);
   --px-surface-hover: rgba(255, 255, 255, 0.1);
@@ -41,6 +51,14 @@
 :root[data-theme='light'] {
   --px-text: #566072;
   --px-heading: #0d1117;
+  --px-strong: #0d1117;
+
+  /*
+   * Sections that read as "slightly different from the page" were a 10% teal
+   * wash. Over a light page that is a muddy tint with almost no separation, so
+   * on light they become plain white cards against the grey page instead.
+   */
+  --px-section-bg: #ffffff;
 
   --px-bg: linear-gradient(135deg, #fbfcfd 0%, #f4f7fa 35%, #eef2f7 65%, #e9eef4 100%);
   --px-surface: rgba(13, 17, 23, 0.04);
