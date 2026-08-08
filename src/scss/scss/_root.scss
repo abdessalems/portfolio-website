@@ -26,6 +26,8 @@
 
   /* Page and panels */
   --px-section-bg: rgba(#{$px-theme-rgb}, 0.1);
+  /* The bar the header takes on once the page scrolls under it. */
+  --px-header-bg: #{$px-black};
   --px-bg: linear-gradient(135deg, #0f1318 0%, #0c1014 35%, #090c10 65%, #07090c 100%);
   --px-surface: rgba(255, 255, 255, 0.05);
   --px-surface-hover: rgba(255, 255, 255, 0.1);
@@ -59,6 +61,9 @@
    * on light they become plain white cards against the grey page instead.
    */
   --px-section-bg: #ffffff;
+  /* Not pure white: the header has to stay distinguishable from the sections
+     that scroll beneath it. */
+  --px-header-bg: #f7f9fc;
 
   --px-bg: linear-gradient(135deg, #fbfcfd 0%, #f4f7fa 35%, #eef2f7 65%, #e9eef4 100%);
   --px-surface: rgba(13, 17, 23, 0.04);
