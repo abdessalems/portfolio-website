@@ -118,22 +118,27 @@
     transform: translateY(-1px);
   }
   .logo .brand-emblem {
-    width: 48px;
-    height: 48px;
+    /* Large enough that the boxer, the laptop and the chart inside the mark are
+       all readable — below about 60px they collapse into a green smudge. */
+    width: 68px;
+    height: 68px;
     flex: none;
-    border-radius: 13px;
-    background: linear-gradient(135deg, #34e3cf, #12a594);
-    /* The tile is teal in both themes, so the glove stays white in both. Set
-       here rather than on the SVG so the mark has one source of colour. */
-    color: #fff;
+    border-radius: 16px;
+    /* The mark carries its own dark background, so the tile only has to crop
+       it to the rounded shape and keep an edge against a light header. */
+    overflow: hidden;
+    background: #0d1117;
+    border: 1px solid var(--px-border);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 6px 16px rgba(var(--px-theme-rgb), 0.35);
   }
-  .logo .brand-emblem svg {
-    width: 30px;
-    height: 30px;
+  .logo .brand-emblem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   .logo .brand-word {
     font-family: $px-font;
@@ -148,15 +153,9 @@
   }
   @include down-sm {
     .logo .brand-emblem {
-      width: 42px;
-      height: 42px;
-    }
-    .logo .brand-emblem svg {
-      width: 26px;
-      height: 26px;
-    }
-    .logo .brand-word {
-      font-size: 22px;
+      width: 52px;
+      height: 52px;
+      border-radius: 13px;
     }
   }
   .px-btn {

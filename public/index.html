@@ -2,9 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="%PUBLIC_URL%/favicon.svg?v=3" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico?v=3" sizes="any" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.svg?v=3" />
+    <!--
+      The SA mark, at the sizes each surface asks for. The ?v= is bumped
+      whenever the icon changes: browsers cache favicons hard, and without it
+      the old one survives for weeks.
+    -->
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32.png?v=4" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/favicon-192.png?v=4" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico?v=4" sizes="any" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png?v=4" />
+    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest?v=4" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0d0f11" />
     <meta name="description" content="Abdessalem Saadaoui — Functional Analyst & Java Developer based in Brussels, Belgium. Requirements engineering, UML/BPMN, Swagger/OpenAPI, Java Spring Boot & Angular. Former professional Muay Thai & kickboxing champion." />
@@ -17,11 +24,11 @@
     <meta property="og:title" content="Abdessalem Saadaoui — Functional Analyst & Java Developer" />
     <meta property="og:description" content="Functional Analyst with 4+ years bridging business and IT. Requirements engineering, UML/BPMN, Swagger/OpenAPI, Java Spring Boot & Angular. Former professional Muay Thai & kickboxing champion." />
     <meta property="og:url" content="https://www.saadaoui.it.com" />
-    <meta property="og:image" content="https://www.saadaoui.it.com/images/home-banner.png" />
+    <meta property="og:image" content="https://www.saadaoui.it.com/images/logo-sa.png" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Abdessalem Saadaoui — Functional Analyst & Java Developer" />
     <meta name="twitter:description" content="Functional Analyst with 4+ years bridging business and IT. Former professional Muay Thai & kickboxing champion." />
-    <meta name="twitter:image" content="https://www.saadaoui.it.com/images/home-banner.png" />
+    <meta name="twitter:image" content="https://www.saadaoui.it.com/images/logo-sa.png" />
 
     <!-- Structured data for search engines (rich results for the name) -->
     <script type="application/ld+json">
