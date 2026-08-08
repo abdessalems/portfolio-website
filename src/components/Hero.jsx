@@ -53,7 +53,7 @@ export default function Hero({ data, socialData }) {
                   to={btnUrl}
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-115}
                   duration={500}
                   className="px-btn"
                 >

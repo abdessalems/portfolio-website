@@ -118,12 +118,18 @@
     transform: translateY(-1px);
   }
   .logo .brand-emblem {
-    /* Large enough that the boxer, the laptop and the chart inside the mark are
-       all readable — below about 60px they collapse into a green smudge. */
-    width: 68px;
-    height: 68px;
+    /*
+     * Large enough that the boxer, the laptop and the chart inside the mark are
+     * all readable — below about 60px they collapse into a green smudge.
+     *
+     * This also sets the height of the bar: 20px padding, the mark, 20px again.
+     * Growing it past ~80px starts covering the page rather than sitting above
+     * it, and the anchor offsets in the nav have to grow to match.
+     */
+    width: 80px;
+    height: 80px;
     flex: none;
-    border-radius: 16px;
+    border-radius: 18px;
     /* The mark carries its own dark background, so the tile only has to crop
        it to the rounded shape and keep an edge against a light header. */
     overflow: hidden;
@@ -153,9 +159,9 @@
   }
   @include down-sm {
     .logo .brand-emblem {
-      width: 52px;
-      height: 52px;
-      border-radius: 13px;
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
     }
   }
   .px-btn {

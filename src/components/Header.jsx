@@ -45,7 +45,7 @@ export default function Header() {
               to="about"
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={-115}
               duration={500}
               onClick={() => setMobileToggle(false)}
             >
@@ -57,7 +57,7 @@ export default function Header() {
               to="project"
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={-115}
               duration={500}
               onClick={() => setMobileToggle(false)}
             >
@@ -69,7 +69,7 @@ export default function Header() {
               to="services"
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={-115}
               duration={500}
               onClick={() => setMobileToggle(false)}
             >
@@ -81,7 +81,7 @@ export default function Header() {
               to="contactus"
               spy={true}
               smooth={true}
-              offset={-80}
+              offset={-115}
               duration={500}
               onClick={() => setMobileToggle(false)}
             >
@@ -101,7 +101,7 @@ export default function Header() {
             to="contactus"
             spy={true}
             smooth={true}
-            offset={-80}
+            offset={-115}
             duration={500}
             onClick={() => setMobileToggle(false)}
             className="px-btn d-none d-lg-inline-flex"

@@ -76,7 +76,7 @@ export default function About({ data }) {
                   to={btnUrl}
                   spy={true}
                   smooth={true}
-                  offset={-80}
+                  offset={-115}
                   duration={300}
                   className="px-btn"
                 >
