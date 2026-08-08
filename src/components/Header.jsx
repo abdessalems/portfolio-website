@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 import Logo from './Logo';
+import ThemeToggle from './ThemeToggle';
 
 export default function Header() {
   const [mobileToggle, setMobileToggle] = useState(false);
@@ -94,7 +95,8 @@ export default function Header() {
           </li>
         </ul>
         {/* Top Menu */}
-        <div className="d-flex">
+        <div className="d-flex align-items-center gap-2">
+          <ThemeToggle />
           <ScrollLink
             to="contactus"
             spy={true}

@@ -1,3 +1,11 @@
+/*
+ * Two themes, one set of names.
+ *
+ * The site was written dark-only, with white-alpha borders and surfaces spelled
+ * out wherever they were needed. Those are named here instead, so a light theme
+ * is a list of values rather than a hunt through five stylesheets — and so the
+ * next colour change happens in one place.
+ */
 :root {
   --bs-heading-color: var(--px-heading);
   --px-theme: #{$px-theme};
@@ -6,4 +14,46 @@
   --px-white: #{$px-white};
   --px-text: #{$px-text};
   --px-heading: #{$px-heading};
+
+  /* Page and panels */
+  --px-bg: linear-gradient(135deg, #0f1318 0%, #0c1014 35%, #090c10 65%, #07090c 100%);
+  --px-surface: rgba(255, 255, 255, 0.05);
+  --px-surface-hover: rgba(255, 255, 255, 0.1);
+
+  /* Lines */
+  --px-border: rgba(255, 255, 255, 0.15);
+  --px-border-soft: rgba(255, 255, 255, 0.1);
+  --px-border-strong: rgba(255, 255, 255, 0.2);
+
+  /* Incidental */
+  --px-placeholder: rgba(255, 255, 255, 0.5);
+  --px-track: rgba(255, 255, 255, 0.08);
+  --px-footer-text: rgba(255, 255, 255, 0.75);
+  --px-fade-bottom: #040c16;
+
+  color-scheme: dark;
+}
+
+/*
+ * Light. The alphas are lower than their dark counterparts on purpose: black at
+ * 15% over white reads far heavier than white at 15% over black.
+ */
+:root[data-theme='light'] {
+  --px-text: #566072;
+  --px-heading: #0d1117;
+
+  --px-bg: linear-gradient(135deg, #fbfcfd 0%, #f4f7fa 35%, #eef2f7 65%, #e9eef4 100%);
+  --px-surface: rgba(13, 17, 23, 0.04);
+  --px-surface-hover: rgba(13, 17, 23, 0.07);
+
+  --px-border: rgba(13, 17, 23, 0.12);
+  --px-border-soft: rgba(13, 17, 23, 0.08);
+  --px-border-strong: rgba(13, 17, 23, 0.16);
+
+  --px-placeholder: rgba(13, 17, 23, 0.45);
+  --px-track: rgba(13, 17, 23, 0.08);
+  --px-footer-text: rgba(13, 17, 23, 0.7);
+  --px-fade-bottom: #e9eef4;
+
+  color-scheme: light;
 }

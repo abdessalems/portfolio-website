@@ -8,13 +8,9 @@ body {
   --bs-body-font-size: 1rem;
   --bs-body-line-height: 1.6;
   overflow-x: hidden;
-  background: linear-gradient(
-    135deg,
-    #0f1318 0%,
-    #0c1014 35%,
-    #090c10 65%,
-    #07090c 100%
-  );
+  background: var(--px-bg);
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 a {
@@ -271,8 +267,8 @@ a {
     padding-top: 15px;
     padding-bottom: 45px;
     .r-box {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: var(--px-surface);
+      border: 1px solid var(--px-border);
       display: flex;
       flex-direction: column;
       color: var(--px-white);
@@ -435,7 +431,7 @@ a {
   border-radius: 8px;
   &:after {
     content: '';
-    background: linear-gradient(180deg, rgba(4, 12, 22, 0) 0%, #040c16 100%);
+    background: linear-gradient(180deg, rgba(4, 12, 22, 0) 0%, var(--px-fade-bottom) 100%);
     position: absolute;
     top: 0;
     left: 0;
@@ -467,7 +463,7 @@ a {
     }
     .rating-wrap {
       padding-top: 10px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-top: 1px solid var(--px-border-soft);
     }
   }
 }
@@ -579,7 +575,7 @@ a {
     display: flex;
     margin: 0 auto 30px;
     border-radius: 50%;
-    border: 8px solid rgba(255, 255, 255, 0.2);
+    border: 8px solid var(--px-border-strong);
     img {
       width: 100%;
       height: 100%;
@@ -675,31 +671,31 @@ a {
       opacity: 0.85;
     }
     .form-control {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: var(--px-surface);
+      border: 1px solid var(--px-border);
       color: var(--px-white);
       box-shadow: none;
       padding: 0.575rem 0.75rem;
       &::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: var(--px-placeholder);
       }
       &:-moz-placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: var(--px-placeholder);
         opacity: 1;
       }
       &::-moz-placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: var(--px-placeholder);
         opacity: 1;
       }
       &:-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: var(--px-placeholder);
       }
       &::-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: var(--px-placeholder);
       }
 
       &::placeholder {
-        color: rgba(255, 255, 255, 0.5);
+        color: var(--px-placeholder);
       }
     }
   }
@@ -947,7 +943,7 @@ a {
   .lang-bar {
     height: 8px;
     border-radius: 30px;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--px-track);
     overflow: hidden;
   }
   .lang-fill {
