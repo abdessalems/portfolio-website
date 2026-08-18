@@ -7,6 +7,11 @@
       "permanent": true
     },
     {
+      "source": "/FA/",
+      "destination": "/fa/",
+      "permanent": true
+    },
+    {
       "source": "/FA/:path*",
       "destination": "/fa/:path*",
       "permanent": true
