@@ -1,20 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "redirects": [
-    {
-      "source": "/FA",
-      "destination": "/fa",
-      "permanent": true
-    },
-    {
-      "source": "/FA/",
-      "destination": "/fa/",
-      "permanent": true
-    },
-    {
-      "source": "/FA/:path*",
-      "destination": "/fa/:path*",
-      "permanent": true
-    }
+  "routes": [
+    { "src": "^/FA$", "status": 308, "headers": { "Location": "/fa/" } },
+    { "src": "^/FA/(.*)$", "status": 308, "headers": { "Location": "/fa/$1" } },
+    { "src": "^/fa$", "status": 308, "headers": { "Location": "/fa/" } },
+    { "src": "^/fa/([a-z0-9-]+)$", "status": 308, "headers": { "Location": "/fa/$1/" } },
+    { "handle": "filesystem" },
+    { "src": "^/fa(/.*)?$", "status": 404, "dest": "/fa/404.html" },
+    { "src": "^/(boxing/?)?$", "dest": "/index.html" },
+    { "src": "^/.*$", "status": 404, "dest": "/404.html" }
   ]
 }

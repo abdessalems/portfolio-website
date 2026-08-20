@@ -88,6 +88,13 @@ export default function Header() {
               Contact
             </ScrollLink>
           </li>
+          {/* The workspace is a separate static app served from /fa, not a
+              route in this bundle — so it needs a real anchor, not a Link.
+              It is also the only path by which a visitor or a crawler can
+              reach it from here. */}
+          <li>
+            <a href="/fa/">Workspace</a>
+          </li>
           <li>
             <Link to="/boxing" onClick={() => setMobileToggle(false)}>
               Boxing

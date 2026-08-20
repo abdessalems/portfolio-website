@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import CustomCursor from './CustomCursor';
 import ScrollTools from './ScrollTools';
+import RouteMeta from './RouteMeta';
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -12,6 +13,7 @@ export default function Layout() {
   }, [pathname]);
   return (
     <>
+      <RouteMeta />
       <ScrollTools />
       <Header />
       <main>

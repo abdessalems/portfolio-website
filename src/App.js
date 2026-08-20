@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Boxing from './pages/Boxing';
+import NotFound from './pages/NotFound';
 import Layout from './components/Layout';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -41,6 +42,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="boxing" element={<Boxing />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
