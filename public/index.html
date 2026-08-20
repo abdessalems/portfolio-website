@@ -3,15 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <!--
-      The SA mark, at the sizes each surface asks for. The ?v= is bumped
-      whenever the icon changes: browsers cache favicons hard, and without it
-      the old one survives for weeks.
+      The SA mark, at the sizes each surface asks for.
+
+      No ?v= cache-buster any more. It was there because browsers cache favicons
+      hard — but these files are served with max-age=0, must-revalidate and an
+      ETag, so a browser revalidates on every load and picks up a new mark
+      without being tricked into it. Google keys its favicon index on the URL,
+      so every bump of ?v= was a brand-new icon it had to rediscover and
+      re-crawl. A stable URL is worth more than a cache-buster that buys us
+      nothing here.
+
+      Largest first: Google wants a square whose sides are a multiple of 48px
+      and rescales it to 48x48, so 192 is the one it should settle on.
     -->
-    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32.png?v=5" />
-    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/favicon-192.png?v=5" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico?v=5" sizes="any" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png?v=5" />
-    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest?v=5" />
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/favicon-192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32.png" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/apple-touch-icon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0d0f11" />
     <meta name="description" content="Abdessalem Saadaoui — Functional Analyst & Java Developer based in Brussels, Belgium. Requirements engineering, UML/BPMN, Swagger/OpenAPI, Java Spring Boot & Angular. Former professional Muay Thai & kickboxing champion." />
