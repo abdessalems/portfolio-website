@@ -20,9 +20,18 @@ export default function Certifications({ data }) {
                 data-aos-duration="800"
                 data-aos-delay={index * 100}
               >
-                <div className="cert-badge" aria-hidden="true">
-                  {item.code}
-                </div>
+                {/* The badge repeats the credential name printed beside it,
+                    so it is decorative to a screen reader. Dimensions are set
+                    so the card does not reflow when the image arrives. */}
+                <img
+                  className="cert-badge"
+                  src={item.badge}
+                  alt=""
+                  width="240"
+                  height="255"
+                  loading="lazy"
+                  decoding="async"
+                />
                 <div className="cert-body">
                   <h5 className="cert-name">{item.name}</h5>
                   <p className="cert-meta">

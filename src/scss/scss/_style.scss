@@ -987,19 +987,13 @@ a {
     border-color: rgba(var(--px-theme-rgb), 0.45);
     transform: translateY(-3px);
   }
+  /* Oracle issues the badge on a transparent ground, so it needs no plate
+     behind it and reads correctly in both themes. */
   .cert-badge {
     flex: 0 0 auto;
-    width: 58px;
-    height: 58px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    color: var(--px-theme);
-    background: rgba(var(--px-theme-rgb), 0.12);
-    border: 1px solid rgba(var(--px-theme-rgb), 0.3);
+    align-self: flex-start;
+    width: 92px;
+    height: auto;
   }
   .cert-name {
     margin: 0 0 6px;

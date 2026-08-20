@@ -376,20 +376,20 @@
     },
     "list": [
       {
-        "code": "OCP",
         "name": "Oracle Certified Professional: Java SE 21 Developer",
         "issuer": "Oracle",
         "date": "August 2026",
         "note": "Modern Java: records, sealed types, pattern matching, virtual threads, the module system and the streams API.",
-        "verifyUrl": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=BF4852FC0988BA16881CB36ED0A3BEC760CEA8115790F352900CAB3386049B60"
+        "verifyUrl": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=BF4852FC0988BA16881CB36ED0A3BEC760CEA8115790F352900CAB3386049B60",
+        "badge": "/images/certs/oracle-jse21-ocp.png"
       },
       {
-        "code": "OCA",
         "name": "Oracle Certified Associate, Java SE 8 Programmer",
         "issuer": "Oracle",
         "date": "March 2023",
         "note": "Core Java: the type system, object-oriented design, collections, exception handling and lambda expressions.",
-        "verifyUrl": ""
+        "verifyUrl": "",
+        "badge": "/images/certs/oracle-jse8-oca.png"
       }
     ]
   },
