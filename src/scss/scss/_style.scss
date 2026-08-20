@@ -972,3 +972,74 @@ a {
     border: 1px solid rgba(239, 68, 68, 0.3);
   }
 }
+
+/* Certifications */
+.cert-item {
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  padding: 26px;
+  border-radius: 12px;
+  background: var(--px-surface);
+  border: 1px solid var(--px-border);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+  &:hover {
+    border-color: rgba(var(--px-theme-rgb), 0.45);
+    transform: translateY(-3px);
+  }
+  .cert-badge {
+    flex: 0 0 auto;
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--px-theme);
+    background: rgba(var(--px-theme-rgb), 0.12);
+    border: 1px solid rgba(var(--px-theme-rgb), 0.3);
+  }
+  .cert-name {
+    margin: 0 0 6px;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--px-heading);
+  }
+  .cert-meta {
+    margin: 0 0 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--px-theme);
+  }
+  .cert-note {
+    margin: 0 0 14px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--px-text);
+  }
+  .cert-verify {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--px-heading);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(var(--px-theme-rgb), 0.5);
+    padding-bottom: 2px;
+    transition: color 0.2s ease;
+    &:hover {
+      color: var(--px-theme);
+    }
+  }
+  /* On a narrow screen the badge and the text stop fitting side by side long
+     before the card does, so the card stacks rather than squeezing the title
+     into a two-word column. */
+  @media (max-width: 575px) {
+    flex-direction: column;
+    gap: 16px;
+    padding: 22px;
+  }
+}
