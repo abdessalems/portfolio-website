@@ -34,7 +34,7 @@
     <meta property="og:site_name" content="Abdessalem Saadaoui" />
     <meta property="og:title" content="Abdessalem Saadaoui — Functional Analyst & Java Developer" />
     <meta property="og:description" content="Functional Analyst with 4+ years bridging business and IT. Requirements engineering, UML/BPMN, Swagger/OpenAPI, Java Spring Boot & Angular. Former professional Muay Thai & kickboxing champion." />
-    <meta property="og:url" content="https://www.saadaoui.it.com" />
+    <meta property="og:url" content="https://www.saadaoui.it.com/" />
     <meta property="og:image" content="https://www.saadaoui.it.com/images/og-default.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -49,40 +49,69 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://www.saadaoui.it.com/#person",
-        "name": "Abdessalem Saadaoui",
-        "jobTitle": "Functional Analyst & Java Developer",
-        "url": "https://www.saadaoui.it.com",
-        "image": "https://www.saadaoui.it.com/images/home-banner.png",
-        "email": "mailto:abdessalemsaa@gmail.com",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Brussels",
-          "addressCountry": "BE"
-        },
-        "knowsLanguage": ["Arabic", "English", "French", "Dutch"],
-        "sameAs": [
-          "https://www.linkedin.com/in/saadaoui-abdessalem-10bb7018a",
-          "https://github.com/abdessalems"
-        ],
-        "hasCredential": [
+        "@graph": [
           {
-            "@type": "EducationalOccupationalCredential",
-            "credentialCategory": "certification",
-            "name": "Oracle Certified Professional: Java SE 21 Developer",
-            "image": "https://www.saadaoui.it.com/images/certs/oracle-jse21-ocp.png",
-            "dateCreated": "2026-08-18",
-            "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=BF4852FC0988BA16881CB36ED0A3BEC760CEA8115790F352900CAB3386049B60",
-            "recognizedBy": { "@type": "Organization", "name": "Oracle", "url": "https://www.oracle.com" }
+            "@type": "WebSite",
+            "@id": "https://www.saadaoui.it.com/#website",
+            "url": "https://www.saadaoui.it.com/",
+            "name": "Abdessalem Saadaoui",
+            "alternateName": "Saadaoui Abdessalem",
+            "description": "Functional Analyst and Java developer in Brussels: requirements engineering, UML/BPMN, Swagger/OpenAPI, Java Spring Boot.",
+            "inLanguage": "en",
+            "publisher": {
+              "@id": "https://www.saadaoui.it.com/#person"
+            }
           },
           {
-            "@type": "EducationalOccupationalCredential",
-            "credentialCategory": "certification",
-            "name": "Oracle Certified Associate, Java SE 8 Programmer",
-            "image": "https://www.saadaoui.it.com/images/certs/oracle-jse8-oca.png",
-            "dateCreated": "2023-03",
-            "recognizedBy": { "@type": "Organization", "name": "Oracle", "url": "https://www.oracle.com" }
+            "@type": "Person",
+            "@id": "https://www.saadaoui.it.com/#person",
+            "name": "Abdessalem Saadaoui",
+            "jobTitle": "Functional Analyst & Java Developer",
+            "url": "https://www.saadaoui.it.com/",
+            "image": "https://www.saadaoui.it.com/images/home-banner.png",
+            "email": "mailto:abdessalemsaa@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Brussels",
+              "addressCountry": "BE"
+            },
+            "knowsLanguage": [
+              "Arabic",
+              "English",
+              "French",
+              "Dutch"
+            ],
+            "sameAs": [
+              "https://www.linkedin.com/in/saadaoui-abdessalem-10bb7018a",
+              "https://github.com/abdessalems"
+            ],
+            "hasCredential": [
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "certification",
+                "name": "Oracle Certified Professional: Java SE 21 Developer",
+                "image": "https://www.saadaoui.it.com/images/certs/oracle-jse21-ocp.png",
+                "dateCreated": "2026-08-18",
+                "url": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=BF4852FC0988BA16881CB36ED0A3BEC760CEA8115790F352900CAB3386049B60",
+                "recognizedBy": {
+                  "@type": "Organization",
+                  "name": "Oracle",
+                  "url": "https://www.oracle.com"
+                }
+              },
+              {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "certification",
+                "name": "Oracle Certified Associate, Java SE 8 Programmer",
+                "image": "https://www.saadaoui.it.com/images/certs/oracle-jse8-oca.png",
+                "dateCreated": "2023-03",
+                "recognizedBy": {
+                  "@type": "Organization",
+                  "name": "Oracle",
+                  "url": "https://www.oracle.com"
+                }
+              }
+            ]
           }
         ]
       }
