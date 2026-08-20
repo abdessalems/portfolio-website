@@ -29,11 +29,22 @@ export default function Hero({ data, socialData }) {
                 data-aos-duration="1200"
                 data-aos-delay="200"
               >
-                <TypeAnimation
-                  sequence={typingText}
-                  speed={0}
-                  repeat={Infinity}
-                />
+                {/* A crawler renders the page and reads whatever is on screen at
+                    that instant, and at that instant the animation is part way
+                    through a word — which is how "I'm a Functi" ended up as the
+                    headline in a Google result. The finished sentence is stated
+                    here for anything reading the DOM, and the animation is marked
+                    decorative so it is not announced twice to a screen reader. */}
+                <span className="visually-hidden">
+                  I'm a Functional Analyst and Java Developer
+                </span>
+                <span aria-hidden="true">
+                  <TypeAnimation
+                    sequence={typingText}
+                    speed={0}
+                    repeat={Infinity}
+                  />
+                </span>
               </h2>
               <p
                 className="text"
