@@ -1,0 +1,20 @@
+{
+  "routes": {
+    "/": {
+      "title": "Abdessalem Saadaoui — Functional Analyst & Java Developer",
+      "description": "Functional Analyst in Brussels with 4+ years bridging business and IT: requirements engineering, UML/BPMN process modelling, Swagger/OpenAPI contracts, Java Spring Boot and Angular.",
+      "image": "https://www.saadaoui.it.com/images/og-default.png"
+    },
+    "/boxing": {
+      "title": "Muay Thai & Kickboxing Career — Abdessalem Saadaoui",
+      "description": "WFM World Champion (Türkiye, 2017), ISKA African Titleholder (2016) and 5× Tunisian National Champion: 25 professional fights across Thailand, Malaysia, Côte d'Ivoire and the Gulf.",
+      "image": "https://www.saadaoui.it.com/images/og-default.png"
+    }
+  },
+  "notFound": {
+    "title": "Page not found — Abdessalem Saadaoui",
+    "description": "This page does not exist. Head back to the homepage to keep looking.",
+    "image": "https://www.saadaoui.it.com/images/og-default.png",
+    "noindex": true
+  }
+}

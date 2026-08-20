@@ -1,33 +1,19 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import RouteMetaData from '../data/RouteMetaData.json';
 
 const SITE = 'https://www.saadaoui.it.com';
 
 /*
- * The site is one HTML file serving several routes, so anything a crawler
- * reads out of <head> is whatever index.html shipped with — the same title,
- * the same description and no canonical, on every URL. Googlebot renders the
- * page before it indexes it, so setting the head per route here is what gives
- * each route its own entry in search results instead of a duplicate of Home.
+ * Keeps the head correct while the visitor moves between routes.
+ *
+ * Each route is also served its own prerendered HTML, so a crawler already
+ * receives the right tags — but that file is only fetched on a full page load.
+ * A client-side navigation from / to /boxing changes no HTML, so without this
+ * the address bar would say /boxing while the head still described the
+ * homepage. Both read the same JSON, so they cannot drift apart.
  */
-const ROUTES = {
-  '/': {
-    title: 'Abdessalem Saadaoui — Functional Analyst & Java Developer',
-    description:
-      'Functional Analyst in Brussels with 4+ years bridging business and IT: requirements engineering, UML/BPMN process modelling, Swagger/OpenAPI contracts, Java Spring Boot and Angular.',
-  },
-  '/boxing': {
-    title: 'Muay Thai & Kickboxing Career — Abdessalem Saadaoui',
-    description:
-      'WFM World Champion (Türkiye, 2017), ISKA African Titleholder (2016) and 5× Tunisian National Champion: 25 professional fights across Thailand, Malaysia, Côte d’Ivoire and the Gulf.',
-  },
-};
-
-const NOT_FOUND = {
-  title: 'Page not found — Abdessalem Saadaoui',
-  description: 'This page does not exist. Head back to the homepage to keep looking.',
-  noindex: true,
-};
+const { routes: ROUTES, notFound: NOT_FOUND } = RouteMetaData;
 
 /** Create the tag if it is missing, then set the attribute we care about. */
 function setTag(selector, create, attribute, value) {
