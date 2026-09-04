@@ -589,37 +589,45 @@
       {
         "youtubeId": "f9p1qtcsKY0",
         "title": "KO in Turkey",
-        "vertical": true
+        "vertical": true,
+        "poster": "/images/boxe/video/f9p1qtcsKY0.webp"
       },
       {
         "youtubeId": "vr1vbRjzvXQ",
-        "title": "Kard Chuek — My Best Fight"
+        "title": "Kard Chuek — My Best Fight",
+        "poster": "/images/boxe/video/vr1vbRjzvXQ.webp"
       },
       {
         "youtubeId": "NJbuLEr02kw",
         "title": "Muay Thai — Bangla Stadium, Phuket",
-        "start": 30
+        "start": 30,
+        "poster": "/images/boxe/video/NJbuLEr02kw.webp"
       },
       {
         "youtubeId": "ddRRAU2yTh8",
-        "title": "Fight — Bangla Stadium, Phuket"
+        "title": "Fight — Bangla Stadium, Phuket",
+        "poster": "/images/boxe/video/ddRRAU2yTh8.webp"
       },
       {
         "youtubeId": "nqeAhTxsSDY",
-        "title": "Fight in Thailand"
+        "title": "Fight in Thailand",
+        "poster": "/images/boxe/video/nqeAhTxsSDY.webp"
       },
       {
         "youtubeId": "rARXl3k4Qe8",
-        "title": "Honoured by the Minister of Youth, Thailand"
+        "title": "Honoured by the Minister of Youth, Thailand",
+        "poster": "/images/boxe/video/rARXl3k4Qe8.webp"
       },
       {
         "youtubeId": "G2Vv_SSFkBk",
-        "title": "TV appearance — Abidjan"
+        "title": "TV appearance — Abidjan",
+        "poster": "/images/boxe/video/G2Vv_SSFkBk.webp"
       },
       {
         "youtubeId": "ttUgBEnARug",
         "title": "Functional training — Muay Thai & kickboxing",
-        "start": 2
+        "start": 2,
+        "poster": "/images/boxe/video/ttUgBEnARug.webp"
       }
     ]
   }

@@ -563,18 +563,30 @@
   }
 }
 
-/* Equal cards in even rows, however long the titles run. */
+/* Equal cards, and a last row that centres rather than stranding one card on
+ * the left. Seven videos into three columns leaves an orphan, and in a grid
+ * that orphan sits alone against the left margin looking like a mistake. */
 .video-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 32px 24px;
 
+  .video-card {
+    flex: 1 1 100%;
+  }
+
   @media (min-width: 576px) {
-    grid-template-columns: repeat(2, 1fr);
+    .video-card {
+      // Two per row: half the width, less half the gap.
+      flex: 0 1 calc(50% - 12px);
+    }
   }
 
   @media (min-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
+    .video-card {
+      flex: 0 1 calc(33.333% - 16px);
+    }
   }
 }
 

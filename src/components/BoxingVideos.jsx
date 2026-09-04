@@ -16,17 +16,8 @@ import SectionHeading from './SectionHeading';
  * requested from Google until the visitor has chosen to watch something.
  */
 
-/** YouTube publishes no maxres frame for some uploads; hq always exists. */
-function posterSources(youtubeId) {
-  return {
-    max: `https://i.ytimg.com/vi/${youtubeId}/maxresdefault.jpg`,
-    hq: `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`,
-  };
-}
-
 function VideoCard({ item, featured }) {
   const [playing, setPlaying] = useState(false);
-  const poster = posterSources(item.youtubeId);
 
   const play = useCallback(() => setPlaying(true), []);
 
@@ -61,17 +52,15 @@ function VideoCard({ item, featured }) {
             onClick={play}
             aria-label={`Play ${item.title}`}
           >
+            {/* Resolved and stored by scripts/fetch-video-posters.mjs, so
+                the right frame is chosen once rather than guessed at in the
+                browser, where YouTube's grey placeholder loads successfully
+                and no error handler ever runs. */}
             <img
-              src={poster.max}
+              src={item.poster}
               alt=""
-              loading="lazy"
+              loading={featured ? 'eager' : 'lazy'}
               decoding="async"
-              onError={(e) => {
-                // Fall back once, then stop: a second failure would loop.
-                if (e.currentTarget.dataset.fallback) return;
-                e.currentTarget.dataset.fallback = '1';
-                e.currentTarget.src = poster.hq;
-              }}
             />
             <span className="video-play" aria-hidden="true">
               <Icon icon="bi:play-fill" />
