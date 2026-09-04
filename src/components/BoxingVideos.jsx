@@ -87,8 +87,6 @@ export default function BoxingVideos({ data }) {
     return null;
   }
 
-  const [lead, ...rest] = available;
-
   return (
     <section className="section gray-bg" id="boxing-videos">
       <div className="container">
@@ -97,19 +95,19 @@ export default function BoxingVideos({ data }) {
           title={sectionHeading.title}
         />
 
-        {/* The knockout leads on its own row: it is the one video someone
-            watches if they watch only one, and a vertical clip stranded in a
-            grid of landscape cards reads as a mistake rather than a choice. */}
-        <div className="video-lead">
-          <VideoCard item={lead} featured />
-        </div>
+        {/*
+          One grid, every card the same. The knockout used to sit on its own
+          row above this, and because it is a vertical clip it was three times
+          the height of everything under it - the section read as two
+          unrelated blocks rather than one wall of videos. It still comes
+          first and still carries the badge; it is simply the first card.
 
-        {/* A grid rather than Bootstrap columns: every card is the same width
-            and the same height, so the frames line up across rows however
-            long a title happens to be. */}
+          Eight cards divide evenly into four columns and into two, so no row
+          is ever left short.
+        */}
         <div className="video-grid">
-          {rest.map((item) => (
-            <VideoCard key={item.youtubeId} item={item} />
+          {available.map((item, index) => (
+            <VideoCard key={item.youtubeId} item={item} featured={index === 0} />
           ))}
         </div>
       </div>

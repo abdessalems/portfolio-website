@@ -1,17 +1,23 @@
 /**
- * Download a poster frame for every boxing video and serve it ourselves.
+ * Build one poster frame per boxing video, all the same shape.
  *
  *   node scripts/fetch-video-posters.mjs
  *
- * Three of the eight videos have no maxresdefault frame, and YouTube does not
- * fail that request - it answers with a grey "no thumbnail" placeholder, which
- * loads perfectly well, so an onError fallback in the browser never fires and
- * three cards sat there grey. Choosing the right frame is decided here, once,
- * by measuring what actually comes back: the placeholder is 120x90, so
- * anything that small means "try the next size down".
+ * Two problems this solves, both decided here rather than in the browser.
  *
- * Hosting the result ourselves also means the page makes no request to Google
- * until a visitor presses play.
+ * Choosing the frame. Three of the eight videos have no maxresdefault, and
+ * YouTube does not fail that request - it answers with a grey placeholder,
+ * which loads perfectly well, so a fallback waiting on an error never runs.
+ * The placeholder is 120x90, so anything that small means "try the next size
+ * down".
+ *
+ * Making them match. Three of the videos are vertical, and YouTube pads them
+ * into a 4:3 frame with black bars baked into the picture. Dropped into a 16:9
+ * card those bars survive any amount of cropping, so the row read as broken.
+ * Each poster is rebuilt at 16:9: the real picture is trimmed out of its
+ * padding, then laid over a blurred, enlarged copy of itself. Every card ends
+ * up the same shape with no bars anywhere - what YouTube and Instagram both do
+ * with material that does not fit their frame.
  */
 import sharp from "sharp";
 import fs from "node:fs";
@@ -24,42 +30,91 @@ const DATA = path.join(ROOT, "src/data/BoxingPageData.json");
 /** Best first. hqdefault always exists for a real video. */
 const VARIANTS = ["maxresdefault", "sddefault", "hqdefault"];
 
+const CARD = { width: 1280, height: 720 };
+
+/**
+ * A dropped connection part-way through should not lose the whole run and
+ * leave half the posters at their old size, which is what happened once.
+ */
+async function get(url, attempts = 4) {
+  for (let attempt = 1; attempt <= attempts; attempt++) {
+    try {
+      return await fetch(url);
+    } catch (error) {
+      if (attempt === attempts) throw error;
+      await new Promise((resolve) => setTimeout(resolve, attempt * 1500));
+    }
+  }
+}
+
 fs.mkdirSync(OUT, { recursive: true });
 
 const data = JSON.parse(fs.readFileSync(DATA, "utf8"));
 let total = 0;
 
 for (const item of data.videos.items) {
-  let chosen = null;
+  let source = null;
 
   for (const variant of VARIANTS) {
-    const response = await fetch(`https://i.ytimg.com/vi/${item.youtubeId}/${variant}.jpg`);
+    const response = await get(`https://i.ytimg.com/vi/${item.youtubeId}/${variant}.jpg`);
     if (!response.ok) continue;
 
     const buffer = Buffer.from(await response.arrayBuffer());
-    const { width, height } = await sharp(buffer).metadata();
+    const { width } = await sharp(buffer).metadata();
+    if (width <= 120) continue; // the grey placeholder
 
-    // The grey placeholder YouTube returns instead of a real frame.
-    if (width <= 120) continue;
-
-    chosen = { variant, buffer, width, height };
+    source = { variant, buffer };
     break;
   }
 
-  if (!chosen) {
+  if (!source) {
     console.log(`  ! no usable frame for ${item.youtubeId} (${item.title})`);
     continue;
   }
 
-  const file = path.join(OUT, `${item.youtubeId}.webp`);
-  await sharp(chosen.buffer).webp({ quality: 82 }).toFile(file);
+  // Strip whatever padding YouTube added, so we are working with the picture.
+  let content = source.buffer;
+  let meta = await sharp(content).metadata();
+  try {
+    const trimmed = await sharp(content).trim({ threshold: 16 }).toBuffer({ resolveWithObject: true });
+    // Only accept a trim that actually found bars rather than eating the image.
+    if (trimmed.info.width > 100 && trimmed.info.height > 100) {
+      content = trimmed.data;
+      meta = trimmed.info;
+    }
+  } catch {
+    /* nothing to trim */
+  }
+
+  const portrait = meta.height > meta.width;
+
+  // The blurred backdrop: the same picture, filling the card, well out of
+  // focus so it reads as a wash rather than a second image.
+  const backdrop = await sharp(content)
+    .resize({ ...CARD, fit: "cover" })
+    .blur(28)
+    .modulate({ brightness: 0.55 })
+    .toBuffer();
+
+  // The picture itself, fitted inside the card without cropping.
+  const foreground = await sharp(content)
+    .resize({ ...CARD, fit: "inside", withoutEnlargement: false })
+    .toBuffer();
+
+  await sharp(backdrop)
+    .composite([{ input: foreground, gravity: "center" }])
+    .webp({ quality: 82 })
+    .toFile(path.join(OUT, `${item.youtubeId}.webp`));
+
   item.poster = `/images/boxe/video/${item.youtubeId}.webp`;
-  total += fs.statSync(file).size;
+  total += fs.statSync(path.join(OUT, `${item.youtubeId}.webp`)).size;
 
   console.log(
-    `  ${item.youtubeId}  ${chosen.variant.padEnd(14)} ${chosen.width}x${chosen.height}  ${item.title}`,
+    `  ${item.youtubeId}  ${source.variant.padEnd(14)} content ${String(meta.width).padStart(4)}x${String(
+      meta.height,
+    ).padEnd(4)} ${portrait ? "portrait -> blurred fill" : "landscape"}   ${item.title}`,
   );
 }
 
 fs.writeFileSync(DATA, JSON.stringify(data, null, 2) + "\n", "utf8");
-console.log(`  posters: ${(total / 1024).toFixed(0)} KB in total, served from this domain`);
+console.log(`  ${data.videos.items.length} posters, all 16:9, ${(total / 1024).toFixed(0)} KB in total`);
