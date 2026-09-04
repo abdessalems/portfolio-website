@@ -128,8 +128,9 @@ export default function BoxingGallery({ data }) {
           title={sectionHeading.title}
         />
 
-        {/* Columns, not a rigid grid: portraits stay portrait. */}
-        <div className="gallery-masonry">
+        {/* Even rows of identical tiles; the uncropped photograph is one
+            click away in the lightbox. */}
+        <div className="gallery-grid">
           {visible?.map((photo, i) => (
             <button
               type="button"

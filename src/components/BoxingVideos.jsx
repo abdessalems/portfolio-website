@@ -115,14 +115,12 @@ export default function BoxingVideos({ data }) {
           <VideoCard item={lead} featured />
         </div>
 
-        <div className="row gy-4">
+        {/* A grid rather than Bootstrap columns: every card is the same width
+            and the same height, so the frames line up across rows however
+            long a title happens to be. */}
+        <div className="video-grid">
           {rest.map((item) => (
-            <div
-              className={item.vertical ? 'col-sm-6 col-lg-4' : 'col-md-6'}
-              key={item.youtubeId}
-            >
-              <VideoCard item={item} />
-            </div>
+            <VideoCard key={item.youtubeId} item={item} />
           ))}
         </div>
       </div>
