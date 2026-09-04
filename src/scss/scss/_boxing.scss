@@ -592,17 +592,10 @@
 
 /* The knockout sits on its own row above the grid, centred. */
 .video-lead {
-  margin-bottom: 48px;
-  display: flex;
-  justify-content: center;
-
-  .video-card {
-    width: 100%;
-    max-width: 380px;
-  }
+  margin-bottom: 40px;
 
   .video-card.vertical .video-frame {
-    max-width: none;
+    max-width: 360px;
   }
 
   .video-title {
