@@ -23,6 +23,7 @@ export default function BoxingGallery({ data }) {
 
   const isOpen = index !== null;
   const visible = showAll ? photos : photos?.slice(0, INITIAL_COUNT);
+  const hiddenCount = showAll ? 0 : Math.max(0, (photos?.length ?? 0) - INITIAL_COUNT);
 
   const dialogRef = useRef(null);
   const openerRef = useRef(null);
@@ -131,15 +132,28 @@ export default function BoxingGallery({ data }) {
         {/* Even rows of identical tiles; the uncropped photograph is one
             click away in the lightbox. */}
         <div className="gallery-grid">
-          {visible?.map((photo, i) => (
+          {visible?.map((photo, i) => {
+            /*
+              The last tile of the collapsed grid carries the count of what is
+              hidden and opens the rest. A plain button under the grid asked
+              people to believe there was more; showing them thirty faces
+              behind a "+30" does not have to ask.
+            */
+            const isMoreTile = hiddenCount > 0 && i === visible.length - 1;
+
+            return (
             <button
               type="button"
-              className="gallery-item"
+              className={`gallery-item${isMoreTile ? ' is-more' : ''}`}
               key={photo.src}
-              aria-label={photo.caption || `Open photo ${i + 1} of ${photos.length}`}
+              aria-label={
+                isMoreTile
+                  ? `Show all ${photos.length} photos`
+                  : photo.caption || `Open photo ${i + 1} of ${photos.length}`
+              }
               data-aos="fade-up"
               data-aos-duration="700"
-              onClick={(event) => open(i, event)}
+              onClick={(event) => (isMoreTile ? setShowAll(true) : open(i, event))}
             >
               <picture>
                 {photo.thumb && <source srcSet={photo.thumb} type="image/webp" />}
@@ -155,24 +169,35 @@ export default function BoxingGallery({ data }) {
                   }}
                 />
               </picture>
-              <span className="gallery-zoom" aria-hidden="true">
-                <Icon icon="bi:plus" />
-              </span>
-              {photo.caption && (
-                <span className="gallery-caption">{photo.caption}</span>
+              {isMoreTile ? (
+                <span className="gallery-more-overlay" aria-hidden="true">
+                  <span className="gallery-more-count">+{hiddenCount}</span>
+                  <span className="gallery-more-label">more photos</span>
+                </span>
+              ) : (
+                <>
+                  <span className="gallery-zoom" aria-hidden="true">
+                    <Icon icon="bi:plus" />
+                  </span>
+                  {photo.caption && (
+                    <span className="gallery-caption">{photo.caption}</span>
+                  )}
+                </>
               )}
             </button>
-          ))}
+            );
+          })}
         </div>
 
         {photos?.length > INITIAL_COUNT && (
           <div className="gallery-more">
             <button
               type="button"
-              className="px-btn"
+              className="gallery-more-btn"
               onClick={() => setShowAll((s) => !s)}
             >
-              {showAll ? 'Show less' : `Show all ${photos.length} photos`}
+              <Icon icon={showAll ? 'bi:chevron-up' : 'bi:images'} />
+              {showAll ? 'Show fewer photos' : `See all ${photos.length} photos`}
             </button>
           </div>
         )}

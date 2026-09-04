@@ -334,9 +334,79 @@
   }
 }
 
+/* The last tile of the collapsed grid: the photograph, dimmed, with the count
+ * of everything still hidden behind it. */
+.gallery-more-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.62);
+  backdrop-filter: blur(2px);
+  transition: background 0.3s ease;
+
+  .gallery-more-count {
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .gallery-more-label {
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+}
+
+.gallery-item.is-more:hover .gallery-more-overlay,
+.gallery-item.is-more:focus-visible .gallery-more-overlay {
+  background: rgba(var(--px-theme-rgb), 0.72);
+}
+
 .gallery-more {
   text-align: center;
   margin-top: 44px;
+}
+
+/* A button that looks worth pressing. The plain one asked people to believe
+ * there were more photographs; this one says how many and shows a hint of
+ * them in the tile above. */
+.gallery-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 30px;
+  border: 1px solid rgba(var(--px-theme-rgb), 0.35);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--px-theme);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease,
+    transform 0.2s ease;
+
+  svg {
+    font-size: 18px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    background: var(--px-theme);
+    border-color: var(--px-theme);
+    color: #fff;
+    transform: translateY(-2px);
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba(var(--px-theme-rgb), 0.4);
+    outline-offset: 3px;
+  }
 }
 
 /* Lightbox */
