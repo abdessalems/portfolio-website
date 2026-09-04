@@ -239,13 +239,42 @@
   }
 }
 
-/* Gallery */
+/* Gallery
+ *
+ * Columns rather than a row grid, so each photograph keeps its own shape.
+ * Every one used to be cropped to 4:3, which cut the subject out of the
+ * portrait shots - a head above the frame, gloves below it.
+ */
+.gallery-masonry {
+  column-count: 2;
+  column-gap: 24px;
+
+  @media (min-width: 768px) {
+    column-count: 3;
+  }
+
+  @media (min-width: 1200px) {
+    column-count: 4;
+  }
+
+  .gallery-item {
+    // A column child must never be split across two columns.
+    break-inside: avoid;
+    margin-bottom: 24px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    border: 0;
+    background: none;
+    text-align: left;
+  }
+}
+
 .gallery-item {
   position: relative;
   border-radius: 14px;
   overflow: hidden;
   cursor: pointer;
-  aspect-ratio: 4 / 3;
   outline: none;
 
   &:focus-visible {
@@ -253,9 +282,11 @@
   }
 
   img {
+    // height:auto against the intrinsic width/height attributes keeps the real
+    // ratio and still reserves the box before the file arrives.
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    display: block;
     transition: transform 0.5s ease;
   }
 
@@ -426,6 +457,63 @@
     }
   }
 
+  /* The poster frame that stands in for the player until it is asked for. */
+  .video-facade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    background: #000;
+    cursor: pointer;
+    display: block;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      // YouTube pads a 4:3 poster onto a 16:9 canvas for some uploads; a
+      // gentle scale hides the bars without cropping anything that matters.
+      transition: transform 0.5s ease, opacity 0.3s ease;
+      opacity: 0.92;
+    }
+
+    .video-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--px-theme);
+      color: #fff;
+      font-size: 32px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      transition: transform 0.3s ease;
+    }
+
+    &:hover,
+    &:focus-visible {
+      img {
+        transform: scale(1.05);
+        opacity: 1;
+      }
+      .video-play {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+
+    &:focus-visible {
+      outline: 3px solid rgba(var(--px-theme-rgb), 0.8);
+      outline-offset: 3px;
+    }
+  }
+
   .video-title {
     margin-top: 16px;
     display: flex;
@@ -436,11 +524,36 @@
     }
   }
 
+  .video-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: var(--px-theme);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
   &.vertical .video-frame {
     padding-bottom: 0;
     height: auto;
     aspect-ratio: 9 / 16;
     max-width: 320px;
     margin: 0 auto;
+  }
+}
+
+/* The lead video sits on its own row above the grid. */
+.video-lead {
+  margin-bottom: 40px;
+
+  .video-card.vertical .video-frame {
+    max-width: 360px;
+  }
+
+  .video-title {
+    justify-content: center;
   }
 }
