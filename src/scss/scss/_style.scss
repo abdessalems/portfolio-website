@@ -62,9 +62,9 @@ a {
     height: 10px;
     background: transparent;
     border: 1px solid var(--px-white);
-    transition: ease all 0.55s;
-    border-radius: 8px;
-    margin: 0 4px;
+    transition: ease all var(--t-slow);
+    border-radius: var(--r-sm);
+    margin: 0 var(--sp-1);
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -110,7 +110,7 @@ a {
     justify-content: center;
     border-radius: 50%;
     pointer-events: auto;
-    transition: ease all 0.35s;
+    transition: ease all var(--t-base);
 
     &:hover {
       background: var(--px-theme-text);
@@ -152,59 +152,54 @@ a {
       padding-bottom: 50px;
     }
     h6 {
-      margin: 0 0 10px;
+      margin: 0 0 var(--sp-25);
       span {
         background: rgba(var(--px-theme-rgb), 0.2);
-        border-radius: 4px;
-        padding: 5px 12px;
+        border-radius: var(--r-xs);
+        padding: var(--sp-1) var(--sp-3);
         display: inline-block;
         color: var(--px-strong);
         font-weight: 400;
-        font-size: 16px;
+        font-size: var(--fs-md);
         line-height: 20px;
         letter-spacing: 4px;
         text-transform: uppercase;
       }
     }
+    /*
+     * No size overrides at the breakpoints any more: --fs-hero is fluid, and a
+     * fixed size inside a media query would freeze it at that width, which is
+     * the jumpiness this is meant to remove. Only the margins still change.
+     */
     h1 {
       color: var(--px-strong);
       font-weight: 700;
-      font-size: 70px;
+      font-size: var(--fs-hero);
+      line-height: 1.04;
+      letter-spacing: -0.02em;
       text-transform: uppercase;
-      @include down-lg {
-        font-size: 45px;
-      }
-      @include down-sm {
-        font-size: 38px;
-      }
     }
     h2 {
       color: var(--px-theme);
       font-weight: 700;
-      font-size: 70px;
+      font-size: var(--fs-hero);
+      line-height: 1.04;
+      letter-spacing: -0.02em;
       text-transform: uppercase;
-      margin: 0 0 30px;
+      margin: 0 0 var(--sp-8);
       @include down-lg {
-        font-size: 45px;
-        margin: 0 0 20px;
+        margin: 0 0 var(--sp-5);
       }
       @include down-sm {
-        font-size: 38px;
-        margin: 0 0 10px;
+        margin: 0 0 var(--sp-3);
       }
     }
     .text {
       font-weight: 400;
-      font-size: 20px;
-      line-height: 150%;
+      font-size: var(--fs-lg);
+      line-height: 1.6;
       letter-spacing: 0.01em;
       color: var(--px-strong);
-      @include down-lg {
-        font-size: 18px;
-      }
-      @include down-sm {
-        font-size: 16px;
-      }
     }
     .btn-bar {
       padding-top: 15px;
@@ -272,13 +267,13 @@ a {
       display: flex;
       flex-direction: column;
       color: var(--px-strong);
-      border-radius: 8px;
-      padding: 20px;
+      border-radius: var(--r-sm);
+      padding: var(--sp-5);
       h3 {
-        margin: 0 0 8px;
+        margin: 0 0 var(--sp-2);
       }
       label {
-        font-size: 13px;
+        font-size: var(--fs-sm);
         line-height: 130%;
       }
       + .r-box {
@@ -288,17 +283,17 @@ a {
     .r-box-link {
       text-decoration: none;
       border-color: rgba(var(--px-theme-rgb), 0.4);
-      transition: all 0.3s ease;
+      transition: all var(--t-base) ease;
       .r-box-cta {
         margin-top: 8px;
-        font-size: 12px;
+        font-size: var(--fs-xs);
         font-weight: 600;
         color: var(--px-theme);
         display: inline-flex;
         align-items: center;
-        gap: 5px;
+        gap: var(--sp-1);
         svg {
-          transition: transform 0.3s ease;
+          transition: transform var(--t-base) ease;
         }
       }
       &:hover {
@@ -323,19 +318,19 @@ a {
   }
 }
 .project-box {
-  padding: 14px;
-  border-radius: 10px;
+  padding: var(--sp-35);
+  border-radius: var(--r-sm);
   background: var(--px-white);
   .project-media {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: var(--r-sm);
     img {
       width: 100%;
       height: 220px;
       object-fit: cover;
       display: block;
-      transition: ease all 0.35s;
+      transition: ease all var(--t-base);
       transform: scale(1);
     }
     .gallery-link {
@@ -350,7 +345,7 @@ a {
       background: rgba(0, 0, 0, 0.5);
       opacity: 0;
       cursor: pointer;
-      transition: ease all 0.35s;
+      transition: ease all var(--t-base);
       i {
         width: 50px;
         height: 50px;
@@ -359,7 +354,7 @@ a {
         justify-content: center;
         background: var(--px-white);
         color: var(--px-black);
-        font-size: 35px;
+        font-size: var(--fs-2xl);
         border-radius: 50%;
       }
     }
@@ -382,14 +377,14 @@ a {
     h5 {
       font-weight: 700;
       color: var(--px-black);
-      font-size: 16px;
-      margin: 0 0 5px;
+      font-size: var(--fs-md);
+      margin: 0 0 var(--sp-1);
     }
     .text {
       flex: 0 0 calc(100% - 50px);
       padding-right: 10px;
       span {
-        font-size: 14px;
+        font-size: var(--fs-base);
       }
     }
     .link {
@@ -402,11 +397,11 @@ a {
         justify-content: center;
         background: var(--px-theme);
         color: var(--px-on-theme);
-        font-size: 20px;
+        font-size: var(--fs-lg);
         border-radius: 50%;
         border: 2px solid var(--px-black);
         cursor: pointer;
-        transition: all 0.4s ease;
+        transition: all var(--t-slow) ease;
         &:hover {
           background: var(--px-black);
         }
@@ -437,10 +432,10 @@ a {
   height: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: var(--r-sm);
   background: var(--px-surface);
   border: 1px solid var(--px-border);
-  transition: border-color 0.25s ease, transform 0.25s ease;
+  transition: border-color var(--t-base) ease, transform var(--t-base) ease;
 
   /*
    * The drawing sits behind the words, held down to a whisper. It is teal line
@@ -461,7 +456,7 @@ a {
     background-position: right bottom;
     opacity: 0.5;
     pointer-events: none;
-    transition: opacity 0.35s ease, transform 0.35s ease;
+    transition: opacity var(--t-base) ease, transform var(--t-base) ease;
   }
 
   &:hover {
@@ -475,7 +470,7 @@ a {
   }
 
   .services-body {
-    padding: 22px 20px;
+    padding: var(--sp-6) var(--sp-5);
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -492,18 +487,18 @@ a {
       align-items: center;
       justify-content: center;
       color: var(--px-on-theme);
-      font-size: 22px;
-      border-radius: 5px;
+      font-size: var(--fs-xl);
+      border-radius: var(--r-xs);
       margin-bottom: 20px;
     }
     p {
       color: var(--px-strong);
-      font-size: 14px;
+      font-size: var(--fs-base);
       line-height: 150%;
-      opacity: 0.7;
+      color: var(--px-text-muted);
       // Pushes the rating to the foot of the card, so the rules line up
       // across a row whatever length the sentence runs to.
-      margin: 0 0 18px;
+      margin: 0 0 var(--sp-5);
       flex: 1;
     }
     .rating-wrap {
@@ -515,7 +510,7 @@ a {
 .ratings {
   position: relative;
   width: 102px;
-  font-size: 16px;
+  font-size: var(--fs-md);
   .rating:last-child {
     position: absolute;
     top: 0;
@@ -549,8 +544,8 @@ a {
    stops and study starts. Education is deliberately the quieter of the two. */
 .ex-column {
   height: 100%;
-  padding: 22px;
-  border-radius: 14px;
+  padding: var(--sp-6);
+  border-radius: var(--r-md);
   background: rgba(var(--px-theme-rgb), 0.05);
   border: 1px solid rgba(var(--px-theme-rgb), 0.2);
 
@@ -568,20 +563,20 @@ a {
   }
 
   @media (max-width: 575px) {
-    padding: 18px;
+    padding: var(--sp-5);
   }
 }
 
 .ex-column-title {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 13px;
+  gap: var(--sp-25);
+  font-size: var(--fs-sm);
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--px-theme);
-  margin: 0 0 18px;
+  margin: 0 0 var(--sp-5);
   padding-bottom: 14px;
   border-bottom: 1px solid var(--px-border);
 }
@@ -592,20 +587,20 @@ a {
   justify-content: center;
   width: 30px;
   height: 30px;
-  border-radius: 8px;
+  border-radius: var(--r-sm);
   background: rgba(var(--px-theme-rgb), 0.15);
   color: var(--px-theme);
-  font-size: 15px;
+  font-size: var(--fs-base);
 }
 
 .ex-column-count {
   margin-left: auto;
   min-width: 24px;
-  padding: 3px 8px;
-  border-radius: 999px;
+  padding: var(--sp-1) var(--sp-2);
+  border-radius: var(--r-pill);
   background: var(--px-surface-hover);
   color: var(--px-text);
-  font-size: 11px;
+  font-size: var(--fs-2xs);
   font-weight: 700;
   text-align: center;
   letter-spacing: 0;
@@ -614,15 +609,15 @@ a {
 .ex-list {
   display: grid;
   grid-auto-rows: 1fr;
-  gap: 16px;
+  gap: var(--sp-4);
 }
 
 .ex-box {
   background: var(--px-surface);
   border: 1px solid var(--px-border);
-  border-radius: 10px;
-  padding: 20px 22px;
-  transition: border-color 0.25s ease, transform 0.25s ease;
+  border-radius: var(--r-sm);
+  padding: var(--sp-5) var(--sp-6);
+  transition: border-color var(--t-base) ease, transform var(--t-base) ease;
 
   &:hover {
     border-color: rgba(var(--px-theme-rgb), 0.45);
@@ -639,8 +634,8 @@ a {
     min-height: 66px;
 
     h4 {
-      margin: 0 0 6px;
-      font-size: 17px;
+      margin: 0 0 var(--sp-15);
+      font-size: var(--fs-lg);
       font-weight: 700;
       line-height: 1.35;
       color: var(--px-heading);
@@ -648,7 +643,7 @@ a {
 
     .ex-company {
       display: block;
-      font-size: 12.5px;
+      font-size: var(--fs-xs);
       font-weight: 600;
       letter-spacing: 0.04em;
       text-transform: uppercase;
@@ -658,18 +653,18 @@ a {
     .ex-duration {
       display: block;
       margin-top: 3px;
-      font-size: 12.5px;
+      font-size: var(--fs-xs);
       text-transform: uppercase;
       letter-spacing: 0.03em;
       color: var(--px-text);
-      opacity: 0.75;
+      color: var(--px-text-muted);
     }
   }
 
   p {
     color: var(--px-strong);
-    opacity: 0.75;
-    font-size: 14.5px;
+    color: var(--px-text-muted);
+    font-size: var(--fs-base);
     line-height: 1.6;
     margin: 0;
     /* Three lines each. The descriptions run to very different lengths, and
@@ -684,16 +679,16 @@ a {
   .ex-tags {
     list-style: none;
     padding: 0;
-    margin: 14px 0 0;
+    margin: var(--sp-35) 0 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
+    gap: var(--sp-2);
     li {
-      font-size: 11.5px;
+      font-size: var(--fs-2xs);
       font-weight: 500;
       line-height: 1;
-      padding: 6px 11px;
-      border-radius: 30px;
+      padding: var(--sp-15) var(--sp-3);
+      border-radius: var(--r-pill);
       color: var(--px-theme);
       background: rgba(var(--px-theme-rgb), 0.08);
       border: 1px solid rgba(var(--px-theme-rgb), 0.25);
@@ -725,23 +720,23 @@ a {
   .t-text {
     margin-bottom: 25px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: var(--fs-lg);
     color: var(--px-strong);
   }
   .t-person {
     h6 {
       font-weight: 500;
-      font-size: 20px;
+      font-size: var(--fs-lg);
       text-transform: uppercase;
-      margin: 0 0 8px;
+      margin: 0 0 var(--sp-2);
     }
     span {
       font-weight: 400;
-      font-size: 16px;
+      font-size: var(--fs-md);
       line-height: 20px;
       text-align: center;
       color: var(--px-strong);
-      opacity: 0.5;
+      color: var(--px-text-muted);
     }
   }
 }
@@ -753,17 +748,17 @@ a {
   .contactus-title {
     h5 {
       font-weight: 500;
-      font-size: 40px;
+      font-size: var(--fs-3xl);
       @include down-sm {
         font-size: 32px;
       }
     }
     p {
       font-weight: 400;
-      font-size: 17px;
+      font-size: var(--fs-lg);
       color: var(--px-strong);
       max-width: 550px;
-      opacity: 0.85;
+      color: var(--px-text-muted);
     }
   }
   .contact-banner {
@@ -772,9 +767,9 @@ a {
     }
   }
   .contact-info {
-    padding: 20px 0 40px;
+    padding: var(--sp-5) 0 var(--sp-10);
     @include down-sm {
-      padding: 20px 0 25px;
+      padding: var(--sp-5) 0 25px;
     }
     .contact-info-in {
       display: flex;
@@ -782,16 +777,16 @@ a {
       padding-top: 20px;
       label {
         font-weight: 400;
-        font-size: 12px;
+        font-size: var(--fs-xs);
         color: var(--px-strong);
-        margin: 0 0 2px;
+        margin: 0 0 var(--sp-05);
         text-transform: uppercase;
         letter-spacing: 2px;
-        opacity: 0.75;
+        color: var(--px-text-muted);
       }
       a {
         color: var(--px-strong);
-        font-size: 22px;
+        font-size: var(--fs-xl);
         font-weight: 600;
       }
     }
@@ -803,11 +798,11 @@ a {
   .contact-form {
     .form-label {
       color: var(--px-strong);
-      margin: 0 0 4px;
-      font-size: 12px;
+      margin: 0 0 var(--sp-1);
+      font-size: var(--fs-xs);
       text-transform: uppercase;
       letter-spacing: 1px;
-      opacity: 0.85;
+      color: var(--px-text-muted);
     }
     .form-control {
       background: var(--px-surface);
@@ -866,7 +861,7 @@ a {
   height: 100%;
   left: 0;
   top: 0;
-  padding: 30px 15px;
+  padding: var(--sp-8) 15px;
   box-sizing: border-box;
   &:before {
     content: '';
@@ -901,7 +896,7 @@ a {
     margin-right: -12px;
   }
   .slick-track > * {
-    padding: 0 12px;
+    padding: 0 var(--sp-3);
   }
 }
 /* 50px between each mark left the row looking sparse, and with fifteen tools
@@ -913,7 +908,7 @@ a {
     margin-right: -8px;
   }
   .slick-track > * {
-    padding: 0 8px;
+    padding: 0 var(--sp-2);
   }
   @media (max-width: 991px) {
     .slick-list {
@@ -921,7 +916,7 @@ a {
       margin-right: -12px;
     }
     .slick-track > * {
-      padding: 0 12px;
+      padding: 0 var(--sp-3);
     }
   }
 }
@@ -981,7 +976,7 @@ a {
   left: 15px;
   top: 15px;
   pointer-events: none;
-  transition: all 0.1s ease;
+  transition: all var(--t-fast) ease;
 }
 @media screen and (max-width: 575px) {
   .cs-cursor_lg,
@@ -1032,7 +1027,7 @@ a {
   border: none;
   background: var(--px-theme);
   color: var(--px-black);
-  font-size: 20px;
+  font-size: var(--fs-lg);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1042,7 +1037,7 @@ a {
   visibility: hidden;
   transform: translateY(12px);
   box-shadow: 0 8px 20px rgba(var(--px-theme-rgb), 0.4);
-  transition: all 0.3s ease;
+  transition: all var(--t-base) ease;
 
   &.show {
     opacity: 1;
@@ -1066,10 +1061,10 @@ a {
 
 /* Contact form feedback */
 .form-note {
-  margin: 4px 0 0;
-  padding: 12px 16px;
-  border-radius: 8px;
-  font-size: 14px;
+  margin: var(--sp-1) 0 0;
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--r-sm);
+  font-size: var(--fs-base);
   &.form-note-success {
     color: var(--px-theme);
     background: rgba(var(--px-theme-rgb), 0.1);
@@ -1095,7 +1090,7 @@ a {
 .cred-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 14px;
+  gap: var(--sp-35);
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
@@ -1105,13 +1100,13 @@ a {
 .cred-card {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
+  gap: var(--sp-4);
   height: 100%;
-  padding: 18px 20px;
-  border-radius: 12px;
+  padding: var(--sp-5) var(--sp-5);
+  border-radius: var(--r-sm);
   background: var(--px-surface);
   border: 1px solid var(--px-border);
-  transition: border-color 0.25s ease, transform 0.25s ease;
+  transition: border-color var(--t-base) ease, transform var(--t-base) ease;
 
   &:hover {
     border-color: rgba(var(--px-theme-rgb), 0.45);
@@ -1131,7 +1126,7 @@ a {
   justify-content: center;
   width: 54px;
   height: 54px;
-  border-radius: 11px;
+  border-radius: var(--r-sm);
   background: #fff;
   border: 1px solid var(--px-border);
   color: #0d1117;
@@ -1149,19 +1144,19 @@ a {
 .cred-body {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: var(--sp-1);
   min-width: 0;
 }
 
 .cred-name {
-  font-size: 14.5px;
+  font-size: var(--fs-base);
   font-weight: 600;
   line-height: 1.4;
   color: var(--px-heading);
 }
 
 .cred-meta {
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   color: var(--px-theme);
 }
@@ -1169,27 +1164,27 @@ a {
 .cred-id {
   align-self: flex-start;
   margin-top: 2px;
-  padding: 2px 8px;
-  border-radius: 999px;
+  padding: var(--sp-05) var(--sp-2);
+  border-radius: var(--r-pill);
   background: rgba(var(--px-theme-rgb), 0.12);
   color: var(--px-theme);
   font-family: monospace;
-  font-size: 10.5px;
+  font-size: var(--fs-2xs);
 }
 
 .cred-verify {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: var(--sp-15);
   margin-top: 6px;
   align-self: flex-start;
-  font-size: 12.5px;
+  font-size: var(--fs-xs);
   font-weight: 600;
   color: var(--px-heading);
   text-decoration: none;
   border-bottom: 1px solid rgba(var(--px-theme-rgb), 0.5);
   padding-bottom: 1px;
-  transition: color 0.2s ease;
+  transition: color var(--t-fast) ease;
 
   &:hover {
     color: var(--px-theme);
@@ -1200,17 +1195,17 @@ a {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px 10px;
-  margin: 26px 0 0;
-  padding: 14px 18px;
-  border-radius: 10px;
+  gap: var(--sp-2) var(--sp-25);
+  margin: var(--sp-6) 0 0;
+  padding: var(--sp-35) var(--sp-5);
+  border-radius: var(--r-sm);
   background: var(--px-surface);
   border: 1px solid var(--px-border);
-  font-size: 13px;
+  font-size: var(--fs-sm);
 }
 
 .lang-note-label {
-  font-size: 11.5px;
+  font-size: var(--fs-2xs);
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1221,9 +1216,9 @@ a {
 .lang-chip {
   display: inline-flex;
   align-items: baseline;
-  gap: 6px;
-  padding: 4px 12px;
-  border-radius: 999px;
+  gap: var(--sp-15);
+  padding: var(--sp-1) var(--sp-3);
+  border-radius: var(--r-pill);
   background: rgba(var(--px-theme-rgb), 0.1);
   color: var(--px-text);
 

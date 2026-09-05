@@ -2,7 +2,7 @@
   background-color: transparent;
   color: var(--px-strong);
   border: 1px solid var(--px-border-strong) !important;
-  border-radius: 5px;
+  border-radius: var(--r-xs);
   padding: 0 25px;
   height: 40px;
   line-height: 1;
@@ -30,7 +30,7 @@
   z-index: 111;
   padding-top: 20px;
   padding-bottom: 20px;
-  transition: ease all 0.35s;
+  transition: ease all var(--t-base);
   background-color: transparent;
   &.fixed-header {
     background-color: var(--px-header-bg);
@@ -57,25 +57,25 @@
       background-color: var(--px-header-bg);
       border-top: 1px solid var(--px-border-strong);
       flex-direction: column;
-      padding: 10px 20px;
+      padding: var(--sp-25) var(--sp-5);
       display: none;
       box-shadow: 0 0.125rem 0.25rem rgba(55, 55, 55, 0.075);
     }
     > li {
-      padding: 0 20px;
+      padding: 0 var(--sp-5);
       @include down-md {
-        padding: 8px 0;
+        padding: var(--sp-2) 0;
       }
       a {
-        padding: 8px 0;
+        padding: var(--sp-2) 0;
         text-transform: uppercase;
         color: var(--px-strong);
-        font-size: 15px;
+        font-size: var(--fs-base);
         letter-spacing: 0.5px;
         font-weight: 500;
         position: relative;
         cursor: pointer;
-        transition: all 0.4s ease;
+        transition: all var(--t-slow) ease;
         &:hover {
           color: var(--px-strong);
         }
@@ -87,7 +87,7 @@
           bottom: 0;
           width: 0;
           height: 2px;
-          transition: ease all 0.35s;
+          transition: ease all var(--t-base);
           background-color: currentColor;
         }
         &.active {
@@ -111,8 +111,8 @@
   .logo .brand-logo {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
-    transition: transform 0.3s ease;
+    gap: var(--sp-3);
+    transition: transform var(--t-base) ease;
   }
   .logo .navbar-brand:hover .brand-logo {
     transform: translateY(-1px);
@@ -129,7 +129,7 @@
     width: 80px;
     height: 80px;
     flex: none;
-    border-radius: 18px;
+    border-radius: var(--r-md);
     /* The mark carries its own dark background, so the tile only has to crop
        it to the rounded shape and keep an edge against a light header. */
     overflow: hidden;
@@ -149,7 +149,7 @@
   .logo .brand-word {
     font-family: $px-font;
     font-weight: 700;
-    font-size: 26px;
+    font-size: var(--fs-xl);
     letter-spacing: 0.5px;
     line-height: 1;
     color: var(--px-heading);
@@ -161,12 +161,12 @@
     .logo .brand-emblem {
       width: 56px;
       height: 56px;
-      border-radius: 14px;
+      border-radius: var(--r-md);
     }
   }
   .px-btn {
-    font-size: 14px;
-    padding: 10px 24px;
+    font-size: var(--fs-base);
+    padding: var(--sp-25) var(--sp-6);
   }
   &.menu-open {
     @include down-lg {
@@ -190,10 +190,10 @@
   border: 1px solid var(--px-border);
   background: var(--px-surface);
   color: var(--px-heading);
-  font-size: 18px;
+  font-size: var(--fs-lg);
   line-height: 1;
   cursor: pointer;
-  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  transition: background var(--t-fast) ease, border-color var(--t-fast) ease, transform var(--t-fast) ease;
 
   &:hover {
     background: var(--px-surface-hover);

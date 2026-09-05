@@ -8,6 +8,75 @@
  */
 :root {
   --bs-heading-color: var(--px-heading);
+  /* ----------------------------------------------------------------
+   * Type scale
+   *
+   * Twenty-six distinct font sizes were in use - 10.5, 11, 11.5, 12, 12.5, 13,
+   * 14, 14.5, 15, 16, 17, 18, 20, 22, 24, 26, 30, 32, 34, 35, 38, 40, 45, 48
+   * and 70 - most of them one-off decisions a few pixels apart. Nine steps
+   * cover the same ground, and a reader can feel the difference between two
+   * steps where they could not feel 14 against 14.5.
+   *
+   * The larger steps are fluid. Headings used to jump between fixed sizes at
+   * each breakpoint, so the hero was oversized at 1000px wide and cramped at
+   * 480px; clamp() scales them continuously and removes the breakpoint
+   * overrides that were doing the job badly.
+   * -------------------------------------------------------------------- */
+  --fs-2xs: 0.6875rem;                       /* 11px  - micro labels */
+  --fs-xs: 0.75rem;                          /* 12px  - meta, chips */
+  --fs-sm: 0.8125rem;                        /* 13px  - captions */
+  --fs-base: 0.875rem;                       /* 14px  - body small */
+  --fs-md: 1rem;                             /* 16px  - body */
+  --fs-lg: clamp(1.0625rem, 0.98rem + 0.4vw, 1.25rem);   /* 17-20 */
+  --fs-xl: clamp(1.25rem, 1.05rem + 1vw, 1.625rem);      /* 20-26 */
+  --fs-2xl: clamp(1.625rem, 1.2rem + 2.1vw, 2.375rem);   /* 26-38 */
+  --fs-3xl: clamp(2rem, 1.35rem + 3.2vw, 3rem);          // 32-48
+  --fs-hero: clamp(2.375rem, 1.1rem + 6.4vw, 4.375rem);  // 38-70
+
+  /* ----------------------------------------------------------------
+   * Corners and motion
+   *
+   * Eleven radii and nine transition durations were in use. Nobody chose 11px
+   * over 12px for a reason; they accumulated one component at a time.
+   * -------------------------------------------------------------------- */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-pill: 999px;
+
+  --t-fast: 0.16s;
+  --t-base: 0.26s;
+  --t-slow: 0.42s;
+
+  /* ----------------------------------------------------------------
+   * Spacing
+   *
+   * A four-pixel grid. The stylesheets had eighty distinct padding and margin
+   * values between 2px and 64px, including 3, 5, 7, 11, 22 and 26 - numbers
+   * nobody chose, which arrived because there was no scale to reach for. The
+   * differences are too small to see individually and add up to a page that
+   * does not quite line up.
+   *
+   * The steps below 16px are finer than a strict four-pixel grid, because 6,
+   * 10 and 14 are used deliberately and often: forcing them up to 8, 12 and 16
+   * would have moved twenty-six gaps by a third of their size, which is a
+   * redesign, not a tidy-up.
+   * -------------------------------------------------------------------- */
+  --sp-05: 2px;
+  --sp-1: 4px;
+  --sp-15: 6px;
+  --sp-2: 8px;
+  --sp-25: 10px;
+  --sp-3: 12px;
+  --sp-35: 14px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+
   --px-theme: #{$px-theme};
   --px-theme-rgb: #{$px-theme-rgb};
   --px-black: #{$px-black};
@@ -21,6 +90,7 @@
   --px-white: #{$px-white};
   --px-on-theme: #{$px-white};
   --px-strong: #{$px-white};
+  --px-text-muted: rgba(255, 255, 255, 0.62);
   --px-text: #{$px-text};
   --px-heading: #{$px-heading};
 
@@ -51,6 +121,7 @@
  * 15% over white reads far heavier than white at 15% over black.
  */
 :root[data-theme='light'] {
+  --px-text-muted: rgba(13, 17, 23, 0.62);
   --px-text: #566072;
   --px-heading: #0d1117;
   --px-strong: #0d1117;

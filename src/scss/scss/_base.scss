@@ -13,8 +13,34 @@ img {
   max-width: 100%;
 }
 
-* {
-  outline: none !important;
+/*
+ * Focus.
+ *
+ * This was a universal "outline: none !important", which removed the focus
+ * ring from every element on the site and, being !important, left nothing able
+ * to put one back - which is why the header and the boxing page had to fight
+ * it with their own !important rules and box-shadows. A keyboard user tabbing
+ * through the home page could not see where they were at all.
+ *
+ * The ring is suppressed for pointer focus, which is what the original rule
+ * was really trying to do, and shown for keyboard focus. :focus-visible is the
+ * browser's own judgement of which is which.
+ */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+:focus-visible {
+  // No border-radius here: setting one would override the element's own while
+  // it is focused, snapping a pill button square the moment it is tabbed to.
+  // Browsers already curve the outline to follow the element's shape.
+  outline: 3px solid rgba(var(--px-theme-rgb), 0.9);
+  outline-offset: 3px;
+}
+
+// Anything scrolled to by an in-page link clears the sticky header.
+:target {
+  scroll-margin-top: 100px;
 }
 
 /* ----------------------
@@ -83,7 +109,7 @@ img {
  * still separates them clearly.
  */
 .section {
-  padding: 64px 0;
+  padding: var(--sp-16) 0;
   position: relative;
 }
 
@@ -108,20 +134,20 @@ img {
     margin-bottom: 28px;
   }
   h6 {
-    margin: 0 0 10px;
-    font-size: 16px;
+    margin: 0 0 var(--sp-25);
+    font-size: var(--fs-md);
     font-weight: 400;
     color: var(--px-text);
     text-transform: uppercase;
     letter-spacing: 2px;
     span {
       background: rgba(var(--px-theme-rgb), 0.2);
-      border-radius: 4px;
-      padding: 5px 12px;
+      border-radius: var(--r-xs);
+      padding: var(--sp-1) var(--sp-3);
       display: inline-block;
       color: var(--px-strong);
       font-weight: 400;
-      font-size: 16px;
+      font-size: var(--fs-md);
       line-height: 20px;
       letter-spacing: 4px;
       text-transform: uppercase;
@@ -130,13 +156,12 @@ img {
   h2 {
     margin: 0;
     font-weight: 700;
-    font-size: 40px;
+    font-size: var(--fs-3xl);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
     text-transform: uppercase;
     span {
       color: var(--px-theme);
-    }
-    @include down-sm {
-      font-size: 35px;
     }
   }
 }
@@ -151,11 +176,11 @@ img {
 .px-modal {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 30px;
+  padding: var(--sp-8);
   background-color: var(--px-strong);
   position: relative;
   @include down-lg {
-    padding: 18px;
+    padding: var(--sp-5);
   }
 
   .about-content {
@@ -164,7 +189,7 @@ img {
       margin: 0;
       list-style: none;
       li {
-        padding: 5px 0;
+        padding: var(--sp-1) 0;
       }
     }
     .col-4 {
@@ -187,7 +212,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.4s ease;
+  transition: all var(--t-slow) ease;
   &:hover {
     color: red;
   }

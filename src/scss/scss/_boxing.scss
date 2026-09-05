@@ -13,7 +13,7 @@
       text-transform: uppercase;
       letter-spacing: 2px;
       font-weight: 600;
-      font-size: 14px;
+      font-size: var(--fs-base);
       position: relative;
       padding-left: 40px;
     }
@@ -30,13 +30,13 @@
 
   .boxing-hero-text {
     h1 {
-      font-size: 48px;
+      font-size: var(--fs-3xl);
       line-height: 1.1;
       margin-bottom: 20px;
       .nickname {
         color: var(--px-theme);
         display: block;
-        font-size: 26px;
+        font-size: var(--fs-xl);
         font-weight: 500;
       }
     }
@@ -49,14 +49,14 @@
   .boxing-titles {
     list-style: none;
     padding: 0;
-    margin: 24px 0 0;
+    margin: var(--sp-6) 0 0;
     li {
       color: var(--px-heading);
       font-weight: 500;
       margin-bottom: 12px;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: var(--sp-3);
       svg {
         color: var(--px-theme);
         flex: none;
@@ -70,13 +70,13 @@
 
   .boxing-hero-media {
     position: relative;
-    border-radius: 18px;
+    border-radius: var(--r-md);
     overflow: hidden;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: 18px;
+      border-radius: var(--r-md);
     }
   }
 }
@@ -85,18 +85,18 @@
   margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 16px;
+  gap: var(--sp-4);
 
   .record-item {
     background: rgba(var(--px-theme-rgb), 0.06);
     border: 1px solid rgba(var(--px-theme-rgb), 0.15);
-    border-radius: 14px;
-    padding: 26px 16px;
+    border-radius: var(--r-md);
+    padding: var(--sp-6) var(--sp-4);
     text-align: center;
 
     .num {
       display: block;
-      font-size: 40px;
+      font-size: var(--fs-3xl);
       font-weight: 700;
       line-height: 1;
       color: var(--px-heading);
@@ -104,7 +104,7 @@
     .label {
       display: block;
       margin-top: 8px;
-      font-size: 13px;
+      font-size: var(--fs-sm);
       letter-spacing: 1px;
       text-transform: uppercase;
       color: var(--px-text);
@@ -135,7 +135,7 @@
 /* Fight record table */
 .fight-table-wrap {
   overflow: auto;
-  border-radius: 14px;
+  border-radius: var(--r-md);
   max-height: 460px;
   border: 1px solid rgba(var(--px-theme-rgb), 0.12);
 
@@ -148,7 +148,7 @@
   }
   &::-webkit-scrollbar-thumb {
     background: rgba(var(--px-theme-rgb), 0.4);
-    border-radius: 8px;
+    border-radius: var(--r-sm);
   }
 
   @media (max-width: $px-media-sm) {
@@ -167,8 +167,8 @@
     top: 0;
     z-index: 2;
     text-align: left;
-    padding: 14px 18px;
-    font-size: 13px;
+    padding: var(--sp-35) var(--sp-5);
+    font-size: var(--fs-sm);
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--px-theme);
@@ -178,7 +178,7 @@
   }
 
   tbody td {
-    padding: 12px 18px;
+    padding: var(--sp-3) var(--sp-5);
     color: var(--px-text);
     border-bottom: 1px solid var(--px-border-soft);
     vertical-align: middle;
@@ -190,9 +190,9 @@
 
   .result-badge {
     display: inline-block;
-    padding: 4px 14px;
-    border-radius: 30px;
-    font-size: 12px;
+    padding: var(--sp-1) var(--sp-35);
+    border-radius: var(--r-pill);
+    font-size: var(--fs-xs);
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -220,16 +220,16 @@
     tbody tr {
       display: block;
       border: 1px solid rgba(var(--px-theme-rgb), 0.15);
-      border-radius: 12px;
+      border-radius: var(--r-sm);
       margin-bottom: 14px;
-      padding: 6px 4px;
+      padding: var(--sp-15) var(--sp-1);
     }
     tbody td {
       display: flex;
       justify-content: space-between;
-      gap: 16px;
+      gap: var(--sp-4);
       border: none;
-      padding: 10px 16px;
+      padding: var(--sp-25) var(--sp-4);
       &::before {
         content: attr(data-label);
         color: var(--px-heading);
@@ -249,7 +249,7 @@
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: var(--sp-6);
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(3, 1fr);
@@ -262,10 +262,9 @@
 
 .gallery-item {
   position: relative;
-  border-radius: 14px;
+  border-radius: var(--r-md);
   overflow: hidden;
   cursor: pointer;
-  outline: none;
   // Identical tiles, so every row lines up.
   aspect-ratio: 1 / 1;
   width: 100%;
@@ -292,7 +291,7 @@
     object-fit: cover;
     object-position: center 30%;
     display: block;
-    transition: transform 0.5s ease;
+    transition: transform var(--t-slow) ease;
   }
 
   .gallery-zoom {
@@ -305,7 +304,7 @@
     color: #fff;
     font-size: 34px;
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity var(--t-slow) ease;
   }
 
   .gallery-caption {
@@ -313,12 +312,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 14px 16px;
-    font-size: 14px;
+    padding: var(--sp-35) var(--sp-4);
+    font-size: var(--fs-base);
     color: #fff;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
     transform: translateY(100%);
-    transition: transform 0.4s ease;
+    transition: transform var(--t-slow) ease;
   }
 
   &:hover {
@@ -343,11 +342,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2px;
+  gap: var(--sp-05);
   color: #fff;
   background: rgba(0, 0, 0, 0.62);
   backdrop-filter: blur(2px);
-  transition: background 0.3s ease;
+  transition: background var(--t-base) ease;
 
   .gallery-more-count {
     font-size: clamp(28px, 5vw, 44px);
@@ -356,7 +355,7 @@
   }
 
   .gallery-more-label {
-    font-size: 13px;
+    font-size: var(--fs-sm);
     letter-spacing: 0.04em;
     text-transform: uppercase;
     opacity: 0.85;
@@ -379,20 +378,20 @@
 .gallery-more-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 14px 30px;
+  gap: var(--sp-25);
+  padding: var(--sp-35) var(--sp-8);
   border: 1px solid rgba(var(--px-theme-rgb), 0.35);
-  border-radius: 999px;
+  border-radius: var(--r-pill);
   background: transparent;
   color: var(--px-theme);
-  font-size: 15px;
+  font-size: var(--fs-base);
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease,
-    transform 0.2s ease;
+  transition: background var(--t-base) ease, color var(--t-base) ease, border-color var(--t-base) ease,
+    transform var(--t-fast) ease;
 
   svg {
-    font-size: 18px;
+    font-size: var(--fs-lg);
   }
 
   &:hover,
@@ -417,7 +416,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
+  padding: var(--sp-6);
 
   .lightbox-bg {
     position: absolute;
@@ -436,7 +435,7 @@
     img {
       max-width: 100%;
       max-height: 80vh;
-      border-radius: 12px;
+      border-radius: var(--r-sm);
       object-fit: contain;
       box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
     }
@@ -447,9 +446,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: var(--sp-4);
     color: var(--px-text);
-    font-size: 14px;
+    font-size: var(--fs-base);
   }
   .lightbox-counter {
     color: var(--px-theme);
@@ -468,7 +467,7 @@
     border: 1px solid rgba(var(--px-theme-rgb), 0.35);
     color: #fff;
     cursor: pointer;
-    transition: all 0.25s ease;
+    transition: all var(--t-base) ease;
 
     &:hover {
       background: var(--px-theme);
@@ -482,7 +481,7 @@
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    font-size: 18px;
+    font-size: var(--fs-lg);
   }
 
   .lightbox-nav {
@@ -491,7 +490,7 @@
     width: 54px;
     height: 54px;
     border-radius: 50%;
-    font-size: 24px;
+    font-size: var(--fs-xl);
 
     &.prev {
       left: 24px;
@@ -528,7 +527,7 @@
     // zero-height box collapsed and the frames stopped matching.
     aspect-ratio: 16 / 9;
     width: 100%;
-    border-radius: 14px;
+    border-radius: var(--r-md);
     overflow: hidden;
     background: #000;
 
@@ -559,7 +558,7 @@
       object-fit: cover;
       // YouTube pads a 4:3 poster onto a 16:9 canvas for some uploads; a
       // gentle scale hides the bars without cropping anything that matters.
-      transition: transform 0.5s ease, opacity 0.3s ease;
+      transition: transform var(--t-slow) ease, opacity var(--t-base) ease;
       opacity: 0.92;
     }
 
@@ -578,7 +577,7 @@
       color: #fff;
       font-size: 32px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-      transition: transform 0.3s ease;
+      transition: transform var(--t-base) ease;
     }
 
     &:hover,
@@ -604,7 +603,7 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: var(--sp-25);
     // Two lines' worth of room whether the title needs it or not, so a long
     // name and a short one leave their cards the same height.
     min-height: 2.6em;
@@ -616,11 +615,11 @@
 
   .video-badge {
     display: inline-block;
-    padding: 3px 10px;
-    border-radius: 999px;
+    padding: var(--sp-1) var(--sp-25);
+    border-radius: var(--r-pill);
     background: var(--px-theme);
     color: #fff;
-    font-size: 11px;
+    font-size: var(--fs-2xs);
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -636,7 +635,7 @@
 .video-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px 24px;
+  gap: var(--sp-8) var(--sp-6);
 
   @media (max-width: 575px) {
     grid-template-columns: 1fr;

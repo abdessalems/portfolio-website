@@ -3,10 +3,10 @@
     padding-bottom: 20px;
     border-top: 1px solid var(--px-border-soft);
     color: var(--px-footer-text);
-    font-size: 14px;
+    font-size: var(--fs-base);
     .nav {
     	a {
-		    font-size: 14px;
+		    font-size: var(--fs-base);
 			color: var(--px-footer-text);
 			+ a {
 				margin-left: 18px;
