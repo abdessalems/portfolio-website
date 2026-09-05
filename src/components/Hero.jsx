@@ -73,16 +73,6 @@ export default function Hero({ data, socialData }) {
                     <Icon icon="bi:arrow-right" />
                   </i>
                 </ScrollLink>
-                <a
-                  href="/cv-saadaoui.pdf"
-                  download
-                  className="px-btn light ms-sm-3 mt-3 mt-sm-0"
-                >
-                  <span>Download CV</span>{' '}
-                  <i className="d-flex">
-                    <Icon icon="bi:download" />
-                  </i>
-                </a>
                 <SocialBtns
                   socialBtns={socialData}
                   variant="ps-sm-4 pt-4 pt-sm-0 d-flex justify-content-center justify-content-sm-start"

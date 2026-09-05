@@ -63,8 +63,19 @@ export default function Brands({ data }) {
                   ragged. The box is identical for every logo now; the artwork
                   scales inside it.
                 */}
-                <span className="brand-logo" aria-hidden="true">
-                  <Icon icon={item.icon} />
+                <span
+                  className={`brand-logo${item.tint ? ' is-tinted' : ''}`}
+                  style={item.color ? { color: item.color } : undefined}
+                  aria-hidden="true"
+                >
+                  {/* Notations and languages have no brand behind them, so
+                      those marks are drawn (see generate-tool-marks.mjs) and
+                      arrive as images rather than icon names. */}
+                  {item.img ? (
+                    <img src={item.img} alt="" width="44" height="44" loading="lazy" decoding="async" />
+                  ) : (
+                    <Icon icon={item.icon} />
+                  )}
                 </span>
                 <span
                   className="text-center"

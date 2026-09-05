@@ -904,13 +904,16 @@ a {
     padding: 0 12px;
   }
 }
+/* 50px between each mark left the row looking sparse, and with fifteen tools
+   the strip scrolled for a long time before repeating. 28px reads as one
+   band. */
 .slider-gap-50 {
   .slick-list {
-    margin-left: -25px;
-    margin-right: -25px;
+    margin-left: -8px;
+    margin-right: -8px;
   }
   .slick-track > * {
-    padding: 0 25px;
+    padding: 0 8px;
   }
   @media (max-width: 991px) {
     .slick-list {
@@ -1245,4 +1248,11 @@ a {
        square mark end up optically the same size. */
     object-fit: contain;
   }
+}
+
+/* A monochrome glyph inherits the text colour, which is near-black in the
+   light theme and white in the dark one — neither belongs in a row of brand
+   marks. Tinted to the site's own teal instead. */
+.brand-logo.is-tinted {
+  color: var(--px-theme);
 }

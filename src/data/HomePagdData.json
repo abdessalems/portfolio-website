@@ -44,44 +44,88 @@
   ],
   "brands": [
     {
-      "icon": "logos:jira",
-      "label": "Jira"
+      "label": "Jira",
+      "icon": "logos:jira"
     },
     {
-      "icon": "logos:confluence",
-      "label": "Confluence"
+      "label": "Confluence",
+      "icon": "logos:confluence"
     },
     {
-      "icon": "logos:swagger",
-      "label": "Swagger"
+      "label": "BPMN",
+      "img": "/images/tools/bpmn.png"
     },
     {
-      "icon": "simple-icons:openapiinitiative",
-      "label": "OpenAPI"
+      "label": "PlantUML",
+      "icon": "vscode-icons:file-type-plantuml"
     },
     {
-      "icon": "logos:java",
-      "label": "Java"
+      "label": "Swagger",
+      "icon": "logos:swagger"
     },
     {
-      "icon": "logos:spring-icon",
-      "label": "Spring Boot"
+      "label": "Postman",
+      "icon": "logos:postman"
     },
     {
-      "icon": "logos:angular-icon",
-      "label": "Angular"
+      "label": "Figma",
+      "icon": "logos:figma"
     },
     {
-      "icon": "logos:postgresql",
-      "label": "PostgreSQL"
+      "label": "SQL",
+      "icon": "mdi:database",
+      "tint": true
     },
     {
-      "icon": "logos:docker",
-      "label": "Docker"
+      "label": "IBM DB2",
+      "icon": "logos:ibm"
     },
     {
-      "icon": "logos:git-icon",
-      "label": "Git"
+      "label": "Apache Artemis",
+      "icon": "simple-icons:apache",
+      "tint": true,
+      "color": "#D22128"
+    },
+    {
+      "label": "Java",
+      "icon": "logos:java"
+    },
+    {
+      "label": "Spring Boot",
+      "icon": "logos:spring-icon"
+    },
+    {
+      "label": "Angular",
+      "icon": "logos:angular-icon"
+    },
+    {
+      "label": "React",
+      "icon": "logos:react"
+    },
+    {
+      "label": "TypeScript",
+      "icon": "logos:typescript-icon"
+    },
+    {
+      "label": "PostgreSQL",
+      "icon": "logos:postgresql"
+    },
+    {
+      "label": "Docker",
+      "icon": "logos:docker"
+    },
+    {
+      "label": "Kubernetes",
+      "icon": "logos:kubernetes"
+    },
+    {
+      "label": "Git",
+      "icon": "logos:git-icon"
+    },
+    {
+      "label": "GitHub",
+      "icon": "logos:github-icon",
+      "tint": true
     }
   ],
   "about": {
