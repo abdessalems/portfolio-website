@@ -8,6 +8,7 @@ import Service from '../components/Service';
 import HomePagdData from '../data/HomePagdData.json';
 import Experience from '../components/Experience';
 import Certifications from '../components/Certifications';
+import Training from '../components/Training';
 import Languages from '../components/Languages';
 import Contact from '../components/Contact';
 
@@ -21,6 +22,7 @@ export default function Home() {
     service,
     experience,
     certifications,
+    training,
     languages,
     testimonial,
     contact,
@@ -35,6 +37,7 @@ export default function Home() {
       <Service data={service} />
       <Experience data={experience} />
       <Certifications data={certifications} />
+      {training && <Training data={training} />}
       <Languages data={languages} />
       <Testimonial data={testimonial} />
       <Contact data={contact} socialData={socialBtns} />

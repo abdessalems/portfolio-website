@@ -1,8 +1,8 @@
 {
   "routes": {
     "/": {
-      "title": "Abdessalem Saadaoui — Functional Analyst & Java Developer",
-      "description": "Functional Analyst in Brussels with 4+ years bridging business and IT: requirements engineering, UML/BPMN process modelling, Swagger/OpenAPI contracts, Java Spring Boot and Angular.",
+      "title": "Abdessalem Saadaoui — Functional & Technical Analyst",
+      "description": "Functional & Technical Analyst in Brussels with 5+ years bridging business and IT: requirements engineering, UML/BPMN modelling, REST API contracts to Belgif standards, microservices and event-driven architecture, DB2 data modelling, Java Spring Boot and Angular.",
       "image": "https://www.saadaoui.it.com/images/og-default.png"
     },
     "/boxing": {
