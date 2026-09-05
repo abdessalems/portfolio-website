@@ -88,7 +88,7 @@
     "imgSrc": "/images/about-banner.png",
     "miniTitle": "About Me",
     "title": "FUNCTIONAL & TECHNICAL ANALYST · <span>FULL-STACK</span> DEVELOPER",
-    "description": "Functional & Technical Analyst based in Brussels, Belgium, with 5+ years bridging business needs and technical delivery across enterprise and SaaS environments. I gather, analyse and document business requirements, model processes with UML & BPMN, write functional specifications and API documentation (Swagger/OpenAPI), and manage stakeholders. I analyse how systems fit together — service boundaries, synchronous and asynchronous integration, error handling and logical data models — and translate that into designs engineering teams can build from. Embedded with hands-on full-stack development for close, clear collaboration with IT teams. Delivered functional analysis at enterprise scale across the Finance, Fitness, HR and logistics sectors (including Leejam Sports — 200+ locations, 100,000+ members). MBA in IT Management (2025). Trilingual — Arabic (native), English & French (B2), Dutch (A2, improving). Available immediately. Before IT, an international professional Muay Thai & Kickboxing champion.",
+    "description": "Functional & Technical Analyst based in Brussels, Belgium, with 5+ years bridging business needs and technical delivery across enterprise and SaaS environments. I gather, analyse and document business requirements, model processes with UML & BPMN, write functional specifications and API documentation (Swagger/OpenAPI), and manage stakeholders. I analyse how systems fit together — service boundaries, synchronous and asynchronous integration, error handling and logical data models — and translate that into designs engineering teams can build from. Embedded with hands-on full-stack development for close, clear collaboration with IT teams. Delivered functional analysis at enterprise scale across the Finance, Fitness, HR and logistics sectors (including Leejam Sports — 200+ locations, 100,000+ members). MBA in IT Management (2025). Arabic (native), English (C1), French (B2), Dutch (A2, improving). Available immediately. Before IT, an international professional Muay Thai & Kickboxing champion.",
     "funfacts": [
       {
         "title": "Years Experience",
@@ -208,64 +208,73 @@
     "allService": [
       {
         "title": "Functional Analysis",
-        "subTitle": "Bridging business and IT: AS-IS / TO-BE process modelling, gap analysis, feasibility and impact analysis. Translating complex business needs into clear, actionable specifications for engineering and QA teams.",
+        "subTitle": "AS-IS and TO-BE process analysis, gap and impact assessment, and the feasibility work behind each option. Produces the analysis a decision can be defended with, not just described.",
         "icon": "bi:diagram-3",
-        "ratings": 5
+        "ratings": 5,
+        "imgUrl": "/images/competency/functional-analysis.png"
       },
       {
         "title": "Requirements Engineering",
-        "subTitle": "Gathering, analysing and documenting business requirements. Writing functional specifications, user stories and acceptance criteria — the backbone of every successful delivery.",
+        "subTitle": "Elicitation through workshops and interviews, then business requirements, functional specifications, user stories and acceptance criteria written to be testable. Managed and traced in Jira and Confluence.",
         "icon": "bi:card-checklist",
-        "ratings": 5
+        "ratings": 5,
+        "imgUrl": "/images/competency/requirements-engineering.png"
       },
       {
         "title": "Process & API Modelling",
-        "subTitle": "Modelling workflows and integration contracts with UML and BPMN (PlantUML, Visio, draw.io) and documenting APIs with Swagger / OpenAPI — clear diagrams that align business and engineering.",
+        "subTitle": "Process and sequence models in UML and BPMN with PlantUML, Visio and draw.io, and interface contracts documented in Swagger / OpenAPI — diagrams engineers build from and business owners can still read.",
         "icon": "bi:diagram-2",
-        "ratings": 5
+        "ratings": 5,
+        "imgUrl": "/images/competency/process-api-modelling.png"
       },
       {
         "title": "Stakeholder Management",
-        "subTitle": "Facilitating stakeholders from C-level to end users: workshops, interviews, requirement validation sessions and demos. Keeping business and delivery teams aligned throughout the project.",
+        "subTitle": "Workshops, interviews, requirement validation sessions and demos, from C-level to end users. Conflicting priorities resolved into one agreed scope, and kept agreed as the project moves.",
         "icon": "bi:people",
-        "ratings": 5
+        "ratings": 5,
+        "imgUrl": "/images/competency/stakeholder-management.png"
       },
       {
         "title": "Functional Testing & UAT",
-        "subTitle": "Coordinating functional testing and UAT with business users: test case documentation, defect tracking, reconciliation checks, and validating system behaviour against requirements.",
+        "subTitle": "Test scenarios and cases written from the acceptance criteria, UAT campaigns run with business users, defects triaged and retested, and coverage traced back to the requirement that asked for it.",
         "icon": "bi:clipboard-check",
-        "ratings": 4.5
+        "ratings": 4.5,
+        "imgUrl": "/images/competency/functional-testing.png"
       },
       {
         "title": "Full-Stack Development",
-        "subTitle": "Hands-on development with Java, Spring Boot, FastAPI and REST APIs, plus Angular and React — technical depth that enables close, well-informed collaboration with IT teams.",
+        "subTitle": "Hands-on with Java, Spring Boot, FastAPI and REST APIs, plus Angular and React and SQL — enough depth to read the codebase, review a contract and hold a real conversation with the engineering team.",
         "icon": "bi:server",
-        "ratings": 4.5
+        "ratings": 4.5,
+        "imgUrl": "/images/competency/full-stack-development.png"
       },
       {
         "title": "Technical Analysis & Solution Design",
-        "subTitle": "Turning business requirements into a technical design engineers can build from: system decomposition, interface and integration analysis, data flows between systems, and the feasibility and impact assessment behind each option.",
+        "subTitle": "Turning requirements into a design engineers can build from: system decomposition, interface and integration analysis, data flows between systems, and the trade-offs behind each option written down.",
         "icon": "bi:diagram-2",
-        "ratings": 5
+        "ratings": 5,
+        "imgUrl": "/images/competency/technical-analysis.png"
       },
       {
         "title": "Integration Analysis",
-        "subTitle": "Specifying how systems talk to each other: synchronous API contracts and asynchronous, message-based exchanges, error and retry behaviour, and the edge cases that decide whether an integration is safe to rely on.",
+        "subTitle": "Specifying how systems talk: synchronous API contracts and asynchronous, message-based exchanges, error and retry behaviour, and the edge cases that decide whether an integration is safe to rely on.",
         "icon": "bi:arrow-repeat",
-        "ratings": 5
+        "ratings": 5,
+        "imgUrl": "/images/competency/integration-analysis.png"
       },
       {
         "title": "Data Modelling & Agile Delivery",
-        "subTitle": "Conceptual and logical data modelling, table design and data mapping across systems, with API test scenarios. User stories written to the INVEST principle, refined and delivered in Scrum.",
+        "subTitle": "Conceptual and logical data models, table design and data mapping across systems, validated with SQL and Postman. User stories written to INVEST, refined and delivered in Scrum.",
         "icon": "bi:database",
-        "ratings": 5
+        "ratings": 5,
+        "imgUrl": "/images/competency/data-modelling.png"
       }
     ]
   },
   "experience": {
     "sectionHeading": {
-      "miniTitle": "Experience",
-      "title": "My Work <span>Experience</span>"
+      "miniTitle": "Background",
+      "title": "Experience & <span>Education</span>"
     },
     "allExperience": [
       {
@@ -383,68 +392,6 @@
       }
     ]
   },
-  "certifications": {
-    "sectionHeading": {
-      "miniTitle": "Credentials",
-      "title": "Oracle <span>Certifications</span>"
-    },
-    "list": [
-      {
-        "name": "Oracle Certified Professional: Java SE 21 Developer",
-        "issuer": "Oracle",
-        "date": "August 2026",
-        "note": "Modern Java: records, sealed types, pattern matching, virtual threads, the module system and the streams API.",
-        "verifyUrl": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=BF4852FC0988BA16881CB36ED0A3BEC760CEA8115790F352900CAB3386049B60",
-        "badge": "/images/certs/oracle-jse21-ocp.png"
-      },
-      {
-        "name": "Oracle Certified Associate, Java SE 8 Programmer",
-        "issuer": "Oracle",
-        "date": "March 2023",
-        "note": "Core Java: the type system, object-oriented design, collections, exception handling and lambda expressions.",
-        "verifyUrl": "",
-        "badge": "/images/certs/oracle-jse8-oca.png"
-      }
-    ]
-  },
-  "testimonial": {
-    "sectionHeading": {
-      "miniTitle": "Continuous Learning",
-      "title": "Courses & <span>Training</span>"
-    },
-    "allTestimonial": [
-      {
-        "reviewText": "IBM Business Analyst Professional Certificate via Coursera — business analysis fundamentals: stakeholder analysis, requirements elicitation and documentation, process modelling, and data-driven decision making.",
-        "avatarImg": "/images/avatar-1.png",
-        "avatarName": "IBM via Coursera",
-        "avatarCompany": "Business Analyst"
-      },
-      {
-        "reviewText": "IBM Java Full Stack Developer Professional Certificate via Coursera — 14-course programme covering Spring Boot 3, Angular, REST API design, JWT authentication, Docker, and CI/CD. Practical emphasis on enterprise-grade full-stack development.",
-        "avatarImg": "/images/avatar-1.png",
-        "avatarName": "IBM via Coursera",
-        "avatarCompany": "Java Full Stack Developer"
-      },
-      {
-        "reviewText": "Meta Front-End Developer Professional Certificate via Coursera — covers React, advanced JavaScript, responsive design, accessibility (WCAG), version control with Git, and UX/UI principles. Issued by Meta's engineering team.",
-        "avatarImg": "/images/avatar-2.jpg",
-        "avatarName": "Meta via Coursera",
-        "avatarCompany": "Front-End Developer"
-      },
-      {
-        "reviewText": "Spring Boot 3, Spring 6 & Hibernate for Beginners — Chad Darby (Udemy, 41h). Deep-dive into Spring Core, AOP, Spring MVC, REST APIs, Spring Data JPA, Hibernate ORM, Spring Security, and OAuth2. Directly applied in production Spring Boot projects.",
-        "avatarImg": "/images/avatar-3.jpg",
-        "avatarName": "Udemy",
-        "avatarCompany": "Spring Boot 3 & Hibernate"
-      },
-      {
-        "reviewText": "World Kickboxing Champion — WFM Türkiye (2017). African Muay Thai ISKA Titleholder (2016). Member of the Tunisian National Team with 25 professional fights in Thailand. Demonstrates elite-level discipline, focus, and resilience under pressure.",
-        "avatarImg": "/images/avatar-4.png",
-        "avatarName": "WFM & ISKA Champion",
-        "avatarCompany": "International Kickboxing"
-      }
-    ]
-  },
   "languages": {
     "sectionHeading": {
       "miniTitle": "Languages",
@@ -458,8 +405,8 @@
       },
       {
         "name": "English",
-        "level": "B2 — Upper-Intermediate",
-        "value": 70
+        "level": "C1 — Advanced",
+        "value": 85
       },
       {
         "name": "French",
@@ -491,6 +438,103 @@
       {
         "title": "Visit my website",
         "web": "www.saadaoui.it.com"
+      }
+    ]
+  },
+  "credentials": {
+    "sectionHeading": {
+      "miniTitle": "Credentials",
+      "title": "Certifications & <span>Certificates</span>"
+    },
+    "list": [
+      {
+        "name": "Certificate in Business Analysis (ECBA)",
+        "issuer": "IIBA — International Institute of Business Analysis",
+        "date": "2025",
+        "icon": "bi:patch-check-fill",
+        "verifyUrl": "",
+        "credentialId": "",
+        "badge": "/images/certs/iiba-ecba.png"
+      },
+      {
+        "name": "Oracle Certified Professional: Java SE 21 Developer",
+        "issuer": "Oracle",
+        "date": "August 2026",
+        "badge": "/images/certs/oracle-jse21-ocp.png",
+        "verifyUrl": "https://catalog-education.oracle.com/ords/certview/sharebadge?id=BF4852FC0988BA16881CB36ED0A3BEC760CEA8115790F352900CAB3386049B60",
+        "credentialId": ""
+      },
+      {
+        "name": "Oracle Certified Associate, Java SE 8 Programmer",
+        "issuer": "Oracle",
+        "date": "March 2023",
+        "badge": "/images/certs/oracle-jse8-oca.png",
+        "verifyUrl": "",
+        "credentialId": ""
+      },
+      {
+        "name": "Java Full Stack Developer",
+        "issuer": "Board Infinity via Coursera",
+        "date": "Oct 2023",
+        "icon": "logos:java",
+        "verifyUrl": "https://www.coursera.org/account/accomplishments/specialization/RT7ZVDLGJ7M8",
+        "credentialId": ""
+      },
+      {
+        "name": "Frontend for Java Full Stack Development",
+        "issuer": "Board Infinity via Coursera",
+        "date": "Jul 2023",
+        "icon": "logos:angular-icon",
+        "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/JCC3X67Y6GGV",
+        "credentialId": ""
+      },
+      {
+        "name": "Version Control",
+        "issuer": "Meta via Coursera",
+        "date": "Aug 2023",
+        "icon": "logos:git-icon",
+        "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/774J7ZVUTPZQ",
+        "credentialId": ""
+      },
+      {
+        "name": "Angular for Front End Engineers",
+        "issuer": "Codio via Coursera",
+        "date": "Feb 2023",
+        "icon": "logos:angular-icon",
+        "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/3W8LNEJYCBLA",
+        "credentialId": ""
+      },
+      {
+        "name": "Fundamentals of Java Programming",
+        "issuer": "Board Infinity via Coursera",
+        "date": "Jan 2023",
+        "icon": "logos:java",
+        "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/T8RS82K4H3B5",
+        "credentialId": ""
+      },
+      {
+        "name": "Data Structures & Backend with Java",
+        "issuer": "Board Infinity via Coursera",
+        "date": "Sep 2022",
+        "icon": "logos:java",
+        "verifyUrl": "https://coursera.org/share/18db16cbca8967bbdd168ec1e4d9310b",
+        "credentialId": ""
+      },
+      {
+        "name": "Frontend Development using Angular",
+        "issuer": "Board Infinity via Coursera",
+        "date": "May 2022",
+        "icon": "logos:angular-icon",
+        "verifyUrl": "https://www.coursera.org/account/accomplishments/verify/DANFERDUZA9C",
+        "credentialId": "DANFERDUZA9C"
+      },
+      {
+        "name": "Angular and NgRx — Building a Real Project From Scratch",
+        "issuer": "Udemy",
+        "date": "",
+        "icon": "logos:angular-icon",
+        "verifyUrl": "https://www.udemy.com/certificate/UC-9cec1dde-87d7-4022-aa40-adb786d0a6eb/",
+        "credentialId": ""
       }
     ]
   }

@@ -76,30 +76,36 @@ img {
 
 /* Section
 ---------------------*/
+/*
+ * 100px above and below each section came to 1,800px of empty space down the
+ * page: two screens of scrolling before a word had been read, and readers were
+ * giving up before Contact - the one section that has to be reached. 64px
+ * still separates them clearly.
+ */
 .section {
-  padding: 100px 0;
+  padding: 64px 0;
   position: relative;
 }
 
 @include down-lg {
   .section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 56px;
+    padding-bottom: 56px;
   }
 }
 
 @include down-sm {
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 44px;
+    padding-bottom: 44px;
   }
 }
 
 .section-heading {
-  margin-bottom: 45px;
+  margin-bottom: 34px;
   position: relative;
   @include down-sm {
-    margin-bottom: 35px;
+    margin-bottom: 28px;
   }
   h6 {
     margin: 0 0 10px;

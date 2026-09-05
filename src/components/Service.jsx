@@ -15,7 +15,13 @@ export default function Service({ data }) {
         <div className="row gy-5">
           {allService?.map((item, index) => (
             <div className="col-sm-6 col-lg-4" key={index}>
-              <div className="services-box">
+              {/* The artwork is a background, not content: it says nothing a
+                  screen reader needs, and the card's own title carries the
+                  meaning. Drawn by scripts/generate-service-art.mjs. */}
+              <div
+                className="services-box"
+                style={{ '--card-art': `url(${item.imgUrl})` }}
+              >
                 <div className="services-body">
                   <div className="icon">
                     <Icon icon={item.icon} />

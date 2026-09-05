@@ -1,14 +1,12 @@
 import React from 'react';
 import Brands from '../components/Brands';
 import Projects from '../components/Projects';
-import Testimonial from '../components/Testimonial';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Service from '../components/Service';
 import HomePagdData from '../data/HomePagdData.json';
 import Experience from '../components/Experience';
-import Certifications from '../components/Certifications';
-import Languages from '../components/Languages';
+import Credentials from '../components/Credentials';
 import Contact from '../components/Contact';
 
 export default function Home() {
@@ -20,9 +18,8 @@ export default function Home() {
     projects,
     service,
     experience,
-    certifications,
+    credentials,
     languages,
-    testimonial,
     contact,
   } = HomePagdData;
 
@@ -34,9 +31,9 @@ export default function Home() {
       <Projects data={projects} />
       <Service data={service} />
       <Experience data={experience} />
-      <Certifications data={certifications} />
-      <Languages data={languages} />
-      <Testimonial data={testimonial} />
+      {/* Certifications, certificates and languages were three sections for
+          fourteen short rows between them. */}
+      <Credentials credentials={credentials} languages={languages} />
       <Contact data={contact} socialData={socialBtns} />
     </>
   );

@@ -442,13 +442,40 @@ a {
   border: 1px solid var(--px-border);
   transition: border-color 0.25s ease, transform 0.25s ease;
 
+  /*
+   * The drawing sits behind the words, held down to a whisper. It is teal line
+   * art on a transparent ground, so it composites over the card surface in
+   * either theme rather than fighting the text colour, which flips between
+   * them. Anything stronger than this and the paragraph becomes hard work.
+   */
+  &::before {
+    content: '';
+    position: absolute;
+    right: -60px;
+    bottom: -40px;
+    width: 300px;
+    height: 235px;
+    background-image: var(--card-art);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    opacity: 0.5;
+    pointer-events: none;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+  }
+
   &:hover {
     border-color: rgba(var(--px-theme-rgb), 0.45);
     transform: translateY(-4px);
+
+    &::before {
+      opacity: 0.75;
+      transform: translate(-6px, -6px);
+    }
   }
 
   .services-body {
-    padding: 26px 24px;
+    padding: 22px 20px;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -510,72 +537,166 @@ a {
 /* ----------------------
 *   EXPERIENCE
 ---------------------------*/
-.ex-box {
-  background: rgba(var(--px-theme-rgb), 0.1);
-  padding: 25px;
-  border-radius: 10px;
-  .ex-left {
-    padding: 20px;
-    border-radius: 8px;
-    background: var(--px-theme);
-    h4 {
-      margin: 0 0 8px;
-      font-weight: 700;
+/*
+ * Two columns of compact entries, not eight full-width blocks.
+ *
+ * The old card put a solid teal panel beside a 32px heading for every one of
+ * eight entries, so a diploma from 2014 arrived as loud as the current role.
+ * The date and the employer are the scanning line here; the description
+ * follows underneath in normal weight.
+ */
+/* Each half is a panel of its own, so a reader can see at a glance where work
+   stops and study starts. Education is deliberately the quieter of the two. */
+.ex-column {
+  height: 100%;
+  padding: 22px;
+  border-radius: 14px;
+  background: rgba(var(--px-theme-rgb), 0.05);
+  border: 1px solid rgba(var(--px-theme-rgb), 0.2);
+
+  &.is-education {
+    background: var(--px-surface);
+    border-color: var(--px-border);
+
+    .ex-column-title {
+      color: var(--px-heading);
     }
-    span {
-      font-weight: 400;
-      font-size: 14px;
-      text-transform: uppercase;
-      color: var(--px-on-theme);
-      opacity: 0.8;
-    }
-    p {
-      font-weight: 400;
-      font-size: 16px;
-      color: var(--px-on-theme);
-      text-transform: uppercase;
-      margin: 0 0 15px;
-    }
-    label {
-      padding: 8px 16px;
-      border-radius: 30px;
-      background: var(--px-white);
-      color: var(--px-black);
-      font-size: 12px;
-      text-transform: uppercase;
-      line-height: 1;
-      font-weight: 600;
+    .ex-column-icon {
+      background: var(--px-surface-hover);
+      color: var(--px-heading);
     }
   }
-  .ex-right {
-    h5 {
+
+  @media (max-width: 575px) {
+    padding: 18px;
+  }
+}
+
+.ex-column-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--px-theme);
+  margin: 0 0 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--px-border);
+}
+
+.ex-column-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(var(--px-theme-rgb), 0.15);
+  color: var(--px-theme);
+  font-size: 15px;
+}
+
+.ex-column-count {
+  margin-left: auto;
+  min-width: 24px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: var(--px-surface-hover);
+  color: var(--px-text);
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.ex-list {
+  display: grid;
+  grid-auto-rows: 1fr;
+  gap: 16px;
+}
+
+.ex-box {
+  background: var(--px-surface);
+  border: 1px solid var(--px-border);
+  border-radius: 10px;
+  padding: 20px 22px;
+  transition: border-color 0.25s ease, transform 0.25s ease;
+
+  &:hover {
+    border-color: rgba(var(--px-theme-rgb), 0.45);
+    transform: translateY(-2px);
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  .ex-head {
+    margin-bottom: 10px;
+    // Two lines of room for the role whether it needs them or not, so the
+    // employer line starts at the same height on every card.
+    min-height: 66px;
+
+    h4 {
+      margin: 0 0 6px;
+      font-size: 17px;
       font-weight: 700;
-      font-size: 32px;
-      @include down-sm {
-        font-size: 28px;
-      }
+      line-height: 1.35;
+      color: var(--px-heading);
     }
-    p {
-      color: var(--px-strong);
-      opacity: 0.8;
+
+    .ex-company {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--px-theme);
     }
-    .ex-tags {
-      list-style: none;
-      padding: 0;
-      margin: 18px 0 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      li {
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 1;
-        padding: 7px 12px;
-        border-radius: 30px;
-        color: var(--px-theme);
-        background: rgba(var(--px-theme-rgb), 0.08);
-        border: 1px solid rgba(var(--px-theme-rgb), 0.25);
-      }
+
+    .ex-duration {
+      display: block;
+      margin-top: 3px;
+      font-size: 12.5px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--px-text);
+      opacity: 0.75;
+    }
+  }
+
+  p {
+    color: var(--px-strong);
+    opacity: 0.75;
+    font-size: 14.5px;
+    line-height: 1.6;
+    margin: 0;
+    /* Three lines each. The descriptions run to very different lengths, and
+       without this one card in a column stood twice the height of its
+       neighbour. The full text stays in the markup for search engines. */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .ex-tags {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    li {
+      font-size: 11.5px;
+      font-weight: 500;
+      line-height: 1;
+      padding: 6px 11px;
+      border-radius: 30px;
+      color: var(--px-theme);
+      background: rgba(var(--px-theme-rgb), 0.08);
+      border: 1px solid rgba(var(--px-theme-rgb), 0.25);
     }
   }
 }
@@ -940,39 +1061,6 @@ a {
   }
 }
 
-/* Languages */
-.lang-item {
-  .lang-head {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    gap: 12px;
-  }
-  .lang-name {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--px-heading);
-  }
-  .lang-level {
-    font-size: 13px;
-    color: var(--px-text);
-  }
-  .lang-bar {
-    height: 8px;
-    border-radius: 30px;
-    background: var(--px-track);
-    overflow: hidden;
-  }
-  .lang-fill {
-    display: block;
-    height: 100%;
-    border-radius: 30px;
-    background: linear-gradient(90deg, #34e3cf, #12a594);
-    transition: width 1.1s cubic-bezier(0.3, 1, 0.4, 1);
-  }
-}
-
 /* Contact form feedback */
 .form-note {
   margin: 4px 0 0;
@@ -991,67 +1079,170 @@ a {
   }
 }
 
-/* Certifications */
-.cert-item {
+/* ----------------------
+*   Credentials
+---------------------------*/
+/*
+ * One card for every credential, all the same size.
+ *
+ * The Oracle examinations used to sit in wide cards with a 92px badge while
+ * the certificates were narrow rows beneath a second heading, so one section
+ * read as two that had been pushed together.
+ */
+.cred-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.cred-card {
   display: flex;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 16px;
   height: 100%;
-  padding: 26px;
+  padding: 18px 20px;
   border-radius: 12px;
   background: var(--px-surface);
   border: 1px solid var(--px-border);
   transition: border-color 0.25s ease, transform 0.25s ease;
+
   &:hover {
     border-color: rgba(var(--px-theme-rgb), 0.45);
     transform: translateY(-3px);
   }
-  /* Oracle issues the badge on a transparent ground, so it needs no plate
-     behind it and reads correctly in both themes. */
-  .cert-badge {
-    flex: 0 0 auto;
-    align-self: flex-start;
-    width: 92px;
-    height: auto;
+}
+
+/*
+ * A light plate behind the mark. These are the issuers' own logos in their own
+ * colours, and IBM blue, Meta blue and Udemy black all disappear against the
+ * dark theme without something to sit on.
+ */
+.cred-logo {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 11px;
+  background: #fff;
+  border: 1px solid var(--px-border);
+  color: #0d1117;
+  font-size: 30px;
+  overflow: hidden;
+
+  img,
+  svg {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
   }
-  .cert-name {
-    margin: 0 0 6px;
-    font-size: 18px;
-    line-height: 1.4;
-    color: var(--px-heading);
-  }
-  .cert-meta {
-    margin: 0 0 10px;
-    font-size: 14px;
-    font-weight: 600;
+}
+
+.cred-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.cred-name {
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--px-heading);
+}
+
+.cred-meta {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--px-theme);
+}
+
+.cred-id {
+  align-self: flex-start;
+  margin-top: 2px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(var(--px-theme-rgb), 0.12);
+  color: var(--px-theme);
+  font-family: monospace;
+  font-size: 10.5px;
+}
+
+.cred-verify {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  align-self: flex-start;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--px-heading);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(var(--px-theme-rgb), 0.5);
+  padding-bottom: 1px;
+  transition: color 0.2s ease;
+
+  &:hover {
     color: var(--px-theme);
   }
-  .cert-note {
-    margin: 0 0 14px;
-    font-size: 15px;
-    line-height: 1.6;
-    color: var(--px-text);
-  }
-  .cert-verify {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-    font-weight: 600;
+}
+
+.lang-note {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin: 26px 0 0;
+  padding: 14px 18px;
+  border-radius: 10px;
+  background: var(--px-surface);
+  border: 1px solid var(--px-border);
+  font-size: 13px;
+}
+
+.lang-note-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--px-theme);
+  margin-right: 4px;
+}
+
+.lang-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(var(--px-theme-rgb), 0.1);
+  color: var(--px-text);
+
+  strong {
     color: var(--px-heading);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(var(--px-theme-rgb), 0.5);
-    padding-bottom: 2px;
-    transition: color 0.2s ease;
-    &:hover {
-      color: var(--px-theme);
-    }
+    font-weight: 600;
   }
-  /* On a narrow screen the badge and the text stop fitting side by side long
-     before the card does, so the card stacks rather than squeezing the title
-     into a two-word column. */
-  @media (max-width: 575px) {
-    flex-direction: column;
-    gap: 16px;
-    padding: 22px;
+}
+
+/* Every tool mark in the same box, whatever shape its artwork is. */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    /* The viewBox scales to fit rather than filling, so a wide wordmark and a
+       square mark end up optically the same size. */
+    object-fit: contain;
   }
 }

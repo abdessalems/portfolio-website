@@ -56,7 +56,16 @@ export default function Brands({ data }) {
                 "Swagger" finds the word, not only the mark.
               */}
               <div className="pt-3 pb-3 d-flex flex-column align-items-center justify-content-center gap-2 w-100">
-                <Icon icon={item.icon} style={{ fontSize: '38px' }} aria-hidden="true" />
+                {/*
+                  A fixed box rather than a font size. Setting only font-size
+                  let each mark keep its own proportions, so a wide wordmark
+                  came out twice the width of a square one and the row looked
+                  ragged. The box is identical for every logo now; the artwork
+                  scales inside it.
+                */}
+                <span className="brand-logo" aria-hidden="true">
+                  <Icon icon={item.icon} />
+                </span>
                 <span
                   className="text-center"
                   style={{ fontSize: '13px', fontWeight: 500, opacity: 0.75 }}
