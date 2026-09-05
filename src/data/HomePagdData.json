@@ -11,7 +11,7 @@
       "I'm a Full-Stack Developer",
       1500
     ],
-    "description": "Functional & Technical Analyst with 5+ years bridging business needs and technical delivery in enterprise and SaaS environments. My core strength is requirements engineering — gathering, analysing and documenting business requirements, modelling processes with UML & BPMN, and writing functional specifications and REST API contracts (Swagger/OpenAPI) — extending into microservices architecture, event-driven integration and data modelling, grounded in hands-on full-stack development with Java and Spring Boot.",
+    "description": "Functional & Technical Analyst with 5+ years bridging business needs and technical delivery in enterprise and SaaS environments. My core strength is requirements engineering — gathering, analysing and documenting business requirements, modelling processes with UML & BPMN, and writing functional specifications and API documentation (Swagger/OpenAPI) — extending into integration analysis and data modelling, grounded in hands-on full-stack development with Java and Spring Boot.",
     "btnText": "Get in touch",
     "btnUrl": "contactus"
   },
@@ -87,8 +87,8 @@
   "about": {
     "imgSrc": "/images/about-banner.png",
     "miniTitle": "About Me",
-    "title": "FUNCTIONAL & TECHNICAL <span>ANALYST</span>",
-    "description": "Functional & Technical Analyst based in Brussels, Belgium, with 5+ years bridging business needs and technical delivery across enterprise and SaaS environments. I gather, analyse and document business requirements, model processes with UML & BPMN, write functional specifications and REST API contracts (Swagger/OpenAPI, Belgif standards), and manage stakeholders. I analyse and design microservices architectures — including the migration of EJB/WebLogic systems towards Java, Docker and Kubernetes — covering synchronous API contracts, asynchronous and event-driven flows over message brokers, and logical data modelling on DB2. Embedded with hands-on full-stack development for close, clear collaboration with IT teams. Delivered functional analysis at enterprise scale across the Finance, Fitness, HR and logistics sectors (including Leejam Sports — 200+ locations, 100,000+ members). MBA in IT Management (2025). Trilingual — Arabic (native), English & French (B2), Dutch (A2, improving). Available immediately. Before IT, an international professional Muay Thai & Kickboxing champion.",
+    "title": "FUNCTIONAL & TECHNICAL ANALYST · <span>FULL-STACK</span> DEVELOPER",
+    "description": "Functional & Technical Analyst based in Brussels, Belgium, with 5+ years bridging business needs and technical delivery across enterprise and SaaS environments. I gather, analyse and document business requirements, model processes with UML & BPMN, write functional specifications and API documentation (Swagger/OpenAPI), and manage stakeholders. I analyse how systems fit together — service boundaries, synchronous and asynchronous integration, error handling and logical data models — and translate that into designs engineering teams can build from. Embedded with hands-on full-stack development for close, clear collaboration with IT teams. Delivered functional analysis at enterprise scale across the Finance, Fitness, HR and logistics sectors (including Leejam Sports — 200+ locations, 100,000+ members). MBA in IT Management (2025). Trilingual — Arabic (native), English & French (B2), Dutch (A2, improving). Available immediately. Before IT, an international professional Muay Thai & Kickboxing champion.",
     "funfacts": [
       {
         "title": "Years Experience",
@@ -244,28 +244,28 @@
       {
         "imgUrl": "/images/service-01.jpg",
         "title": "Full-Stack Development",
-        "subTitle": "Hands-on development with Java, Spring Boot, FastAPI and REST APIs, plus Angular and React, containerised with Docker and deployed on Kubernetes — technical depth that enables close, well-informed collaboration with IT teams.",
+        "subTitle": "Hands-on development with Java, Spring Boot, FastAPI and REST APIs, plus Angular and React — technical depth that enables close, well-informed collaboration with IT teams.",
         "icon": "bi:server",
         "ratings": 4.5
       },
       {
         "imgUrl": "/images/service-01.jpg",
-        "title": "Microservices & API Architecture",
-        "subTitle": "Analysing and designing microservices architectures, including migration from EJB/WebLogic towards Java, Docker and Kubernetes. Decomposition by business capability, REST API contracts written to Belgif standards, OpenAPI, versioning and a common error model.",
+        "title": "Technical Analysis & Solution Design",
+        "subTitle": "Turning business requirements into a technical design engineers can build from: system decomposition, interface and integration analysis, data flows between systems, and the feasibility and impact assessment behind each option.",
         "icon": "bi:diagram-2",
         "ratings": 5
       },
       {
         "imgUrl": "/images/service-02.jpg",
-        "title": "Event-Driven & Resilience Patterns",
-        "subTitle": "Analysis of synchronous and asynchronous exchanges over message brokers (Artemis): commands against events, saga orchestration across services, retry policy with exponential backoff, idempotency keys and dead letter queues.",
+        "title": "Integration Analysis",
+        "subTitle": "Specifying how systems talk to each other: synchronous API contracts and asynchronous, message-based exchanges, error and retry behaviour, and the edge cases that decide whether an integration is safe to rely on.",
         "icon": "bi:arrow-repeat",
         "ratings": 5
       },
       {
         "imgUrl": "/images/service-03.jpg",
         "title": "Data Modelling & Agile Delivery",
-        "subTitle": "Conceptual and logical data modelling with table design on DB2, ownership per service, and API test scenarios in Postman. User stories written to the INVEST principle, refined and delivered in Scrum.",
+        "subTitle": "Conceptual and logical data modelling, table design and data mapping across systems, with API test scenarios. User stories written to the INVEST principle, refined and delivered in Scrum.",
         "icon": "bi:database",
         "ratings": 5
       }
@@ -423,6 +423,12 @@
     },
     "allTestimonial": [
       {
+        "reviewText": "IBM Business Analyst Professional Certificate via Coursera — business analysis fundamentals: stakeholder analysis, requirements elicitation and documentation, process modelling, and data-driven decision making.",
+        "avatarImg": "/images/avatar-1.png",
+        "avatarName": "IBM via Coursera",
+        "avatarCompany": "Business Analyst"
+      },
+      {
         "reviewText": "IBM Java Full Stack Developer Professional Certificate via Coursera — 14-course programme covering Spring Boot 3, Angular, REST API design, JWT authentication, Docker, and CI/CD. Practical emphasis on enterprise-grade full-stack development.",
         "avatarImg": "/images/avatar-1.png",
         "avatarName": "IBM via Coursera",
@@ -494,22 +500,6 @@
       {
         "title": "Visit my website",
         "web": "www.saadaoui.it.com"
-      }
-    ]
-  },
-  "training": {
-    "sectionHeading": {
-      "miniTitle": "Continuing Education",
-      "title": "Courses & <span>Training</span>"
-    },
-    "list": [
-      {
-        "name": "IBM Business Analyst Professional Certificate",
-        "issuer": "IBM",
-        "date": "",
-        "icon": "simple-icons:ibm",
-        "note": "Business analysis fundamentals: stakeholder analysis, requirements elicitation and documentation, process modelling, and data-driven decision making.",
-        "verifyUrl": ""
       }
     ]
   }
