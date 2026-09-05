@@ -15,10 +15,7 @@ export default function Service({ data }) {
         <div className="row gy-5">
           {allService?.map((item, index) => (
             <div className="col-sm-6 col-lg-4" key={index}>
-              <div
-                className="services-box"
-                style={{ backgroundImage: `url(${item.imgUrl})` }}
-              >
+              <div className="services-box">
                 <div className="services-body">
                   <div className="icon">
                     <Icon icon={item.icon} />

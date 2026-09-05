@@ -207,63 +207,54 @@
     },
     "allService": [
       {
-        "imgUrl": "/images/service-03.jpg",
         "title": "Functional Analysis",
         "subTitle": "Bridging business and IT: AS-IS / TO-BE process modelling, gap analysis, feasibility and impact analysis. Translating complex business needs into clear, actionable specifications for engineering and QA teams.",
         "icon": "bi:diagram-3",
         "ratings": 5
       },
       {
-        "imgUrl": "/images/service-04.jpg",
         "title": "Requirements Engineering",
         "subTitle": "Gathering, analysing and documenting business requirements. Writing functional specifications, user stories and acceptance criteria — the backbone of every successful delivery.",
         "icon": "bi:card-checklist",
         "ratings": 5
       },
       {
-        "imgUrl": "/images/service-01.jpg",
         "title": "Process & API Modelling",
         "subTitle": "Modelling workflows and integration contracts with UML and BPMN (PlantUML, Visio, draw.io) and documenting APIs with Swagger / OpenAPI — clear diagrams that align business and engineering.",
         "icon": "bi:diagram-2",
         "ratings": 5
       },
       {
-        "imgUrl": "/images/service-02.jpg",
         "title": "Stakeholder Management",
         "subTitle": "Facilitating stakeholders from C-level to end users: workshops, interviews, requirement validation sessions and demos. Keeping business and delivery teams aligned throughout the project.",
         "icon": "bi:people",
         "ratings": 5
       },
       {
-        "imgUrl": "/images/service-03.jpg",
         "title": "Functional Testing & UAT",
         "subTitle": "Coordinating functional testing and UAT with business users: test case documentation, defect tracking, reconciliation checks, and validating system behaviour against requirements.",
         "icon": "bi:clipboard-check",
         "ratings": 4.5
       },
       {
-        "imgUrl": "/images/service-01.jpg",
         "title": "Full-Stack Development",
         "subTitle": "Hands-on development with Java, Spring Boot, FastAPI and REST APIs, plus Angular and React — technical depth that enables close, well-informed collaboration with IT teams.",
         "icon": "bi:server",
         "ratings": 4.5
       },
       {
-        "imgUrl": "/images/service-01.jpg",
         "title": "Technical Analysis & Solution Design",
         "subTitle": "Turning business requirements into a technical design engineers can build from: system decomposition, interface and integration analysis, data flows between systems, and the feasibility and impact assessment behind each option.",
         "icon": "bi:diagram-2",
         "ratings": 5
       },
       {
-        "imgUrl": "/images/service-02.jpg",
         "title": "Integration Analysis",
         "subTitle": "Specifying how systems talk to each other: synchronous API contracts and asynchronous, message-based exchanges, error and retry behaviour, and the edge cases that decide whether an integration is safe to rely on.",
         "icon": "bi:arrow-repeat",
         "ratings": 5
       },
       {
-        "imgUrl": "/images/service-03.jpg",
         "title": "Data Modelling & Agile Delivery",
         "subTitle": "Conceptual and logical data modelling, table design and data mapping across systems, with API test scenarios. User stories written to the INVEST principle, refined and delivered in Scrum.",
         "icon": "bi:database",

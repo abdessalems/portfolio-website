@@ -418,30 +418,45 @@ a {
 /* ----------------------
 *   Services
 ---------------------------*/
+/*
+ * A surface, not a photograph.
+ *
+ * These cards carried stock illustrations with their own titles printed into
+ * them - "CI/CD vs DevOps" behind Requirements Engineering, HTML and CSS
+ * labels behind Stakeholder Management - so the picture argued with the words
+ * above it. Every one of them also drew a programmer, on the section whose
+ * job is to show an analyst. Nine cards shared four images across three
+ * different art styles, one of them 917 KB.
+ *
+ * The icon, the title, the sentence and the rating are the content. They read
+ * better on a plain surface, and they now read the same on all nine.
+ */
 .services-box {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 150px;
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  flex-direction: column;
+  height: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
-  &:after {
-    content: '';
-    background: linear-gradient(180deg, rgba(4, 12, 22, 0) 0%, var(--px-fade-bottom) 100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  border-radius: 10px;
+  background: var(--px-surface);
+  border: 1px solid var(--px-border);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+
+  &:hover {
+    border-color: rgba(var(--px-theme-rgb), 0.45);
+    transform: translateY(-4px);
   }
+
   .services-body {
-    padding: 20px;
+    padding: 26px 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     position: relative;
     z-index: 1;
+    h5 {
+      margin-bottom: 10px;
+    }
     .icon {
       width: 50px;
       height: 50px;
@@ -457,12 +472,15 @@ a {
     p {
       color: var(--px-strong);
       font-size: 14px;
-      line-height: 140%;
-      opacity: 0.65;
-      margin: 0 0 15px;
+      line-height: 150%;
+      opacity: 0.7;
+      // Pushes the rating to the foot of the card, so the rules line up
+      // across a row whatever length the sentence runs to.
+      margin: 0 0 18px;
+      flex: 1;
     }
     .rating-wrap {
-      padding-top: 10px;
+      padding-top: 12px;
       border-top: 1px solid var(--px-border-soft);
     }
   }
